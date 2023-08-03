@@ -11,7 +11,6 @@ const Header = () => {
 				}
 			`}</style>
 			<header className={"header wrapper"}>
-				Header
 				<Banner></Banner>
 				<NavBar></NavBar>
 				<SideNavBar></SideNavBar>

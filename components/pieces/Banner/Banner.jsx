@@ -14,6 +14,7 @@ const Banner = () => {
           background-size: cover;
           background-repeat: no-repeat;
           padding: 1rem;
+          position:relative;
         }
 
         .banner::before{
