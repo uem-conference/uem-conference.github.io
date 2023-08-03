@@ -140,5 +140,4 @@ const organisingCommittee = [
 	},
 ];
 
-// Export the constant if you need to use it in other files
 module.exports = organisingCommittee;
