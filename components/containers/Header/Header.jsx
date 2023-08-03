@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./header.module.css";
 import { Banner, NavBar, SideNavBar } from "../../pieces";
 
 const Header = () => {
+	// const [isSideNavBarVisible, setIsSideNavBarVisible] = useState(false)
+	const [isSideNavBarVisible, setIsSideNavBarVisible] = useState(true)
+	const showSideNavBar = ()=>{
+		setIsSideNavBarVisible(!isSideNavBarVisible)
+	}
 	return (
 		<>
 			<style jsx>{`
@@ -76,8 +81,8 @@ const Header = () => {
 					will be notified by 15th March, 2024 at the latest
 				</p>
 			</div>
-				<NavBar></NavBar>
-				<SideNavBar></SideNavBar>
+				<NavBar isSideNavBarVisible={isSideNavBarVisible} showSideNavBar={showSideNavBar}></NavBar>
+				<SideNavBar isSideNavBarVisible={isSideNavBarVisible} showSideNavBar={showSideNavBar}></SideNavBar>
 			</header>
 		</>
 	);

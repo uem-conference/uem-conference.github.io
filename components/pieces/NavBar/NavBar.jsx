@@ -3,17 +3,17 @@ import styles from "./navbar.module.css";
 import Link from "next/link";
 import { navMenuItems } from "../../../data/navbar";
 
-const NavBar = ({ isExpanded, setExpendState }) => {
+const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
   const [menuItems, setMenuItems] = useState(navMenuItems);
 
   useEffect(() => {
-    if (isExpanded) {
+    if (isSideNavBarVisible) {
       document.body.classList.add("expanded");
     } else {
       document.body.classList.remove("expanded");
     }
     setMenuItems(navMenuItems);
-  }, [isExpanded]);
+  }, [isSideNavBarVisible]);
 
   const toggleSideBarContainer = () => {
     let conatiner = document.getElementById("sideNavBarContainer");
@@ -68,7 +68,7 @@ const NavBar = ({ isExpanded, setExpendState }) => {
           color: var(--color-light);
         }
 
-        .navbar__menu__item:hover .navbar__sub__list{
+        .navbar__menu__item:hover .navbar__sub__list {
           display: flex;
           border: 2px solid var(--color-light);
           z-index: 1000;
@@ -106,11 +106,15 @@ const NavBar = ({ isExpanded, setExpendState }) => {
           {menuItems.map((item) => {
             if (item.path) {
               return (
-                  <li className="navbar__menu__item bg-gradient--primary">
-                <Link href={item.path} key={item.path} style={{color: "white"}}>
+                <li className="navbar__menu__item bg-gradient--primary">
+                  <Link
+                    href={item.path}
+                    key={item.path}
+                    style={{ color: "white" }}
+                  >
                     {item.text}
-                </Link>
-                  </li>
+                  </Link>
+                </li>
               );
             }
 
@@ -121,13 +125,13 @@ const NavBar = ({ isExpanded, setExpendState }) => {
                   {item.sub.map((subItem) => {
                     return (
                       <li className="navbar__menu__sub__item">
-                      <Link
-                        href={subItem.path}
-                        key={subItem.path}
-                        style={{color: "white"}}
-                      >
-                        {subItem.text}
-                      </Link>
+                        <Link
+                          href={subItem.path}
+                          key={subItem.path}
+                          style={{ color: "white" }}
+                        >
+                          {subItem.text}
+                        </Link>
                       </li>
                     );
                   })}
@@ -139,10 +143,10 @@ const NavBar = ({ isExpanded, setExpendState }) => {
           <div
             className={`navbar__menu__item bg-gradient--primary`}
             onClick={() => {
-              // toggleSideBarContainer();
+              showSideNavBar();
             }}
           >
-            {!isExpanded ? (
+            {!isSideNavBarVisible ? (
               <span className="material-symbols-outlined">widgets</span>
             ) : (
               <span className="material-symbols-outlined ">close</span>
