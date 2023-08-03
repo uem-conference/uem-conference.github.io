@@ -65,7 +65,7 @@ export default function SideNavBar() {
 					{isExpanded && (
 						<div className="nav-brand">
 							<Image src="" alt="logo" width={30} height={30} />
-							<h2>Universa</h2>
+							<h2>AdComSys</h2>
 						</div>
 					)}
 					<button
@@ -103,9 +103,9 @@ export default function SideNavBar() {
 				.side-nav-container {
 					/* background-color: var(--dark); */
 					background-color: rgba(6, 27, 40, 0.3);
-					backdrop-filter: blur(15px);
+					backdrop-filter: blur(5px);
 					border-right: 1px solid rgba(6, 27, 40, 0.655);
-					width: 230px;
+					width: 300px;
 					height: 100vh;
 					position: fixed;
 					color: var(--light);
@@ -115,7 +115,7 @@ export default function SideNavBar() {
 					left: 0;
 				}
 				.side-nav-container-NX {
-					width: 65px;
+					width: 50px;
 				}
 
 				.nav-upper,
@@ -220,10 +220,10 @@ export default function SideNavBar() {
 					background-color: var(--primary);
 				}
 				.menu-item img {
-					width: 65px;
+					width: 30px;
 					height: 30px;
 					padding: 0 20px;
-					filter: invert(100%);
+					// filter: invert(100%);
 				}
 
 				.nav-footer {
