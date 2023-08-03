@@ -18,7 +18,7 @@ export default function SideNavBar() {
 		{
 			text: "Committees",
 			icon: "/assets/IEM_Logo.png",
-			link: "/register",
+			link: "/",
 		},
 		// {
 		// 	text: "Login",
@@ -54,7 +54,7 @@ export default function SideNavBar() {
 				<div className="nav-heading">
 					{isExpanded && (
 						<div className="nav-brand">
-							<Image src="" alt="logo" width={50} height={50} />
+							<Image src="" alt="logo" width={30} height={30} />
 							<h2>Universa</h2>
 						</div>
 					)}
@@ -203,7 +203,6 @@ export default function SideNavBar() {
 					text-decoration: none;
 					text-transform: uppercase;
 					border-radius: 10px;
-					position: relative;
 				}
 
 				.menu-item-NX {
