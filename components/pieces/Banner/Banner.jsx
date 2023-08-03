@@ -13,12 +13,23 @@ const Banner = () => {
           grid-template-columns: 1fr 6fr 1fr;
           background-size: cover;
           background-repeat: no-repeat;
+          padding: 1rem;
+        }
+
+        .banner::before{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1.5rem;
+          bottom: -0.75rem;
+          background-image: linear-gradient(to bottom, transparent, black, transparent);
         }
         .banner__logos {
           width: 100%;
           display: flex;
           flex-direction: column;
           align-items: center;
+          justify-content: space-between;
           gap: 1rem;
           // background-color: rgba(255, 255, 255, 0.5);
           padding: 1rem 0rem;
@@ -30,6 +41,9 @@ const Banner = () => {
           background-color: white;
           border-radius: 1rem;
           // padding: 1rem;
+	border: 2px solid white;
+
+          box-shadow: 0px 0px 5px white, 0px 0px 10px white, 0px 0px 15px white;
         }
         .banner__logo {
           // width: 80%;
@@ -38,10 +52,52 @@ const Banner = () => {
 
         .banner__content{
           width: 60%;
-          padding: 2rem 0rem;
+          // margin: 1rem;
+          padding: 1rem 1rem;
           margin: auto;
-          background-color: rgba(255, 255, 255, 0.2);
-          backdrop-filter: blur(5px);
+          background-color: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(10px);
+          border-radius: 1rem;
+          text-align: center;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .banner__heading{
+          font-size: 1.8rem;
+          line-height: 3rem;
+          font-weight: 400;
+        }
+        .banner__heading__span{
+          font-size: 1.5em;
+          line-height: 2em;
+          font-family: var(--font-russo);
+          letter-spacing: 4px;
+        }
+
+        .banner__text {
+          font-size: var(--font-size-text-small);
+          line-height: 2.1rem;
+          letter-spacing: 1px;
+          /* opacity: 0.8; */
+        }
+
+        .banner__date {
+          // opacity: 1;
+          margin: 1rem 0.5rem 0.5rem;
+          font-weight: 600;
+          font-size: var(--font-size-text-big);
+        }
+
+        .banner__line{
+          width: 80%;
+          margin: auto;
+          border: 1px solid white;
+          margin: 1rem 0rem;
+          opacity: 0.5;
         }
       `}</style>
 
@@ -49,7 +105,7 @@ const Banner = () => {
         className={`banner`}
         style={{
           backgroundImage:
-            "linear-gradient(250deg, rgba(0, 0, 0, 0.1) 75%, rgba(97, 97, 97, 0.4) 75%), linear-gradient(290deg, rgba(97, 97, 97, 0.4) 25%, rgba(0, 0, 0, 0.1) 25%),url(../assets/images/banner.png)",
+            "linear-gradient(250deg, rgba(0, 0, 0, 0.1) 75%, rgba(255, 255, 255, 0.2) 75%), linear-gradient(290deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0.1) 25%),url(../assets/images/banner.png)",
         }}
       >
         <div className="banner__logos">
@@ -74,10 +130,22 @@ const Banner = () => {
         </div>
         <div className="banner__content">
 
-        <h1 className="banner__heading heading">International Conference on Advanced Computing and Systems
+        <h1 className="banner__heading">International Conference on Advanced Computing and Systems
         <br />
         <span className="banner__heading__span">AdComSys 2024</span>
         </h1>
+        <hr className="banner__line"/>
+        <p className={`banner__text`}>Organized by:</p>
+        <p className={`banner__text`}>
+          Department of Computer Science and Technology & <br /> Computer
+          Science and Information Technology <br />
+          (CST & CSIT)
+        </p>
+        <p className={`banner__text`}>
+          University of Engineering and Management, Kolkata
+        </p>
+        <hr className="banner__line"/>
+        <p className={`banner__text banner__date`}>26th and 27th June, 2024</p>
 
         </div>
         <div className="banner__logos">
