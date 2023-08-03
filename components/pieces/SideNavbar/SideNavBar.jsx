@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { navMenuItems } from "@/data/navbar";
+import { SettingPanel } from "..";
 
 // export default function SideNavBar() {
 // 	const [isExpanded, setExpandState] = useState(false);
@@ -269,176 +270,210 @@ import { navMenuItems } from "@/data/navbar";
 // }
 
 const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
-	const [menuItems, setMenuItems] = useState(navMenuItems);
-	// const [isExpanded]
+  const [menuItems, setMenuItems] = useState(navMenuItems);
+  const [isSettingVisible, setIsSettingVisible] = useState(false);
+  // const [isExpanded]
   return (
-	<>
-	<style jsx>{`
-	.sideNavBar__conatiner{
-		background-color: rgba(0,0,0,0.5);
-		transition: 0.3s ease-in-out;
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		overflow: hidden;
-		z-index: 10000;
-	}
-	.sideNavBar{
-		background-color: aqua;
-		transition: 0.3s ease-in-out;
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		max-width: 30rem;
-		display: flex;
-		flex-direction: column;
-		// justify-content: space-between;
-		padding: 1rem;
-	}
-	.sideNavBar__top{
-		display: grid;
-		grid-template-columns: 1fr 4fr;
-		padding: 0rem 0rem 1rem;
-		border-bottom: 2px solid white;
-	}
-	.sideNavBar__logo__container{
-		width: 100%;
-		aspect-ratio: 1;
-		position: relative;
-	}
-	.sideNavBar__name{
-		width: 100%;
-		// aspect-ratio: 1;
-		// position: relative;
-		font-size: 2.5rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.sideNavBar__middle{
-		padding: 2rem 1rem;
-	}
+    <>
+      <style jsx>{`
+        .sideNavBar__conatiner {
+          background-color: rgba(0, 0, 0, 0.5);
+          transition: 0.3s ease-in-out;
+          position: fixed;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          overflow: hidden;
+          z-index: 10000;
+        }
+        .sideNavBar {
+          background-color: aqua;
+          transition: 0.3s ease-in-out;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          max-width: 30rem;
+          display: flex;
+          flex-direction: column;
+          // justify-content: space-between;
+          padding: 1rem;
+        }
+        .sideNavBar__top {
+          display: grid;
+          grid-template-columns: 1fr 4fr;
+          padding: 0rem 0rem 1rem;
+          border-bottom: 2px solid white;
+        }
+        .sideNavBar__logo__container {
+          width: 100%;
+          aspect-ratio: 1;
+          position: relative;
+        }
+        .sideNavBar__name {
+          width: 100%;
+          // aspect-ratio: 1;
+          // position: relative;
+          font-size: 2.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .sideNavBar__middle {
+          padding: 2rem 1rem;
+        }
 
-	.sideNavBar__list{
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
+        .sideNavBar__list {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
 
-	.sideNavBar__menu__item{
-		width: 100%;
-		padding: 1rem;
-		text-align: center;
-		background-color: blue;
-		cursor: pointer;
-		position: relative;
-		border-radius: 1rem 1rem 0rem 0rem;
-		color: white;
-	}
-	.sideNavBar__menu__item:hover .sideNavBar__sub__list{
-		display: flex;
-		flex-direction: column;
-		gap: 0.2rem;
-		padding: 0.5rem
-	}
+        .sideNavBar__menu__item {
+          width: 100%;
+          padding: 1rem;
+          text-align: center;
+          background-color: blue;
+          cursor: pointer;
+          position: relative;
+          border-radius: 1rem 1rem 0rem 0rem;
+          color: white;
+        }
+        .sideNavBar__menu__item:hover .sideNavBar__sub__list {
+          display: flex;
+          flex-direction: column;
+          gap: 0.2rem;
+          padding: 0.5rem;
+        }
 
-	.sideNavBar__sub__list{
-		position: absolute;
-		z-index: 1;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		display: none;
-		background-color: blueviolet;
-	}
-	
-	.sideNavBar__menu__sub__item{
-		width: 95%;
-		margin: auto;
-		padding: 1rem;
-		text-align: center;
-		cursor: pointer;
-		background-color: blueviolet;
-		font-size: 1.4rem;
-	}
-	.sideNavBar__menu__sub__item:hover{
-		background-color: green;
-	}
+        .sideNavBar__sub__list {
+          position: absolute;
+          z-index: 1;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          display: none;
+          background-color: blueviolet;
+        }
 
-	.sideNavBar__btn{
-		width: 5rem;
-		aspect-ratio: 1;
-		position: absolute;
-		right: 0%;
-		// z
-	}
-	`}</style>
-	<div className="sideNavBar__conatiner" style={isSideNavBarVisible? {width: "100%"}: {width: "0px"}}>
-	  <button className="sideNavBar__btn" onClick={showSideNavBar}>
-	  {!isSideNavBarVisible ? (
-              <span className="material-symbols-outlined">widgets</span>
-            ) : (
-              <span className="material-symbols-outlined ">close</span>
-            )}
-	  </button>
-	  <div className="sideNavBar">
-		<div className="sideNavBar__top">
-			<div className="sideNavBar__logo__container">
-				<Image src={"/assets/Logo.png"} layout="fill" objectFit="contain" alt="logo"></Image>
+        .sideNavBar__menu__sub__item {
+          width: 95%;
+          margin: auto;
+          padding: 1rem;
+          text-align: center;
+          cursor: pointer;
+          background-color: blueviolet;
+          font-size: 1.4rem;
+        }
+        .sideNavBar__menu__sub__item:hover {
+          background-color: green;
+        }
+
+        .sideNavBar__btn {
+          width: 5rem;
+          aspect-ratio: 1;
+          position: absolute;
+          right: 0%;
+          // z
+        }
+
+		.sideNavBar__bottom{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 1rem;
+			// overflow: hi
+		}
+
+		.sideNavBar__setting__container{
+			margin-top: 1rem;
+			overflow: hidden;
+			height: 0;
+		}
+      `}</style>
+      <div
+        className="sideNavBar__conatiner"
+        style={isSideNavBarVisible ? { width: "100%" } : { width: "0px" }}
+      >
+        <button className="sideNavBar__btn" onClick={showSideNavBar}>
+          {!isSideNavBarVisible ? (
+            <span className="material-symbols-outlined">widgets</span>
+          ) : (
+            <span className="material-symbols-outlined ">close</span>
+          )}
+        </button>
+        <div className="sideNavBar">
+          <div className="sideNavBar__top">
+            <div className="sideNavBar__logo__container">
+              <Image
+                src={"/assets/Logo.png"}
+                layout="fill"
+                objectFit="contain"
+                alt="logo"
+              ></Image>
+            </div>
+            <div className="sideNavBar__name">AdComSys 2024</div>
+          </div>
+          <div className="sideNavBar__middle">
+            <ul className="sideNavBar__list">
+              {menuItems.map((item) => {
+                if (item.path) {
+                  return (
+                    <li className="sideNavBar__menu__item">
+                      <Link
+                        href={item.path}
+                        key={item.path}
+                        style={{ color: "white" }}
+                        onClick={showSideNavBar}
+                      >
+                        {item.text}
+                      </Link>
+                    </li>
+                  );
+                }
+
+                return (
+                  <div className="sideNavBar__menu__item ">
+                    <p>{item.text}</p>
+                    <ul className="sideNavBar__sub__list">
+                      {item.sub.map((subItem) => {
+                        return (
+                          <li className="sideNavBar__menu__sub__item">
+                            <Link
+                              href={subItem.path}
+                              key={subItem.path}
+                              style={{ color: "white" }}
+                              onClick={showSideNavBar}
+                            >
+                              {subItem.text}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
+            </ul>
+          </div>
+
+          <div className="sideNavBar__bottom">
+            <div className="btn--settings sideNavBar__menu__item" onClick={()=>{setIsSettingVisible(!isSettingVisible)}}>
+              <span class="material-symbols-outlined">{isSettingVisible? "close" : "widgets"}</span>
+            </div>
+            <div className={"sideNavBar__setting__container"} style={isSettingVisible? {height: "fit-content"}: {height: "0"}}>
+			<SettingPanel
+              isSideNavBarVisible={isSideNavBarVisible}
+              showSideNavBar={showSideNavBar}
+            ></SettingPanel>
 			</div>
-			<div className="sideNavBar__name">AdComSys 2024</div>
-		</div>
-	  <div className="sideNavBar__middle">
-		<ul className="sideNavBar__list">
-		{menuItems.map((item) => {
-            if (item.path) {
-              return (
-                <li className="sideNavBar__menu__item">
-                  <Link
-                    href={item.path}
-                    key={item.path}
-                    style={{ color: "white" }}
-					onClick={showSideNavBar}
-                  >
-                    {item.text}
-                  </Link>
-                </li>
-              );
-            }
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-            return (
-              <div className="sideNavBar__menu__item ">
-                <p>{item.text}</p>
-                <ul className="sideNavBar__sub__list">
-                  {item.sub.map((subItem) => {
-                    return (
-                      <li className="sideNavBar__menu__sub__item">
-                        <Link
-                          href={subItem.path}
-                          key={subItem.path}
-                          style={{ color: "white" }}
-						  onClick={showSideNavBar}
-                        >
-                          {subItem.text}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            );
-          })}
-		</ul>
-	  </div>
-
-	  </div>
-	</div>
-	</>
-  )
-}
-
-export default SideNavBar
-
+export default SideNavBar;

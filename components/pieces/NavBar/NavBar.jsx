@@ -100,6 +100,16 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
         .navbar__sub__list .navbar__menu__sub__item:hover {
           background-color: var(--color-primary-light);
         }
+
+        @media screen and (max-width: 600px) {
+          .navbar__menu__item {
+            display: none;
+          }
+          .navbar__menu__item:last-child {
+            display: block;
+            font-size: var(--font-size-2);
+          }
+        }
       `}</style>
       <nav className="navbar">
         <ul className="navbar__list">
@@ -147,7 +157,7 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
             }}
           >
             {!isSideNavBarVisible ? (
-              <span className="material-symbols-outlined">widgets</span>
+              <span className="material-symbols-outlined">menu_open</span>
             ) : (
               <span className="material-symbols-outlined ">close</span>
             )}

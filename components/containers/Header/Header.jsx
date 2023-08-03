@@ -3,8 +3,8 @@ import styles from "./header.module.css";
 import { Banner, NavBar, SideNavBar } from "../../pieces";
 
 const Header = () => {
-	const [isSideNavBarVisible, setIsSideNavBarVisible] = useState(false)
-	// const [isSideNavBarVisible, setIsSideNavBarVisible] = useState(true)
+	// const [isSideNavBarVisible, setIsSideNavBarVisible] = useState(false)
+	const [isSideNavBarVisible, setIsSideNavBarVisible] = useState(true)
 	const showSideNavBar = ()=>{
 		setIsSideNavBarVisible(!isSideNavBarVisible)
 	}

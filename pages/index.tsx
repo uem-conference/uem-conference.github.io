@@ -1,6 +1,6 @@
 // import Head from 'next/head'
 // import { Inter } from 'next/font/google'
-import { Heading } from '@/components/pieces';
+import { Carousel, Heading } from '@/components/pieces';
 import styles from '@/styles/Home.module.css'
 import { useEffect } from 'react';
 
@@ -198,6 +198,7 @@ const HomePage = () => {
     }
     
     `}</style>
+      <Carousel></Carousel>
 		<div className="homepage invalid-selection">
 			<section className="homepage__grid--about">
 				<div className="homepage__about">

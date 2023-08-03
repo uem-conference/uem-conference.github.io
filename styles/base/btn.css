@@ -7,3 +7,14 @@
 .btn--download:hover{
     transform: scale(1.1);
 }
+.btn--settings{
+    width: 100%;
+    /* aspect-ratio: 1; */
+    color: var(--color-dark);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+/* .btn--settings:hover{
+    transform: scale(1.1);
+} */
