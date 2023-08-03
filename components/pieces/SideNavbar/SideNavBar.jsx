@@ -7,37 +7,47 @@ export default function SideNavBar() {
 	const menuItems = [
 		{
 			text: "Home",
-			icon: "/nav-icons/home.png",
+			icon: "/nav-icons/home-1.png",
 			link: "/",
 		},
 		{
 			text: "About UEM",
-			icon: <i class="fa-solid fa-building-columns"></i>,
-			link: "/aboutus",
+			icon: "/assets/UEM_Logo.png",
+			link: "/about-uem",
 		},
 		{
 			text: "Committees",
-			icon: "/assets/IEM_Logo.png",
-			link: "/",
+			icon: "/nav-icons/committee.png",
+			link: "/committees",
+		},
+		{
+			text: "Authors",
+			icon: "/nav-icons/authors.png",
+			link: "/authors",
+		},
+		{
+			text: "Keynote Speakers",
+			icon: "/nav-icons/keynote-speakers.png",
+			link: "/keynote-speakers",
+		},
+		{
+			text: "Technical Programs",
+			icon: "/nav-icons/technical-programs-new.png",
+			link: "/technical-programs",
+		},
+		{
+			text: "Registration",
+			icon: "/nav-icons/registration.png",
+			link: "/registration",
+		},
+		{
+			text: "Contact",
+			icon: "/nav-icons/contact.png",
+			link: "/contact",
 		},
 		// {
-		// 	text: "Login",
-		// 	icon: "../../../public/icons-sidenavbar/login.png",
-		// 	link: "/login",
-		// },
-		// {
-		// 	text: "Services",
-		// 	icon: "../../../public/icons-sidenavbar/services.png",
-		// 	link: "/services",
-		// },
-		// {
-		// 	text: "Contact Us",
-		// 	icon: "../../../public/icons-sidenavbar/contactus.png",
-		// 	link: "/contactus",
-		// },
-		// {
 		// 	text: "Settings",
-		// 	icon: "../../../public/icons-sidenavbar/setting.png",
+		// 	icon: "../../../icons-sidenavbar/setting.png",
 		// 	link: "/settings",
 		// },
 	];
