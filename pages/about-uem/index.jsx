@@ -155,9 +155,9 @@ export default function AboutUem() {
 						margin-bottom: 15px;
 					}
 
-					.sub-title {
-						font-size: 20px;
-					}
+					// .sub-title {
+					// 	font-size: 20px;
+					// }
 
 					.list-item {
 						font-size: 12px;
@@ -194,7 +194,7 @@ export default function AboutUem() {
 
 				<section className="about-uem">
 					<div className="about-uem-content">
-						<h2 className="heading heading--3 sub-title">Who we are</h2>
+						<h2 className="heading heading--2 sub-title">Who we are</h2>
 						<ul className=" text-2 text--normal list">
 							<li className="list-item">
 								UEM Kolkata has won "AAA" category (first 10 institutes
@@ -231,7 +231,7 @@ export default function AboutUem() {
 
 				<section className="about-uem">
 					<div className="about-uem-content">
-						<h2 className="heading heading--3 sub-title">
+						<h2 className="heading heading--2 sub-title">
 							Vision Mission Values
 						</h2>
 						<div className="vision">
@@ -270,7 +270,7 @@ export default function AboutUem() {
 
 				<section className="about-uem">
 					<div className="about-uem-content">
-						<h2 className="heading heading--3 sub-title">Recognition</h2>
+						<h2 className="heading heading--2 sub-title">Recognition</h2>
 						<ul className=" text-2 text--normal list">
 							<li className="list-item">
 								University of Engineering &amp; Management (UEM) is a fully
@@ -301,7 +301,7 @@ export default function AboutUem() {
 
 				<section className="about-uem">
 					<div className="about-uem-content">
-						<h2 className="heading heading--3 sub-title">Courses</h2>
+						<h2 className="heading heading--2 sub-title">Courses</h2>
 						<ul className=" text-2 text--normal list">
 							<li className="list-item">B.Tech</li>
 							<ul className="sub-list">
@@ -339,7 +339,7 @@ export default function AboutUem() {
 
 				<section className="about-uem">
 					<div className="about-uem-content">
-						<h2 className="heading heading--3 sub-title">Placements</h2>
+						<h2 className="heading heading--2 sub-title">Placements</h2>
 						<p className=" text-2 text--normal description">
 							Highest salary offers at UEM Kolkata: Rs. 72 Lakhs per annum.
 						</p>
@@ -359,7 +359,7 @@ export default function AboutUem() {
 
 				<section className="about-uem">
 					<div className="about-uem-content">
-						<h2 className="heading heading--3 sub-title">Internships</h2>
+						<h2 className="heading heading--2 sub-title">Internships</h2>
 						<ul className=" text-2 text--normal list">
 							<li className="list-item">
 								Few companies – NTPC Ltd., WBSETCL, N.F. Railway, Damodar Valley
@@ -374,7 +374,7 @@ export default function AboutUem() {
 				</section>
 				<section className="about-uem">
 					<div className="about-uem-content">
-						<h2 className="heading heading--3 sub-title">Students’ projects</h2>
+						<h2 className="heading heading--2 sub-title">Students’ projects</h2>
 						<ul className=" text-2 text--normal list">
 							<li className="list-item">
 								Manufacturing Tesla Coil for Wireless Power transmission.
@@ -406,7 +406,7 @@ export default function AboutUem() {
 
 				<section className="about-uem">
 					<div className="about-uem-content">
-						<h2 className="heading heading--3 sub-title">Library</h2>
+						<h2 className="heading heading--2 sub-title">Library</h2>
 						<ul className=" text-2 text--normal list">
 							<li className="list-item">Open 24x7x365 hours</li>
 							<li className="list-item">
@@ -436,7 +436,7 @@ export default function AboutUem() {
 
 				<section className="about-uem">
 					<div className="about-uem-content">
-						<h2 className="heading heading--3 sub-title">Student Chapters</h2>
+						<h2 className="heading heading--2 sub-title">Student Chapters</h2>
 						<ul className=" text-2 text--normal list">
 							<li className="list-item">IEEE Antenna and Propagation</li>
 							<li className="list-item">IEEE Communication</li>
@@ -462,7 +462,7 @@ export default function AboutUem() {
 
 				<section className="about-uem">
 					<div className="about-uem-content">
-						<h2 className="heading heading--3 sub-title">Faculty</h2>
+						<h2 className="heading heading--2 sub-title">Faculty</h2>
 						<p className=" text-2 text--normal description">
 							Our faculty consisting of professors from renowned institutes such
 							as IIT Kharagpur and IIM Kolkata.
@@ -473,7 +473,7 @@ export default function AboutUem() {
 							their students.
 						</p>
 
-						<h2 className="heading heading--3 sub-title">Startups</h2>
+						<h2 className="heading heading--2 sub-title">Startups</h2>
 						<p className=" text-2 text--normal description">
 							University has got an existing very prominent incubation center
 							from where students are supported to start-up with their own
@@ -485,7 +485,7 @@ export default function AboutUem() {
 							Thunder Hound, Flappify, Better India, Illicium motors Pvt. Ltd.
 						</p>
 
-						<h2 className="heading heading--3 sub-title">
+						<h2 className="heading heading--2 sub-title">
 							Online Study Materials
 						</h2>
 						<ul className=" text-2 text--normal list">

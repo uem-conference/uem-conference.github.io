@@ -1,6 +1,7 @@
 .heading {
 	font-family: var(--font-oswald);
 	letter-spacing: 1px;
+	text-transform: capitalize;
 	
 	/* remove this later */
 	color: var(--color-primary-dark);
@@ -23,6 +24,12 @@
 }
 .heading--6 {
 	font-size: var(--font-size-6);
+}
+
+
+.heading--line{
+	padding-bottom: 1rem;
+	border-bottom: 2px solid var(--color-dark);
 }
 
 .text {

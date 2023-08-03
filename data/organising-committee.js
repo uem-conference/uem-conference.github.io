@@ -136,7 +136,8 @@ const organisingCommittee = [
 	},
 	{
 		title: "Publicity Co Chair",
-		data: [{ name: "KMB" }, { name: "SJM" }],
+		data: [{ name: "Prof. Sanjukta Mishra (SJM)" },
+		{ name: "Prof. Kamalika Bhowal (KMB)" },],
 	},
 ];
 

@@ -1,0 +1,9 @@
+.btn--download{
+    width: 5rem;
+    aspect-ratio: 1;
+    color: var(--color-dark);
+    cursor: pointer;
+}
+.btn--download:hover{
+    transform: scale(1.1);
+}
