@@ -100,13 +100,51 @@ const Banner = () => {
           margin: 1rem 0rem;
           opacity: 0.5;
         }
+
+
+        @media screen and (max-width: 820px) {
+	
+          .banner__content{
+            width: 70%;
+            // margin: auto;
+          }
+        }
+        @media screen and (max-width: 700px) {
+	
+          .banner__content{
+            width: 80%;
+            // margin: auto;
+          }
+        }
+        @media screen and (max-width: 600px) {
+	
+          .banner__content{
+            width: 90%;
+            // margin: auto;
+          }
+        }
+        @media screen and (max-width: 450px) {
+          .banner{
+            grid-template-columns: 1fr;
+          }
+          .banner__logos{
+            flex-direction: row;
+          }
+          .banner__logo__container {
+            width: 15%;
+          }
+          .banner__content{
+            width: 90%;
+            // margin: auto;
+          }
+        }
       `}</style>
 
       <section
         className={`banner`}
         style={{
           backgroundImage:
-            "linear-gradient(250deg, rgba(0, 0, 0, 0.1) 75%, rgba(255, 255, 255, 0.2) 75%), linear-gradient(290deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0.1) 25%),url(../assets/images/banner.png)",
+            "linear-gradient(250deg, rgba(0, 0, 0, 0.1) 70%, rgba(255, 255, 255, 0.2) 70%), linear-gradient(290deg, rgba(255, 255, 255, 0.2) 30%, rgba(0, 0, 0, 0.1) 30%),url(../assets/images/banner.png)",
         }}
       >
         <div className="banner__logos">
