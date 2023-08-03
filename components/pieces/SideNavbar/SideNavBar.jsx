@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 //icons
-
+import HomeIcon from "../../../public/sidenavbar-icons/home.svg";
 export default function SideNavBar() {
 	const [isExpanded, setExpandState] = useState(false);
 	const menuItems = [
 		{
 			text: "Home",
-			icon: "",
+			icon: <span className="material-symbols-outlined">home</span>,
 			link: "/",
 		},
 		// {
@@ -77,13 +77,14 @@ export default function SideNavBar() {
 							href={link}
 							className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}
 						>
-							<Image
+							{/* <Image
 								className="menu-item-icon"
 								src={icon}
 								alt="img"
 								width={65}
 								height={30}
-							/>
+							/> */}
+							{icon}
 							{isExpanded && <p>{text}</p>}
 						</Link>
 					))}
