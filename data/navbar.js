@@ -29,13 +29,13 @@ export const navMenuItems = [
         "sub": [
             {
                 "text": "Submissions",
-                "path": "/authors/submission",
+                "path": "/authors/submissions",
                 "heading": "INFORMATION FOR AUTHORS OF SPRINGER CONFERENCE PROCEEDINGS"
             },
             {
                 "text": "Call For Papers",
                 "heading": "Call For Papers",
-                "path": "/authors/call-for-paper"
+                "path": "/authors/call-for-papers"
             }
         ]
     },
@@ -43,6 +43,11 @@ export const navMenuItems = [
         "text": "Keynote Speakers",
         "heading": "Keynote Speakers",
         "path": "/keynote-speakers"
+    },
+    {
+        "text": "Registration",
+        "heading": "Registration policy",
+        "path": "/registration"
     },
     {
         "text": "Technical Programs",
@@ -64,11 +69,7 @@ export const navMenuItems = [
             }
         ]
     },
-    {
-        "text": "Registration",
-        "heading": "Registration policy",
-        "path": "/registration"
-    },
+    
     {
         "text": "Contact",
         "heading": "Contact",

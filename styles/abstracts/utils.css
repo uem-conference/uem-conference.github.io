@@ -98,10 +98,10 @@
 }
 
 .bg-gradient--primary:hover > * {
-	z-index: 1;
+	z-index: 2;
 }
 .bg-gradient--primary:hover:after {
-	opacity: 1;
+	opacity: 0.5;
 	z-index: 0;
 }
 
