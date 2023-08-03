@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-//icons
-import HomeIcon from "../../../public/sidenavbar-icons/home.svg";
 export default function SideNavBar() {
 	const [isExpanded, setExpandState] = useState(false);
 	const menuItems = [
@@ -11,20 +9,20 @@ export default function SideNavBar() {
 			icon: <span className="material-symbols-outlined">home</span>,
 			link: "/",
 		},
-		// {
-		// 	text: "Register",
-		// 	icon: "../../../public/icons-sidenavbar/register.png",
-		// 	link: "/register",
-		// },
+		{
+			text: "About UEM",
+			icon: <span class="material-symbols-outlined">school</span>,
+			link: "/aboutus",
+		},
+		{
+			text: "Committees",
+			icon: <span class="material-symbols-outlined">group</span>,
+			link: "/register",
+		},
 		// {
 		// 	text: "Login",
 		// 	icon: "../../../public/icons-sidenavbar/login.png",
 		// 	link: "/login",
-		// },
-		// {
-		// 	text: "About Us",
-		// 	icon: "../../../public/icons-sidenavbar/aboutus.png",
-		// 	link: "/aboutus",
 		// },
 		// {
 		// 	text: "Services",
