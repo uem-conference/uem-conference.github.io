@@ -7,8 +7,7 @@ const BodyTemplate = (props) => {
 	return (
 		<>
 			<Header></Header>
-			body template
-			<main>{props.child}</main>
+			<main className="wrapper" style={{marginBottom: "4rem"}}>{props.child}</main>
 			<Footer></Footer>
 		</>
 	);

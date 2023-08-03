@@ -1,5 +1,6 @@
 // import Head from 'next/head'
 // import { Inter } from 'next/font/google'
+import { Heading } from '@/components/pieces';
 import styles from '@/styles/Home.module.css'
 import { useEffect } from 'react';
 
@@ -25,6 +26,178 @@ const HomePage = () => {
 		document.title = "Home | " + "ICACS";
 	}, []);
 	return (
+    <>
+    <style jsx>{`
+    .homepage {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2rem;
+    }
+    
+    .homepage__section {
+      padding: 1rem 2rem;
+      /* border: 2px solid black; */
+      /* height: 10rem; */
+    }
+    
+    .homepage__grid--about {
+      display: grid;
+      grid-template-columns: 5fr 3fr;
+      /* gap: 2rem; */
+    }
+    
+    .homepage__about {
+      /* padding-top: 2rem; */
+      // padding-left: 2rem;
+      width: 90%;
+      /* margin: auto; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .homepage__heading {
+      width: 100%;
+    }
+    
+    .homepage__text {
+      font-size: clamp(1.4rem, 3vw, 1.6rem);
+      width: 90%;
+      text-align: justify;
+      line-height: clamp(2.1rem, 4.5vw, 2.4rem);
+    }
+    
+    
+    .homepage__announcements{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+    .homepage__deadlines {
+      width: 90%;
+      margin: 2rem auto;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* padding: 15px; */
+      background-color: var(--color-primary);
+      border-radius: 1rem;
+      border: var(--color-primary) 2px solid;
+      font-size: clamp(1.4rem, 3vw, 1.6rem);
+      height: fit-content;
+      position: relative;
+      /* top: 10%; */
+    }
+    
+    .homepage__deadlines__heading {
+      padding: 1rem;
+      width: 100%;
+      background-color: var(--color-primary);
+      color: rgb(255, 236, 236);
+      /* margin-bottom: 10px; */
+      text-align: center;
+      text-transform: uppercase;
+      /* border-bottom: white 2px solid; */
+    }
+    
+    .homepage__deadlines ul {
+      width: 100%;
+      display: grid;
+      text-align: center;
+      grid-template-columns: 5fr 4fr;
+      gap: 0.2rem 0rem;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .homepage__deadlines__text {
+      margin: 0;
+      min-height: 5rem;
+      width: 100%;
+      height: 100%;
+      /* padding: 5px 5px; */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      /* border-bottom: 2px solid black; */
+      /* border-radius: 5px; */
+      /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); */
+    }
+    
+    .homepage__deadlines__text:nth-child(even){
+      background-color: #fff;
+      /* margin-bottom: 1rem; */
+    }
+    .homepage__deadlines__text:nth-child(odd){
+      background-color: #c4c4c4;
+      /* margin-bottom: 1rem; */
+    }
+    
+    @media screen and (max-width: 768px) {
+      .homepage__grid--about {
+        grid-template-columns: 1fr 1fr;
+      }
+      .homepage__about{
+        width: 90%;
+      }
+      .homepage__deadlines {
+        /* padding: 5px; */
+        width: 80%;
+        margin: 1rem auto;
+        /* top: 0; */
+      }
+      .homepage__deadlines ul {
+        grid-template-columns: 1fr;
+        /* width: 85%; */
+        gap: 0;
+        /* height: auto; */
+        padding: 0.3rem;
+      }
+      .homepage__deadlines__text:nth-child(even){
+        /* background-color: #fff; */
+        /* margin-bottom: 1rem; */
+        border-bottom: 3px solid var(--color-primary);
+      }
+      .homepage__deadlines__text:last-child{
+        /* background-color: #fff; */
+        /* margin-bottom: 1rem; */
+        border-bottom: none;
+      }
+    }
+    
+    @media screen and (max-width: 450px) {
+      .homepage__about{
+        width: 95%;
+      }
+      .homepage__grid--about {
+        grid-template-columns: 1fr;
+        /* gap: 2rem; */
+      }
+      .homepage__deadlines {
+        width: 80%;
+        margin: 4rem auto 2rem;
+        /* padding: 2rem; */
+        /* top: 0; */
+      }
+      .homepage__deadlines__text{
+        min-height: fit-content;
+        padding: 1rem;
+      }
+      /* .homepage__deadlines ul {
+        grid-template-columns: 1fr;
+        /* width: 100%;
+        height: auto; *
+        padding: 0.3rem;
+      } */
+    }
+    
+    `}</style>
 		<div className="homepage invalid-selection">
 			<section className="homepage__grid--about">
 				<div className="homepage__about">
@@ -86,6 +259,7 @@ const HomePage = () => {
 				</div>
 			</section>
 		</div>
+    </>
 	);
 };
 

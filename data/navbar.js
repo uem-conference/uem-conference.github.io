@@ -44,11 +44,7 @@ export const navMenuItems = [
         "heading": "Keynote Speakers",
         "path": "/keynote-speakers"
     },
-    {
-        "text": "Registration",
-        "heading": "Registration policy",
-        "path": "/registration"
-    },
+    
     {
         "text": "Technical Programs",
         "sub": [
@@ -69,7 +65,11 @@ export const navMenuItems = [
             }
         ]
     },
-    
+    {
+        "text": "Registration",
+        "heading": "Registration policy",
+        "path": "/registration"
+    },
     {
         "text": "Contact",
         "heading": "Contact",

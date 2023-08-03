@@ -78,7 +78,8 @@ const NavBar = ({ isExpanded, setExpendState }) => {
           display: none;
           flex-direction: column;
           position: absolute;
-          width: 200%;
+          width: 150%;
+          min-width: 20rem;
           max-width: 30rem;
           left: 0;
           background-color: var(--color-primary);
