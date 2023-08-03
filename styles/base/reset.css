@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	/* transition: 0.3s ease-in-out; */
+}
+
+body {
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	font-family: var(--font-roboto);
+	background-color: var(--color-bg);
+	color: var(--color-dark);
+}
+/* body.expanded {
+	opacity: 0.3;
+} */
+
+html {
+	font-size: 62.5%;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#root {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}

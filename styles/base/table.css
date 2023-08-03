@@ -1,0 +1,32 @@
+.table {
+	width: 100%;
+	/* border-collapse: collapse; */
+}
+
+.table__heading {
+	border: none;
+	border: 2px solid transparent;
+	/* border-image: linear-gradient; */
+	padding: 1rem;
+	/* background-color: var(--color-primary); */
+}
+.table__head {
+	/* border: 2px solid var(--color-primary); */
+	/* border: none;
+    border-bottom: 2px solid black; */
+	/* padding: 1rem; */
+	color: var(--color-light);
+	background-color: var(--color-primary-dark);
+}
+
+.table__data {
+	border: 1px solid transparent;
+	border-image: linear-gradient(
+			to bottom,
+			transparent 25%,
+			var(--color-primary)
+		)
+		1;
+	text-align: center;
+	padding: 1rem;
+}

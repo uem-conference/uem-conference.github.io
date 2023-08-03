@@ -1,0 +1,94 @@
+:root {
+	--color-primary: hsl(140, 100%, 45%);
+	--color-bg: hsl(280, 100%, 95%);
+	--color-primary: hsl(280, 100%, 40%);
+	--color-primary-dark: hsl(280, 100%, 25%);
+	--color-primary-light: hsl(280, 100%, 55%);
+
+	--color-dark: hsl(280, 100%, 5%);
+	--color-light: hsl(280, 100%, 95%);
+
+	--font-oswald: "Oswald", sans-serif;
+	--font-playfair: "Playfair Display", serif;
+	--font-roboto: "Roboto", sans-serif;
+	--font-russo: "Russo One", sans-serif;
+	--font-source: "Source Code Pro", monospace;
+
+	--font-size-text-big: 1.8rem;
+	--font-size-text-normal: 1.6rem;
+	--font-size-text-small: 1.4rem;
+	--font-size-1: 3rem;
+	--font-size-2: 2.5rem;
+	--font-size-3: 2rem;
+	--font-size-4: 1.8rem;
+	--font-size-5: 1.5rem;
+	--font-size-6: 1rem;
+
+	--breakpoint-phone: 450px;
+	--breakpoint-tablet: 768px;
+	--breakpoint-desktop: 1000px;
+
+	/* Added by Ankur */
+	--primary: #0091ff;
+	--dark: #061b28;
+	--gray: #756388;
+	--light: #ffffff;
+	--pure-black: #000;
+}
+
+/* @media screen and (max-width: 768px) {
+    :root{
+        --font-size-text-big: 1.8rem;
+        --font-size-text-normal: 1.6rem;
+        --font-size-text-small: 1.4rem;
+        --font-size-1: 3rem;
+        --font-size-2: 2.5rem;
+        --font-size-3: 2rem;
+        --font-size-4: 1.8rem;
+        --font-size-5: 1.5rem;
+        --font-size-6: 1rem;
+    }
+} */
+
+@media screen and (max-width: 450px) {
+	:root {
+		--font-size-text-big: 1.6rem;
+		--font-size-text-normal: 1.4rem;
+		--font-size-text-small: 1.2rem;
+		--font-size-1: 2.5rem;
+		--font-size-2: 2rem;
+		--font-size-3: 1.8rem;
+		--font-size-4: 1.5rem;
+		--font-size-5: 1.4rem;
+		--font-size-6: 1rem;
+	}
+}
+
+/* // Breakpoints for different screen sizes used in responsive.scss
+// Small Mobiles --- 0px - 360px
+// Mobiles --- 361px - 768px
+// Tabs --- 769px - 1024px
+// Desktop --- 1025px - 1920px
+// Large Screens --- Default CSS styles
+$breakpoint-:mobile-small: 360px;
+$breakpoint-mobile: 768px;
+$breakpoint-tab: 1024px;
+$breakpoint-desktop: 1920px; */
+
+@media (min-width: 1440px) {
+	html {
+		zoom: 1.2;
+	}
+}
+
+@media (min-width: 2560px) {
+	html {
+		zoom: 1.8;
+	}
+}
+
+@media (min-width: 3860px) {
+	html {
+		zoom: 2.8;
+	}
+}

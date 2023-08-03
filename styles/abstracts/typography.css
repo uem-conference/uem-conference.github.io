@@ -1,0 +1,61 @@
+.heading {
+	font-family: var(--font-oswald);
+	letter-spacing: 1px;
+	
+	/* remove this later */
+	color: var(--color-primary-dark);
+}
+
+.heading--1 {
+	font-size: var(--font-size-1);
+}
+.heading--2 {
+	font-size: var(--font-size-2);
+}
+.heading--3 {
+	font-size: var(--font-size-3);
+}
+.heading--4 {
+	font-size: var(--font-size-4);
+}
+.heading--5 {
+	font-size: var(--font-size-5);
+}
+.heading--6 {
+	font-size: var(--font-size-6);
+}
+
+.text {
+	font-family: var(--font-roboto);
+	color: var(--color-dark);
+	text-align: justify;
+}
+/* Added by ankur */
+.text-2 {
+	font-family: var(--font-roboto);
+	color: var(--pure-black);
+	text-align: justify;
+}
+
+.text--big {
+	font-size: var(--font-size-text-big);
+	line-height: calc(var(--font-size-text-big) * 1.5);
+}
+.text--normal {
+	font-size: var(--font-size-text-normal);
+	line-height: calc(var(--font-size-text-normal) * 1.5);
+}
+.text--small {
+	font-size: var(--font-size-text-small);
+	line-height: calc(var(--font-size-text-small) * 1.5);
+}
+
+.link {
+	text-decoration: underline;
+	transition: 0.1s ease-in-out;
+}
+
+.link:hover {
+	filter: brightness(2);
+	font-weight: 500;
+}
