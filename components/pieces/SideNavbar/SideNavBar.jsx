@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 export default function SideNavBar() {
 	const [isExpanded, setExpandState] = useState(false);
 	const menuItems = [
 		{
 			text: "Home",
-			icon: <span className="material-symbols-outlined">home</span>,
+			icon: "/nav-icons/home.png",
 			link: "/",
 		},
 		{
 			text: "About UEM",
-			icon: <span class="material-symbols-outlined">school</span>,
+			icon: <i class="fa-solid fa-building-columns"></i>,
 			link: "/aboutus",
 		},
 		{
 			text: "Committees",
-			icon: <span class="material-symbols-outlined">group</span>,
+			icon: "/assets/IEM_Logo.png",
 			link: "/register",
 		},
 		// {
@@ -75,14 +76,14 @@ export default function SideNavBar() {
 							href={link}
 							className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}
 						>
-							{/* <Image
+							<Image
 								className="menu-item-icon"
 								src={icon}
 								alt="img"
 								width={65}
 								height={30}
-							/> */}
-							{icon}
+							/>
+							{/* {icon} */}
 							{isExpanded && <p>{text}</p>}
 						</Link>
 					))}
