@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+//icons
 
 export default function SideNavBar() {
 	const [isExpanded, setExpandState] = useState(false);
 	const menuItems = [
 		{
 			text: "Home",
-			icon: "/assets/icon-sidenavbar/home.png",
+			icon: "",
 			link: "/",
 		},
 		// {
@@ -54,12 +55,7 @@ export default function SideNavBar() {
 				<div className="nav-heading">
 					{isExpanded && (
 						<div className="nav-brand">
-							<Image
-								// src="../../../public/icons-sidenavbar/logo.png"
-								alt="logo"
-								width={50}
-								height={50}
-							/>
+							<Image src="" alt="logo" width={50} height={50} />
 							<h2>Universa</h2>
 						</div>
 					)}
