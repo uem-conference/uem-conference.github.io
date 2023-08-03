@@ -4,12 +4,19 @@ import { Banner, NavBar, SideNavBar } from "../../pieces";
 
 const Header = () => {
 	return (
-		<header>
-			Header
-			<Banner></Banner>
-			<NavBar></NavBar>
-			<SideNavBar></SideNavBar>
-		</header>
+		<>
+			<style jsx>{`
+				.header {
+					color: red;
+				}
+			`}</style>
+			<header className={"header wrapper"}>
+				Header
+				<Banner></Banner>
+				<NavBar></NavBar>
+				<SideNavBar></SideNavBar>
+			</header>
+		</>
 	);
 };
 

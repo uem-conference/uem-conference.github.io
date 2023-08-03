@@ -1,11 +1,19 @@
 import React from 'react'
+import Image from "next/image"
 import styles from "./banner.module.css"
 
 const Banner = () => {
   return (
-    <div>
+    <>
+    <style jsx>{`
+      
+    `}</style>
+
+
+    <section className={`${styles.banner}`}>
       Banner
-    </div>
+    </section>
+    </>
   )
 }
 
