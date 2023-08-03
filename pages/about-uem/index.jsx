@@ -1,7 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect } from "react";
 // import "./aboutuem.css";
 import { Heading } from "../../components/pieces";
-
 
 export default function AboutUem() {
 	useEffect(() => {
@@ -9,171 +9,170 @@ export default function AboutUem() {
 	}, []);
 	return (
 		<>
-    <style jsx>{`
-    .about-uem {
-      background-image: var(--color-primary-light);
-      margin-bottom: 20px;
-    }
-    
-    .about-uem-content {
-      margin: 0 auto;
-    }
-    .title {
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-    .description {
-      margin-bottom: 20px;
-    }
-    
-    .sub-title {
-      text-transform: uppercase;
-      margin-bottom: 15px;
-    }
-    
-    .list-item {
-      list-style-type: none;
-      padding-left: 20px;
-      color: var(--pure-black);
-      background-image: url(../../assets/icons//dot-2.png);
-      background-repeat: no-repeat;
-      background-size: 8px;
-      background-position: left top;
-      background-position-x: 0px;
-      background-position-y: 6px;
-    }
-    
-    .list {
-      margin-left: 20px;
-      padding-left: 20px;
-    }
-    
-    .sub-list {
-      list-style-type: none;
-      color: var(--pure-black);
-    }
-    .sub-list li {
-      margin-left: 20px;
-      padding-left: 20px;
-      background-image: url(../../assets/icons/dot-1.png);
-      background-repeat: no-repeat;
-      background-size: 5px;
-      background-position: left top;
-      background-position-x: 2px;
-      background-position-y: 6px;
-    }
-    .section {
-      margin-bottom: 60px;
-    }
-    
-    .vision,
-    .mission {
-      margin-bottom: 30px;
-    }
-    
-    .library .list-item {
-      margin-bottom: 10px;
-    }
-    
-    .student-chapters .list-item {
-      margin-bottom: 10px;
-    }
-    
-    .faculty .description {
-      margin-bottom: 10px;
-    }
-    
-    .about-uem-content h2.sub-title {
-      border-bottom: 2px solid #333;
-      padding-bottom: 10px;
-    }
-    
-    .about-uem-content ul.sub-list {
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    
-    .about-uem-content ul.sub-list li {
-      margin-bottom: 5px;
-    }
-    
-    .about-uem-content ul.sub-list li:before {
-      margin-right: 5px;
-    }
-    
-    .about-uem-content ul.list {
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    
-    .about-uem-content ul.list li {
-      margin-bottom: 5px;
-    }
-    
-    .about-uem-content ul.list li:before {
-      margin-right: 5px;
-    }
-    
-    .about-uem-content .description {
-      color: var(--pure-black);
-    }
-    
-    .about-uem-content .description a:hover {
-      text-decoration: underline;
-    }
-    
-    /* Responsive Styles */
-    
-    @media (max-width: 768px) {
-      .title {
-        font-size: 28px;
-      }
-    
-      .description {
-        font-size: 16px;
-        margin-bottom: 15px;
-      }
-    
-      .sub-title {
-        font-size: 24px;
-      }
-    
-      .list-item {
-        font-size: 14px;
-        margin-bottom: 5px;
-      }
-    }
-    
-    @media (max-width: 576px) {
-      .title {
-        font-size: 24px;
-        margin-bottom: 15px;
-      }
-    
-      .description {
-        font-size: 14px;
-        margin-bottom: 15px;
-      }
-    
-      .sub-title {
-        font-size: 20px;
-      }
-    
-      .list-item {
-        font-size: 12px;
-        margin-bottom: 5px;
-      }
-    
-      .section {
-        margin-bottom: 30px;
-      }
-    
-      .about-uem-content {
-        padding: 20px;
-      }
-    }
-    
-    `}</style>
+			<style jsx>{`
+				.about-uem {
+					background-image: var(--color-primary-light);
+					margin-bottom: 20px;
+				}
+
+				.about-uem-content {
+					margin: 0 auto;
+				}
+				.title {
+					text-transform: uppercase;
+					margin-bottom: 20px;
+				}
+				.description {
+					margin-bottom: 20px;
+				}
+
+				.sub-title {
+					text-transform: uppercase;
+					margin-bottom: 15px;
+				}
+
+				.list-item {
+					list-style-type: none;
+					padding-left: 20px;
+					color: var(--pure-black);
+					background-image: url(../../assets/icons//dot-2.png);
+					background-repeat: no-repeat;
+					background-size: 8px;
+					background-position: left top;
+					background-position-x: 0px;
+					background-position-y: 6px;
+				}
+
+				.list {
+					margin-left: 20px;
+					padding-left: 20px;
+				}
+
+				.sub-list {
+					list-style-type: none;
+					color: var(--pure-black);
+				}
+				.sub-list li {
+					margin-left: 20px;
+					padding-left: 20px;
+					background-image: url(../../assets/icons/dot-1.png);
+					background-repeat: no-repeat;
+					background-size: 5px;
+					background-position: left top;
+					background-position-x: 2px;
+					background-position-y: 6px;
+				}
+				.section {
+					margin-bottom: 60px;
+				}
+
+				.vision,
+				.mission {
+					margin-bottom: 30px;
+				}
+
+				.library .list-item {
+					margin-bottom: 10px;
+				}
+
+				.student-chapters .list-item {
+					margin-bottom: 10px;
+				}
+
+				.faculty .description {
+					margin-bottom: 10px;
+				}
+
+				.about-uem-content h2.sub-title {
+					border-bottom: 2px solid #333;
+					padding-bottom: 10px;
+				}
+
+				.about-uem-content ul.sub-list {
+					margin-top: 10px;
+					margin-bottom: 20px;
+				}
+
+				.about-uem-content ul.sub-list li {
+					margin-bottom: 5px;
+				}
+
+				.about-uem-content ul.sub-list li:before {
+					margin-right: 5px;
+				}
+
+				.about-uem-content ul.list {
+					margin-top: 10px;
+					margin-bottom: 20px;
+				}
+
+				.about-uem-content ul.list li {
+					margin-bottom: 5px;
+				}
+
+				.about-uem-content ul.list li:before {
+					margin-right: 5px;
+				}
+
+				.about-uem-content .description {
+					color: var(--pure-black);
+				}
+
+				.about-uem-content .description a:hover {
+					text-decoration: underline;
+				}
+
+				/* Responsive Styles */
+
+				@media (max-width: 768px) {
+					.title {
+						font-size: 28px;
+					}
+
+					.description {
+						font-size: 16px;
+						margin-bottom: 15px;
+					}
+
+					.sub-title {
+						font-size: 24px;
+					}
+
+					.list-item {
+						font-size: 14px;
+						margin-bottom: 5px;
+					}
+				}
+
+				@media (max-width: 576px) {
+					.title {
+						font-size: 24px;
+						margin-bottom: 15px;
+					}
+
+					.description {
+						font-size: 14px;
+						margin-bottom: 15px;
+					}
+
+					.sub-title {
+						font-size: 20px;
+					}
+
+					.list-item {
+						font-size: 12px;
+						margin-bottom: 5px;
+					}
+
+					.section {
+						margin-bottom: 30px;
+					}
+
+					.about-uem-content {
+						padding: 20px;
+					}
+				}
+			`}</style>
 			<Heading
 				text={"Welcome to UEM Kolkata"}
 				class={"mb--2 invalid-selection"}
