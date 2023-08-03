@@ -80,8 +80,10 @@ export default function SideNavBar() {
 								className="menu-item-icon"
 								src={icon}
 								alt="img"
-								width={65}
-								height={30}
+								layout="fill"
+								objectFit="contain"
+								// width={65}
+								// height={30}
 							/>
 							{/* {icon} */}
 							{isExpanded && <p>{text}</p>}
@@ -201,6 +203,7 @@ export default function SideNavBar() {
 					text-decoration: none;
 					text-transform: uppercase;
 					border-radius: 10px;
+					position: relative;
 				}
 
 				.menu-item-NX {
