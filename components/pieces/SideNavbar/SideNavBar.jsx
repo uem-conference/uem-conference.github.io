@@ -80,10 +80,8 @@ export default function SideNavBar() {
 								className="menu-item-icon"
 								src={icon}
 								alt="img"
-								layout="fill"
-								objectFit="contain"
-								// width={65}
-								// height={30}
+								width={65}
+								height={30}
 							/>
 							{/* {icon} */}
 							{isExpanded && <p>{text}</p>}
