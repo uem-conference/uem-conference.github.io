@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Heading } from "../../components/pieces";
-
+import Image from "next/image";
 const ContactPage = () => {
 	useEffect(() => {
 		document.title = "Contact | " + process.env.app_name;
@@ -70,7 +70,7 @@ const ContactPage = () => {
 					text-decoration: underline;
 				}
 				.email-icon:hover {
-					zoom: 120%;
+					zoom: 105%;
 				}
 				@media screen and (max-width: 768px) {
 					.contact__grid {
@@ -99,9 +99,12 @@ const ContactPage = () => {
 						Convener, AdComSys 2024{" "}
 					</p>
 					<div className="contact__container">
-						<span className="material-symbols-outlined contact__icon address-icon">
-							map
-						</span>
+						<Image
+							src="/assets/icons/location.png"
+							alt="menu"
+							width={25}
+							height={25}
+						></Image>
 						<p className="contact__text text text--normal">
 							University Area, Plot No. III – B/5, New Town, Action Area – III,
 							Kolkata, West Bengal 700160{" "}
@@ -112,9 +115,12 @@ const ContactPage = () => {
 						<strong>For details you may contact the following:</strong>
 					</p>
 					<div className="contact__container">
-						<span className="material-symbols-outlined contact__icon phone-icon">
-							phone_in_talk
-						</span>
+						<Image
+							src="/assets/icons/call.png"
+							alt="menu"
+							width={25}
+							height={25}
+						></Image>
 						<p
 							style={{ margin: "0", marginBottom: "5px" }}
 							className="contact__text text text--normal"
@@ -123,9 +129,12 @@ const ContactPage = () => {
 						</p>
 					</div>
 					<div className="contact__container">
-						<span className="material-symbols-outlined contact__icon phone-icon">
-							phone_in_talk
-						</span>
+						<Image
+							src="/assets/icons/call.png"
+							alt="menu"
+							width={25}
+							height={25}
+						></Image>
 						<p
 							style={{ margin: "0", marginBottom: "5px" }}
 							className="contact__text text text--normal"
@@ -134,9 +143,15 @@ const ContactPage = () => {
 						</p>
 					</div>
 					<div onClick={clickMailHandler} className="contact__container">
-						<span className="material-symbols-outlined contact__icon email-icon">
-							mail
-						</span>
+						<div className="email-icon">
+							<Image
+								className="email-icon"
+								src="/assets/icons/email.png"
+								alt="menu"
+								width={25}
+								height={25}
+							></Image>
+						</div>
 						<p
 							style={{ margin: "0", marginTop: "5px" }}
 							className="contact__text text text--normal email"
