@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 // import styles from "./footer.module.css";
 // import { classNameFormatter } from "@/functions/classNameFormatter";
 import { navMenuItems } from "@/data/navbar";
 
 export default function Footer() {
-  const [menuItems, setMenuItems] = useState(navMenuItems);
+  // const [menuItems, setMenuItems] = useState(navMenuItems);
 
-  useEffect(() => {
-    if (menuItems) {
-      setMenuItems(navMenuItems);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (menuItems) {
+  //     setMenuItems(navMenuItems);
+  //   }
+  // }, [menuItems]);
   return (
     <>
     <style jsx>{`
@@ -133,7 +133,7 @@ export default function Footer() {
       </div>
       <div className={"footer__list_container"}>
         <ul className={"footer_list"}>
-          {menuItems.map((item) => {
+          {navMenuItems.map((item) => {
             if (item.path) {
               return (
                 <Link

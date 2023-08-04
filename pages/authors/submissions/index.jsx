@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Heading } from "../../../components/pieces";
 
-const index = () => {
+const Submissions = () => {
   useEffect(() => {
 		document.title = "Submissions | Authors |" + process.env.app_name;
 	}, []);
@@ -136,4 +136,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Submissions;

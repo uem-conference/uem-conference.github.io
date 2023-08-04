@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import {Heading} from "../../components/pieces"
+import Link from 'next/link';
 
 const RegistrationPage = () => {
 	useEffect(() => {
@@ -120,7 +121,7 @@ const RegistrationPage = () => {
 				</h4>
 
 				<p className="text text--normal mb--1">
-					To register your Paper please <a href="/">Click here.</a>
+					To register your Paper please <Link href="/registration">Click here.</Link>
 				</p>
 
 				<p className="text text--normal mb--1">
