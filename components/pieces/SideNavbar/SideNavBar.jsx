@@ -278,6 +278,7 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
       <style jsx>{`
         .sideNavBar__conatiner {
           background-color: rgba(0, 0, 0, 0.5);
+          backdrop-filter: blur(5px);
           transition: 0.3s ease-in-out;
           position: fixed;
           top: 0;
