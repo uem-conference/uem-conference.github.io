@@ -56,7 +56,7 @@ export default function Footer() {
     }
     
     /* Footer list item */
-    .footer_list_option {
+    .footer__list_option {
       flex-grow: 1;
       color: #fff;
       font-size: 14px;
@@ -66,7 +66,7 @@ export default function Footer() {
       transition: opacity 0.3s ease;
       text-decoration: none;
     }
-    .footer_list_option:hover {
+    .footer__list_option:hover {
       text-decoration: underline;
     }
     
@@ -113,9 +113,9 @@ export default function Footer() {
       .footer_list {
         flex-wrap: wrap;
       }
-      /* .footer-list-option {
-          margin: 10px 15px;
-        } */
+      .footer__list_option{
+        font-size: 1.2rem;
+      }
     }
     
     @media screen and (min-width: 601px) and (max-width: 900px) {
