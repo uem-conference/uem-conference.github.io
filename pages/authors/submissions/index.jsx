@@ -2,12 +2,50 @@ import React, { useEffect } from "react";
 import { Heading } from "../../../components/pieces";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 const Submissions = () => {
-	useEffect(() => {
-		document.title = "Submissions | Authors |" + process.env.app_name;
-	}, []);
+	// useEffect(() => {
+	// 	document.title = "Submissions | Authors |" + process.env.app_name;
+	// }, []);
 	return (
 		<>
+			<Head>
+				{/* regular */}
+				<title>
+					{"Submissions | Authors | AdComSys |" + process.env.app_name}
+				</title>
+				<meta
+					name="description"
+					content="Learn how to submit your paper for AdComSys conference proceedings. Find templates, guidelines, and agreements for authors. Mode of presentation and paper categories explained."
+				/>
+				<meta
+					name="keywords"
+					content="Submissions, Authors, AdComSys, conference proceedings, templates, guidelines, agreements, presentation, paper categories"
+				/>
+				{/* social media */}
+				<meta property="og:title" content="Submissions | Authors | AdComSys" />
+				<meta
+					property="og:description"
+					content="Learn how to submit your paper for AdComSys conference proceedings. Find templates, guidelines, and agreements for authors. Mode of presentation and paper categories explained."
+				/>
+				{/* <meta property="og:image" content="/path/to/your/image.jpg" /> Add a
+				relevant image URL */}
+				<meta
+					property="og:url"
+					content="https://adcomsys.vercel.app/authors/submissions"
+				/>
+				<meta property="og:type" content="website" />
+				{/* for twitter */}
+				<meta name="twitter:card" content="summary" />
+				{/* <meta name="twitter:site" content="@yourtwitterhandle" /> */}
+				<meta name="twitter:title" content="Submissions | Authors | AdComSys" />
+				<meta
+					name="twitter:description"
+					content="Learn how to submit your paper for AdComSys conference proceedings. Find templates, guidelines, and agreements for authors. Mode of presentation and paper categories explained."
+				/>
+				{/* <meta name="twitter:image" content="/path/to/your/image.jpg" />{" "} */}
+				{/* Add a relevant image URL */}
+			</Head>
 			<style jsx>{`
 				p {
 					display: flex;
@@ -44,7 +82,7 @@ const Submissions = () => {
 						<Image
 							className="download-icon"
 							src="/assets/icons/download.png"
-							alt="menu"
+							alt="download-icon"
 							width={25}
 							height={25}
 						></Image>
@@ -56,7 +94,7 @@ const Submissions = () => {
 						<Image
 							className="download-icon"
 							src="/assets/icons/download.png"
-							alt="menu"
+							alt="download-icon"
 							width={25}
 							height={25}
 						></Image>
@@ -68,7 +106,7 @@ const Submissions = () => {
 						<Image
 							className="download-icon"
 							src="/assets/icons/download.png"
-							alt="menu"
+							alt="download-icon"
 							width={25}
 							height={25}
 						></Image>
@@ -80,7 +118,7 @@ const Submissions = () => {
 						<Image
 							className="download-icon"
 							src="/assets/icons/download.png"
-							alt="menu"
+							alt="download-icon"
 							width={25}
 							height={25}
 						></Image>
@@ -101,7 +139,7 @@ const Submissions = () => {
 						<Image
 							className="download-icon"
 							src="/assets/icons/download.png"
-							alt="menu"
+							alt="download-icon"
 							width={25}
 							height={25}
 						></Image>
@@ -113,7 +151,7 @@ const Submissions = () => {
 						<Image
 							className="download-icon"
 							src="/assets/icons/download.png"
-							alt="menu"
+							alt="download-icon"
 							width={25}
 							height={25}
 						></Image>
@@ -140,7 +178,7 @@ const Submissions = () => {
 						<Image
 							className="download-icon"
 							src="/assets/icons/download.png"
-							alt="menu"
+							alt="download-icon"
 							width={25}
 							height={25}
 						></Image>
