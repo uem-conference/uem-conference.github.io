@@ -23,7 +23,7 @@ const ContactPage = () => {
 			<style jsx>{`
 				.contact__grid {
 					display: grid;
-					grid-template-columns: 2fr 3fr;
+					grid-template-columns: 2fr;
 					gap: 2rem;
 				}
 
@@ -87,11 +87,6 @@ const ContactPage = () => {
 						<span className="material-symbols-outlined contact__icon address-icon">
 							map
 						</span>
-						{/* <img
-							src={address_icon}
-							alt="Address"
-							className="contact__icon address-icon"
-						/> */}
 						<p className="contact__text text text--normal">
 							University Area, Plot No. III – B/5, New Town, Action Area – III,
 							Kolkata, West Bengal 700160{" "}
@@ -105,12 +100,6 @@ const ContactPage = () => {
 						<span className="material-symbols-outlined contact__icon phone-icon">
 							phone_in_talk
 						</span>
-						{/* <img
-							src={phone_icon}
-							alt="phone"
-							className="contact__icon phone-icon"
-							style={{ marginBottom: "5px" }}
-						/> */}
 						<p
 							style={{ margin: "0", marginBottom: "5px" }}
 							className="contact__text text text--normal"
@@ -122,11 +111,6 @@ const ContactPage = () => {
 						<span className="material-symbols-outlined contact__icon phone-icon">
 							phone_in_talk
 						</span>
-						{/* <img
-							src={phone_icon}
-							alt="phone"
-							className="contact__icon phone-icon"
-						/> */}
 						<p
 							style={{ margin: "0", marginBottom: "5px" }}
 							className="contact__text text text--normal"
@@ -134,24 +118,10 @@ const ContactPage = () => {
 							Dr. Subhalaxmi Chakraborty - 7003720703
 						</p>
 					</div>
-					{/* <p className="contact__text text text--normal">
-            , Phone No.: 
-          </p> */}
-					{/* <p className="contact__text text text--normal">
-            , Phone No.: 
-          </p> */}
-
 					<div onClick={clickMailHandler} className="contact__container">
 						<span className="material-symbols-outlined contact__icon email-icon">
 							mail
 						</span>
-						{/* <img
-							src={email_icon}
-							alt="Email"
-							className="contact__icon email-icon"
-							style={{ marginTop: "5px" }}
-						/> */}
-
 						<p
 							style={{ margin: "0", marginTop: "5px" }}
 							className="contact__text text text--normal email"
@@ -160,7 +130,6 @@ const ContactPage = () => {
 						</p>
 					</div>
 				</div>
-
 				<div className="contact__map">
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.512563514172!2d88.4873264744012!3d22.559925133436433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020b267a3cdc13%3A0xb3b21d652126f40!2sUniversity%20of%20Engineering%20%26%20Management%2C%20Kolkata!5e0!3m2!1sen!2sin!4v1689485233150!5m2!1sen!2sin"
