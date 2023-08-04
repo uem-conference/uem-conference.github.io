@@ -105,7 +105,7 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
           .navbar__menu__item {
             display: none;
           }
-          .navbar__menu__itemb:last-child {
+          .navbar__menu__item:last-child {
             display: block;
             font-size: var(--font-size-2);
           }
