@@ -288,7 +288,7 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
           z-index: 10000;
         }
         .sideNavBar {
-          background-color: aqua;
+          background-color: var(--dark);
           transition: 0.3s ease-in-out;
           position: absolute;
           top: 0;
@@ -314,6 +314,7 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
         }
         .sideNavBar__name {
           width: 100%;
+          color: var(--light);
           // aspect-ratio: 1;
           // position: relative;
           font-size: 2.5rem;
