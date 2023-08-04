@@ -64,11 +64,15 @@ export default function Footer() {
       text-transform: uppercase;
       opacity: 0.7;
       transition: opacity 0.3s ease;
+      text-decoration: none;
+    }
+    .footer_list_option:hover {
+      text-decoration: underline;
     }
     
     /* Footer list item link */
     .footer_item {
-      text-decoration: none;
+      // text-decoration: none;
       color: #fff;
     }
     
