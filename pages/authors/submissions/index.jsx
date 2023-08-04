@@ -135,7 +135,7 @@ const Submissions = () => {
 				</p>
 
 				<p className="submissions__heading heading heading--3 mb--1">
-					PPT Template of AdComSYs 2524:- Soon
+					PPT Template of AdComSYs 2024:- Soon
 					<Link href="/authors/submissions">
 						<Image
 							className="download-icon"
@@ -148,7 +148,7 @@ const Submissions = () => {
 				</p>
 
 				<p className="submissions__heading heading heading--2 heading--line my--2">
-					AdComSys 2524 Paper Categories:
+					AdComSys 2024 Paper Categories:
 				</p>
 
 				<ul className=" text-2 text--normal list">

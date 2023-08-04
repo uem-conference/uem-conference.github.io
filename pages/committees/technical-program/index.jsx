@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import { Fragment } from "react";
 import { Heading } from "../../../components/pieces";
 const technicalProgramCommittee = require("../../../data/technical-program-committee");
 function TechnicalProgramCommittee() {
@@ -33,10 +34,10 @@ function TechnicalProgramCommittee() {
 			// 						{member.affiliation}
 			// 					</p>
 			// 				</div>
-			<>
+			<Fragment key={member.name + member.affiliation}>
 			<p className="technical-program-committee__name technical-program-committee__content">{member.name}</p>
 			<p className={`technical-program-committee__affiliation ${index%2===0? "technical-program-committee__affiliation-even" : "technical-program-committee__affiliation-odd" } technical-program-committee__content`}>{member.affiliation}</p>
-			</>
+			</Fragment>
 						);
 					})}
 				</div>
