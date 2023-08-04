@@ -35,7 +35,7 @@ function TechnicalProgramCommittee() {
 			// 				</div>
 			<>
 			<p className="technical-program-committee__name technical-program-committee__content">{member.name}</p>
-			<p className="technical-program-committee__affiliation technical-program-committee__content">{member.affiliation}</p>
+			<p className={`technical-program-committee__affiliation ${index%2===0? "technical-program-committee__affiliation-even" : "technical-program-committee__affiliation-odd" } technical-program-committee__content`}>{member.affiliation}</p>
 			</>
 						);
 					})}
@@ -146,14 +146,23 @@ function TechnicalProgramCommittee() {
 					// height: 100%;
 					font-size: 1.5rem;
 					font-weight: 500;
-					margin-bottom: 0.5rem;
-					color: var(--color-primary-dark);
-					background-color: grey;
+					// margin-bottom: 0.5rem;
+					color: var(--color-light);
+					background-color: var(--color-primary);
 				}
 				.technical-program-committee__affiliation {
-					font-size: 1.3rem;
+					font-size: 1.4rem;
 					/* font-weight: 500; */
-					color: var(--color-primary);
+					color: var(--color-primary-dark);
+					transition: 0.1s ease-in-out;
+				}
+				.technical-program-committee__affiliation:hover {
+					filter: brightness(0.95);
+				}
+				.technical-program-committee__affiliation-odd {
+					background-color: #eee;
+				}
+				.technical-program-committee__affiliation-even {
 					background-color: #ccc;
 				}
 
