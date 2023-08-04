@@ -34,6 +34,20 @@
 	--gray: #756388;
 	--light: #ffffff;
 	--pure-black: #000;
+	/* for chatbot */
+	--primaryGradient: linear-gradient(
+		93.12deg,
+		var(--color-primary-dark) 0.52%,
+		var(--color-primary-light) 100%
+	);
+	--secondaryGradient: linear-gradient(
+		268.91deg,
+		var(--color-primary-dark) -2.14%,
+		var(--color-primary-light) 99.69%
+	);
+	--primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+	--secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+	--primary: var(--color-primary);
 }
 
 /* @media screen and (max-width: 768px) {

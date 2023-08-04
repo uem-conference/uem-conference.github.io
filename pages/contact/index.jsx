@@ -23,7 +23,7 @@ const ContactPage = () => {
 			<style jsx>{`
 				.contact__grid {
 					display: grid;
-					grid-template-columns: 2fr;
+					grid-template-columns: 2fr 3fr;
 					gap: 2rem;
 				}
 
@@ -71,6 +71,21 @@ const ContactPage = () => {
 				}
 				.email-icon:hover {
 					zoom: 120%;
+				}
+				@media screen and (max-width: 768px) {
+					.contact__grid {
+						display: grid;
+						grid-template-columns: 2fr;
+						gap: 2rem;
+					}
+				}
+
+				@media screen and (max-width: 450px) {
+					.contact__grid {
+						display: grid;
+						grid-template-columns: 2fr;
+						gap: 2rem;
+					}
 				}
 			`}</style>
 			<Heading text={"Contact"} className={"mb--2 invalid-selection"}></Heading>
