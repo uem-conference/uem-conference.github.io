@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import {Heading} from "../../components/pieces"
+import React, { useEffect } from "react";
+import { Heading } from "../../components/pieces";
 
 const ContactPage = () => {
 	useEffect(() => {
@@ -20,61 +20,60 @@ const ContactPage = () => {
 
 	return (
 		<>
-    <style jsx>{`
-    .contact__grid {
-      display: grid;
-      grid-template-columns: 2fr 3fr;
-      gap: 2rem;
-    }
-    
-    .contact__map {
-      width: 100%;
-      height: 100%;
-      /* background-color: aqua; */
-    }
-    .contact__details {
-      width: 100%;
-      height: 100%;
-      padding: 1rem 2rem;
-      /* background-color: aqua; */
-    }
-    .contact__map iframe {
-      width: 100%;
-      height: 100%;
-      /* background-color: aqua; */
-    }
-    
-    .contact__icon {
-      width: 2rem;
-      height: auto;
-    }
-    
-    .phone-icon {
-      width: 1.5rem;
-    }
-    
-    .contact__text {
-      font-size: var(--font-size-text-small);
-      line-height: calc(var(--font-size-text-small) * 1.35);
-      margin-bottom: 1rem;
-    }
-    
-    .contact__container {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-    
-    /* extraa added later */
-    .email:hover {
-      text-decoration: underline;
-    }
-    .email-icon:hover {
-      zoom: 120%;
-    }
-    
-    `}</style>
-			<Heading text={"Contact"} class={"mb--2 invalid-selection"}></Heading>
+			<style jsx>{`
+				.contact__grid {
+					display: grid;
+					grid-template-columns: 2fr 3fr;
+					gap: 2rem;
+				}
+
+				.contact__map {
+					width: 100%;
+					height: 100%;
+					/* background-color: aqua; */
+				}
+				.contact__details {
+					width: 100%;
+					height: 100%;
+					padding: 1rem 2rem;
+					/* background-color: aqua; */
+				}
+				.contact__map iframe {
+					width: 100%;
+					height: 100%;
+					/* background-color: aqua; */
+				}
+
+				.contact__icon {
+					width: 2rem;
+					height: auto;
+				}
+
+				.phone-icon {
+					width: 1.5rem;
+				}
+
+				.contact__text {
+					font-size: var(--font-size-text-small);
+					line-height: calc(var(--font-size-text-small) * 1.35);
+					margin-bottom: 1rem;
+				}
+
+				.contact__container {
+					display: flex;
+					gap: 1rem;
+					align-items: center;
+				}
+
+				/* extraa added later */
+				.email:hover {
+					text-decoration: underline;
+				}
+				.email-icon:hover {
+					zoom: 120%;
+				}
+			`}</style>
+			<Heading text={"Contact"} className={"mb--2 invalid-selection"}></Heading>
 			<div className="contact__grid">
 				<div className="contact__details">
 					<p className="contact__heading text text--normal">
@@ -85,9 +84,9 @@ const ContactPage = () => {
 						Convener, AdComSys 2024{" "}
 					</p>
 					<div className="contact__container">
-          <span class="material-symbols-outlined contact__icon address-icon">
-map
-</span>
+						<span className="material-symbols-outlined contact__icon address-icon">
+							map
+						</span>
 						{/* <img
 							src={address_icon}
 							alt="Address"
@@ -103,9 +102,9 @@ map
 						<strong>For details you may contact the following:</strong>
 					</p>
 					<div className="contact__container">
-          <span class="material-symbols-outlined contact__icon phone-icon">
-phone_in_talk
-</span>
+						<span className="material-symbols-outlined contact__icon phone-icon">
+							phone_in_talk
+						</span>
 						{/* <img
 							src={phone_icon}
 							alt="phone"
@@ -120,9 +119,9 @@ phone_in_talk
 						</p>
 					</div>
 					<div className="contact__container">
-          <span class="material-symbols-outlined contact__icon phone-icon">
-phone_in_talk
-</span>
+						<span className="material-symbols-outlined contact__icon phone-icon">
+							phone_in_talk
+						</span>
 						{/* <img
 							src={phone_icon}
 							alt="phone"
@@ -143,9 +142,9 @@ phone_in_talk
           </p> */}
 
 					<div onClick={clickMailHandler} className="contact__container">
-          <span class="material-symbols-outlined contact__icon email-icon">
-mail
-</span>
+						<span className="material-symbols-outlined contact__icon email-icon">
+							mail
+						</span>
 						{/* <img
 							src={email_icon}
 							alt="Email"
