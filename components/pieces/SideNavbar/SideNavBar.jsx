@@ -421,10 +421,10 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
               {menuItems.map((item) => {
                 if (item.path) {
                   return (
-                    <li className="sideNavBar__menu__item">
+                    <li className="sideNavBar__menu__item" key={item.path}>
                       <Link
                         href={item.path}
-                        key={item.path}
+                        
                         style={{ color: "white" }}
                         onClick={showSideNavBar}
                       >
@@ -435,12 +435,12 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
                 }
 
                 return (
-                  <div className="sideNavBar__menu__item ">
+                  <div className="sideNavBar__menu__item " key={item.text}>
                     <p>{item.text}</p>
                     <ul className="sideNavBar__sub__list">
                       {item.sub.map((subItem) => {
                         return (
-                          <li className="sideNavBar__menu__sub__item">
+                          <li className="sideNavBar__menu__sub__item" key={subItem.path}>
                             <Link
                               href={subItem.path}
                               key={subItem.path}
@@ -461,7 +461,7 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 
           <div className="sideNavBar__bottom">
             <div className="btn--settings sideNavBar__menu__item" onClick={()=>{setIsSettingVisible(!isSettingVisible)}}>
-              <span class="material-symbols-outlined">{isSettingVisible? "close" : "widgets"}</span>
+              <span className="material-symbols-outlined">{isSettingVisible? "close" : "widgets"}</span>
             </div>
             <div className={"sideNavBar__setting__container"} style={isSettingVisible? {height: "fit-content"}: {height: "0"}}>
 			<SettingPanel

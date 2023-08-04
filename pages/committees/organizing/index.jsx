@@ -4,7 +4,7 @@ import { Heading } from "../../../components/pieces";
 const organisingCommittee = require("../../../data/organising-committee");
 function Organizing() {
 	useEffect(() => {
-		document.title = "Organising Committee | " + "ICACS";
+		document.title = "Organizing Committee | Committees | " + process.env.app_name;
 	}, []);
 	return (
 		<>

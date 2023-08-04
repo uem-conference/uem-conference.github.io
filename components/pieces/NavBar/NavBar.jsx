@@ -105,7 +105,7 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
           .navbar__menu__item {
             display: none;
           }
-          .navbar__menu__item:last-child {
+          .navbar__menu__itemb:last-child {
             display: block;
             font-size: var(--font-size-2);
           }
@@ -116,10 +116,10 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
           {menuItems.map((item) => {
             if (item.path) {
               return (
-                <li className="navbar__menu__item bg-gradient--primary">
+                <li className="navbar__menu__item bg-gradient--primary" key={item.path}>
                   <Link
                     href={item.path}
-                    key={item.path}
+                    
                     style={{ color: "white" }}
                   >
                     {item.text}
@@ -129,15 +129,15 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
             }
 
             return (
-              <div className="navbar__menu__item bg-gradient--primary">
+              <div className="navbar__menu__item bg-gradient--primary" key={item.text}>
                 {item.text}
                 <ul className="navbar__sub__list">
                   {item.sub.map((subItem) => {
                     return (
-                      <li className="navbar__menu__sub__item">
+                      <li className="navbar__menu__sub__item" key={subItem.path}>
                         <Link
                           href={subItem.path}
-                          key={subItem.path}
+                          
                           style={{ color: "white" }}
                         >
                           {subItem.text}

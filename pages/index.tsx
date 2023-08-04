@@ -3,27 +3,14 @@
 import { Carousel, Heading } from '@/components/pieces';
 import styles from '@/styles/Home.module.css'
 import { useEffect } from 'react';
-
+import {importantDeadlines} from "../data/importantDates"
 // const inter = Inter({ subsets: ['latin'] })
 
 const HomePage = () => {
 	
-	const importantDeadlines = [
-		"Submission Opens:",
-		"02/08/2023",
-		"Submission Closes:",
-		"02/12/2023",
-		"Notification Acceptance:",
-		"15/3/2024",
-		"Early Bird Registration:",
-		"25/3/2024",
-		"Last Date of Registration:",
-		"15/4/2024",
-		"Submission of CRM/Copyright:",
-		"01/5/2024",
-	];
+	
 	useEffect(() => {
-		document.title = "Home | " + "ICACS";
+		document.title = "Home | " + process.env.app_name;
 	}, []);
 	return (
     <>

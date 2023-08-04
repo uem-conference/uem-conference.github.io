@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Heading } from "../../../components/pieces";
 
 const CallForPapers = () => {
+  useEffect(() => {
+		document.title = "Call For Papers | Authors | " + process.env.app_name;
+	}, []);
   return (
     <>
       <style jsx>{`

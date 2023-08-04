@@ -3,7 +3,7 @@ import {Heading} from "../../../components/pieces"
 
 function AcceptedAndRegisteredPapers() {
 	useEffect(() => {
-		document.title = "Accepted And Registered Papers | " +"ICACS";
+		document.title = "Accepted And Registered Papers | Techinical Programs | " + process.env.app_name;
 	}, []);
 	return (
 		<>

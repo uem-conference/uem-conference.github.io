@@ -3,7 +3,7 @@ import {Heading} from "../../components/pieces"
 
 const RegistrationPage = () => {
 	useEffect(() => {
-		document.title = "Registration | " + process.env.REACT_APP_TITLE;
+		document.title = "Registration | " + process.env.app_name;
 	}, []);
 	return (
 		<>

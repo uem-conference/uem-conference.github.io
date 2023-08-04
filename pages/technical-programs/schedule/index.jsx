@@ -3,7 +3,7 @@ import {Heading} from "../../../components/pieces"
 
 function Schedule() {
 	useEffect(() => {
-		document.title = "Schedule | " +"ICACS";
+		document.title = "Schedule | Techinical Programs | " +process.env.app_name;
 	}, []);
 	return (
 		<>

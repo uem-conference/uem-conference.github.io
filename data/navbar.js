@@ -36,6 +36,12 @@ export const navMenuItems = [
                 "text": "Call For Papers",
                 "heading": "Call For Papers",
                 "path": "/authors/call-for-papers"
+            },
+            {
+                "text": "Important ",
+                "text": "Important Dates",
+                "path": "/authors/important-dates",
+                "heading": "importatnt dates"
             }
         ]
     },

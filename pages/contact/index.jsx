@@ -3,7 +3,7 @@ import {Heading} from "../../components/pieces"
 
 const ContactPage = () => {
 	useEffect(() => {
-		document.title = "Contact | " + process.env.REACT_APP_TITLE;
+		document.title = "Contact | " + process.env.app_name;
 	}, []);
 	function clickMailHandler() {
 		const email = "adcomsys@uem.edu.in";
@@ -95,7 +95,7 @@ map
 						/> */}
 						<p className="contact__text text text--normal">
 							University Area, Plot No. III – B/5, New Town, Action Area – III,
-							Kolkata, West Bengal 700156{" "}
+							Kolkata, West Bengal 700160{" "}
 						</p>
 					</div>
 

@@ -5,7 +5,7 @@ import { Heading } from "../../components/pieces";
 
 export default function AboutUem() {
 	useEffect(() => {
-		document.title = "About UEM | " + "ICACS";
+		document.title = "About UEM | " + process.env.app_name;
 	}, []);
 	return (
 		<>

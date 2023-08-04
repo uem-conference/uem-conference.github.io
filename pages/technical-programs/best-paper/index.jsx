@@ -3,7 +3,7 @@ import {Heading} from "../../../components/pieces"
 
 function BestPaper() {
 	useEffect(() => {
-		document.title = "Best Paper | " +"ICACS";
+		document.title = "Best Paper | Techinical Programs | " +process.env.app_name;
 	}, []);
 	return (
 		<>

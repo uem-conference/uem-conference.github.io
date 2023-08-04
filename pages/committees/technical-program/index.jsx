@@ -4,7 +4,7 @@ import { Heading } from "../../../components/pieces";
 const technicalProgramCommittee = require("../../../data/technical-program-committee");
 function TechnicalProgramCommittee() {
 	useEffect(() => {
-		document.title = "Organising Committee | " + "ICACS";
+		document.title = "Technical Program Committee | Committees | " + process.env.app_name;
 	}, []);
 	return (
 		<>
@@ -16,23 +16,27 @@ function TechnicalProgramCommittee() {
 				<div className="technical-program-committee__grid">
 					{technicalProgramCommittee.map((member, index) => {
 						return (
-							<div
-								key={Math.random()}
-								className="technical-program-committee__card"
-							>
-								<p className="technical-program-committee__card_number">
-									{index + 1}
-								</p>
-								<p className="technical-program-committee__text technical-program-committee__name text text--small">
-									{member.name}
-								</p>
-								<p
-									className="technical-program-committee__text 
-			technical-program-committee__affiliation text text--small"
-								>
-									{member.affiliation}
-								</p>
-							</div>
+			// 				<div
+			// 					key={Math.random()}
+			// 					className="technical-program-committee__card"
+			// 				>
+			// 					<p className="technical-program-committee__card_number">
+			// 						{index + 1}
+			// 					</p>
+			// 					<p className="technical-program-committee__text technical-program-committee__name text text--small">
+			// 						{member.name}
+			// 					</p>
+			// 					<p
+			// 						className="technical-program-committee__text 
+			// technical-program-committee__affiliation text text--small"
+			// 					>
+			// 						{member.affiliation}
+			// 					</p>
+			// 				</div>
+			<>
+			<p className="technical-program-committee__name technical-program-committee__content">{member.name}</p>
+			<p className="technical-program-committee__affiliation technical-program-committee__content">{member.affiliation}</p>
+			</>
 						);
 					})}
 				</div>
@@ -116,8 +120,8 @@ function TechnicalProgramCommittee() {
 					width: 100%;
 					margin: 4rem 0rem 2rem;
 					display: grid;
-					grid-template-columns: repeat(3, 1fr);
-					gap: 2rem;
+					grid-template-columns: 1fr 2fr;
+					gap: 2px 0px;
 				}
 
 				.technical-program-committee__card_number {
@@ -130,21 +134,32 @@ function TechnicalProgramCommittee() {
 					opacity: 0.25;
 					z-index: 0;
 				}
+
+				.technical-program-committee__content{
+					height: 100%;
+					display: flex;
+					align-items: center;
+					min-height: 4rem;
+					padding: 1rem;
+				}
 				.technical-program-committee__name {
-					font-size: 1.6rem;
+					// height: 100%;
+					font-size: 1.5rem;
 					font-weight: 500;
 					margin-bottom: 0.5rem;
 					color: var(--color-primary-dark);
+					background-color: grey;
 				}
 				.technical-program-committee__affiliation {
 					font-size: 1.3rem;
 					/* font-weight: 500; */
 					color: var(--color-primary);
+					background-color: #ccc;
 				}
 
 				@media screen and (max-width: 768px) {
 					.technical-program-committee__grid {
-						grid-template-columns: repeat(2, 1fr);
+						// grid-template-columns: repeat(2, 1fr);
 					}
 				}
 
