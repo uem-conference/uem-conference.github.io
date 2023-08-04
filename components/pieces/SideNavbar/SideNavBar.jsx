@@ -336,11 +336,16 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
           width: 100%;
           padding: 1rem;
           text-align: center;
-          background-color: blue;
+          background-color: var(--color-primary-dark);
           cursor: pointer;
           position: relative;
-          border-radius: 1rem 1rem 0rem 0rem;
+          border-radius: 1rem;
           color: white;
+          transition: 0.3s ease-in-out;
+        }
+        .sideNavBar__menu__item:hover{
+          background-color: var(--color-primary);
+          border-radius: 1rem 1rem 0rem 0rem;
         }
         .sideNavBar__menu__item:hover .sideNavBar__sub__list {
           display: flex;
@@ -356,7 +361,8 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
           left: 0;
           width: 100%;
           display: none;
-          background-color: blueviolet;
+          background-color: var(--color-primary);
+
         }
 
         .sideNavBar__menu__sub__item {
@@ -365,11 +371,12 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
           padding: 1rem;
           text-align: center;
           cursor: pointer;
-          background-color: blueviolet;
+          background-color: var(--color-primary);
           font-size: 1.4rem;
         }
         .sideNavBar__menu__sub__item:hover {
-          background-color: green;
+          background-color: var(--color-primary-light);
+
         }
 
         .sideNavBar__btn {
@@ -377,6 +384,12 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
           aspect-ratio: 1;
           position: absolute;
           right: 0%;
+          border-radius: 50rem 0rem 50rem 50rem;
+          background-color: var(--color-primary);
+          color: white;
+          border: 2px solid var(--color-light);
+          outline: 2px solid var(--color-light);
+          outline-offset: 2px;
           // z
         }
 
