@@ -6,7 +6,7 @@ function Dots({ activeIndex, onclick, imageSlider }) {
 				<span
 					key={index}
 					className={`${styles.dot} ${
-						activeIndex === index ? styles["active-dot"] : ""
+						activeIndex === index ? styles["active_dot"] : ""
 					}`}
 					onClick={() => onclick(index)}
 				></span>
