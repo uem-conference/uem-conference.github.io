@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import styles from "./settingpanel.module.css";
 import { handleThemeChange, hsl } from "../../../data/colors";
-import styles from "./settingpanel.module.css"
+import styles from "./settingpanel.module.css";
 
 const SettingPanel = ({ isSideNavBarVisible, showSideNavBar }) => {
 	//   const [isHover, setIsHover] = useState(false);
@@ -10,9 +10,9 @@ const SettingPanel = ({ isSideNavBarVisible, showSideNavBar }) => {
 	useEffect(() => {
 		const colorObj = {
 			default: {
-				h: 280,
+				h: 209,
 				s: 100,
-				l: 40,
+				l: 38,
 			},
 			// give the new green color below
 			first: {
@@ -21,9 +21,9 @@ const SettingPanel = ({ isSideNavBarVisible, showSideNavBar }) => {
 				l: 45,
 			},
 			second: {
-				h: 209,
+				h: 280,
 				s: 100,
-				l: 38,
+				l: 40,
 			},
 		};
 		setColors(colorObj);
