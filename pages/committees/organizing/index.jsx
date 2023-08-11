@@ -4,12 +4,13 @@ import { Heading } from "../../../components/pieces";
 const organisingCommittee = require("../../../data/organising-committee");
 function Organizing() {
 	useEffect(() => {
-		document.title = "Organizing Committee | Committees | " + process.env.app_name;
+		document.title =
+			"Organizing Committee | Committees | " + process.env.app_name;
 	}, []);
 	return (
 		<>
 			<Heading
-				text={"Conference Details"}
+				text={"Organizing committee"}
 				class={"mb--2 invalid-selection"}
 			></Heading>
 			<div className="conference-details">
