@@ -3,14 +3,14 @@ import { useEffect } from "react";
 import { Fragment } from "react";
 import { Heading } from "../../../components/pieces";
 const technicalProgramCommittee = require("../../../data/technical-program-committee");
-function TechnicalProgramCommittee() {
+function InternationAdvisoryCommittee() {
 	useEffect(() => {
-		document.title = "Technical Program Committee | Committees | " + process.env.app_name;
+		document.title = "International Advisory Committee | Committees | " + process.env.app_name;
 	}, []);
 	return (
 		<>
 			<Heading
-				text={"Technical Program Committee"}
+				text={"International Advisory Committee"}
 				class={"mb--2 invalid-selection"}
 			></Heading>
 			<div className="technical-program-committee">
@@ -182,4 +182,4 @@ function TechnicalProgramCommittee() {
 		</>
 	);
 }
-export default TechnicalProgramCommittee;
+export default InternationAdvisoryCommittee;
