@@ -1,4 +1,5 @@
 const organisingCommittee = [
+	// Chief Patron
 	{
 		title: "Chief Patron",
 		data: [
@@ -9,6 +10,7 @@ const organisingCommittee = [
 			},
 		],
 	},
+	// Patrons
 	{
 		title: "Patrons",
 		data: [
@@ -28,6 +30,11 @@ const organisingCommittee = [
 				organization: "UEM Kolkata",
 			},
 			{
+				name: "Prof. Dr. Kamakhya Prasad Ghatak",
+				role: "Dean-Engineering",
+				organization: "UEM Kolkata",
+			},
+			{
 				name: "Prof. Dr. Rajiv Ganguly",
 				role: "Dean-Science",
 				organization: "UEM Kolkata",
@@ -39,24 +46,28 @@ const organisingCommittee = [
 			},
 		],
 	},
+	// General Chair
 	{
 		title: "General Chair",
 		data: [
 			{
-				name: "Prof. Dr. Asit Kumar Das",
-				organization: "IIEST Shibpur, India",
+				name: "Prof. Dr. Weiping Ding",
+				organization:
+					"Deputy Dean of School of Information Science and Technology, Nantong University, Nantong, Jiangsu, China",
+			},
+			{
+				name: "Prof. Dr. Shouvik Chakraborty",
+				organization:
+					"Department of Computer Science & Technology, Women's Polytechnic, Chandernagore, Government of West Bengal, Chandannagar, Hooghly, West Bengal, India",
 			},
 			{
 				name: "Prof. Dr. Maumita Chakraborty",
-				organization: "UEM Kolkata, India",
-			},
-			{
-				name: "Prof. Dr. Danilo Pelusi",
 				organization:
-					"University of Teramo, Faculty of Communication Sciences, Teramo, Italy",
+					"Department of Computer Science and Technology & Computer Science and Information Technology, University of Engineering and Management Kolkata",
 			},
 		],
 	},
+	// Convener
 	{
 		title: "Convener",
 		data: [
@@ -66,20 +77,32 @@ const organisingCommittee = [
 			},
 		],
 	},
+	// Technical Chair
 	{
 		title: "Technical Chair",
 		data: [
 			{
+				name: "Prof. Dr. Danilo Pelusi",
+				organization:
+					"University of Teramo, Faculty of Communication Sciences, Teramo, Italy",
+			},
+			{
 				name: "Prof. Dr. Valentina Emilia Balas",
 				organization: "Aurel Vlaicu University of Arad, Romania",
-				confirmation: "PENDING",
 			},
 			{
 				name: "Prof. Dr. Amlan Chakrabarti",
-				confirmation: "PENDING",
+				organization:
+					"A.K.Choudhury School of Information Technology , University of Calcutta",
+			},
+			{
+				name: "Prof. Dr. Asit Kumar Das",
+				organization:
+					"Department of Computer Science and Technology, Indian Institute of Engineering Science and Technology, Shibpur",
 			},
 		],
 	},
+	// Industry Chair
 	{
 		title: "Industry Chair",
 		data: [
@@ -89,16 +112,17 @@ const organisingCommittee = [
 			},
 		],
 	},
+	// Organizing Committee Members
 	{
 		title: "Organizing Committee Members",
 		data: [
 			{ name: "Prof. Sankhadeep Chatterjee" },
-			{ name: "Dr.Sudipta Basu Pal" },
-			{ name: "Dr.Subhalaxmi Chakraborty" },
+			{ name: "Dr. Sudipta Basu Pal" },
+			{ name: "Dr. Subhalaxmi Chakraborty" },
 			{ name: "Dr. Chiradeep Mukherjee" },
-			{ name: "Dr.Srilekha Mukherjee" },
-			{ name: "Dr.Panchali Datta Choudhury" },
-			{ name: "Dr.Anirban Chakraborty" },
+			{ name: "Dr. Srilekha Mukherjee" },
+			{ name: "Dr. Panchali Datta Choudhury" },
+			{ name: "Dr. Anirban Chakraborty" },
 			{ name: "Prof. Stobak Dutta" },
 			{ name: "Prof. Prasenjit Das" },
 			{ name: "Prof. Piyali Chandra" },
@@ -110,6 +134,7 @@ const organisingCommittee = [
 			{ name: "Prof. Sudipta Sikdar" },
 		],
 	},
+	// Finance Chair
 	{
 		title: "Finance Chair",
 		data: [
@@ -120,24 +145,29 @@ const organisingCommittee = [
 			},
 		],
 	},
+	// Registration Reception Chair
 	{
 		title: "Registration Reception Chair",
 		data: [
-			{ name: "Dr. Subhalaxmi Chakraborty (SLC)" },
-			{ name: "Dr. Sudipta Basu Pal (SBP)" },
-			{ name: "Prof. Sankhadeep Chatterjee (SDC) " },
-			{ name: "Dr. Chiradeep Mukherjee (CME)" },
-			{ name: "Prof. Subha Ghosh (SBG)" },
+			{ name: "Dr. Subhalaxmi Chakraborty " },
+			{ name: "Dr. Sudipta Basu Pal " },
+			{ name: "Prof. Sankhadeep Chatterjee  " },
+			{ name: "Dr. Chiradeep Mukherjee" },
+			{ name: "Prof. Subha Ghosh" },
 		],
 	},
+	// Publicity Chair
 	{
 		title: "Publicity Chair",
-		data: [{ name: "Prof. Piyali Chandra (PYC)" }],
+		data: [{ name: "Prof. Piyali Chandra " }],
 	},
+	// Publicity Co Chair
 	{
 		title: "Publicity Co Chair",
-		data: [{ name: "Prof. Sanjukta Mishra (SJM)" },
-		{ name: "Prof. Kamalika Bhowal (KMB)" },],
+		data: [
+			{ name: "Prof. Sanjukta Mishra " },
+			{ name: "Prof. Kamalika Bhowal " },
+		],
 	},
 ];
 
