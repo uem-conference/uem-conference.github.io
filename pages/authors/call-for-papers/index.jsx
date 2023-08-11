@@ -8,32 +8,127 @@ const CallForPapers = () => {
   }, []);
   return (
     <>
-     
-
       <style jsx>{`
+        .call-for-papers {
+          // width:100%;
+          // max-width: 90rem;
+          margin: auto;
+        }
         .call-for-papers__track {
           padding: 1.5rem;
           font-size: 2.5rem;
           color: white;
-          background-color: var(--color-primary-dark);
-          text-align: center;
-        }
-        .call-for-papers__sub-track {
-          padding: 1rem;
-          font-size: 2rem;
-          color: white;
           background-color: var(--color-primary);
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        .call-for-papers__list {
+          width: 100%;
+          max-width: 45rem;
+          margin: auto;
         }
 
         .call-for-papers__grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+        }
+
+
+        @media screen and (max-width: 450px) {
+          .call-for-papers__grid {
+            // display: grid;
+            grid-template-columns: 1fr;
+            // gap: 1rem;
+          }
+
+          .call-for-papers__track {
+            // padding: 1.5rem;
+            font-size: 2rem;
+            // color: white;
+            // background-color: var(--color-primary);
+            // text-align: center;
+            // margin-bottom: 2rem;
+          }
         }
       `}</style>
       <Heading
         text={"Call for papers"}
         class={"mb--2 invalid-selection"}
       ></Heading>
+
+      <section className="call-for-papers call-for-papers__grid">
+        <div>
+          <h1 className="call-for-papers__track">
+            {callForPaperList[0].title}
+          </h1>
+          {callForPaperList[0].subtracks.map((subtrack) => {
+            return (
+              <Fragment key={Math.random()}>
+                <ul className="list list--1 call-for-papers__list">
+                  <li className="list__item list__item--1">{subtrack.title}</li>
+                  {/* <section className="call-for-papers__grid call-for-papers__grid--2"> */}
+                  <ul className="list list--2">
+                    {subtrack.subtrackData[0].map((data) => (
+                      <li className="list__item list__item--2" key={data}>
+                        {data}
+                      </li>
+                    ))}
+                  </ul>
+                  <ul className="list list--2">
+                    {subtrack.subtrackData[1].map((data) => (
+                      <li className="list__item list__item--2" key={data}>
+                        {data}
+                      </li>
+                    ))}
+                  </ul>
+                </ul>
+                {/* <ul>
+                {subtrack.subtrackData[1].map((data) => (
+                  <li>{data}</li>
+                ))}
+              </ul> */}
+                {/* </section> */}
+              </Fragment>
+            );
+          })}
+        </div>
+
+        <div>
+          <h1 className="call-for-papers__track">
+            {callForPaperList[1].title}
+          </h1>
+
+          {callForPaperList[1].subtracks.map((subtrack) => {
+            return (
+              <Fragment key={Math.random()}>
+                <ul className="list list--1 call-for-papers__list">
+                  <li className="list__item list__item--1">{subtrack.title}</li>
+                  {/* <section className="call-for-papers__grid call-for-papers__grid--2"> */}
+                  <ul className="list list--2">
+                    {subtrack.subtrackData.map((data) => (
+                      <li className="list__item list__item--2" key={data}>
+                        {data}
+                      </li>
+                    ))}
+                  </ul>
+                  {/* <ul className="list list--2">
+                {subtrack.subtrackData[1].map((data) => (
+                  <li className="list__item list__item--2" key={data}>{data}</li>
+                ))}
+              </ul> */}
+                </ul>
+                {/* <ul>
+                {subtrack.subtrackData[1].map((data) => (
+                  <li>{data}</li>
+                ))}
+              </ul> */}
+                {/* </section> */}
+              </Fragment>
+            );
+          })}
+        </div>
+      </section>
       {/* <div className="call-for-papers">
         <table border="1" className="conference-table">
           <thead>
@@ -192,35 +287,6 @@ const CallForPapers = () => {
           </tbody>
         </table>
       </div> */}
-      <h1 className="call-for-papers__track">{callForPaperList[0].title}</h1>
-      {callForPaperList[0].subtracks.map((subtrack) => {
-        return (
-          <Fragment key={Math.random()}>
-            <ul className="list list--1 call-for-papers__sub-trac">
-              <li className="list__item list__item--1">{subtrack.title}</li>
-              {/* <section className="call-for-papers__grid call-for-papers__grid--2"> */}
-              <ul className="list list--2">
-                {subtrack.subtrackData[0].map((data) => (
-                  <li className="list__item list__item--2" key={data}>{data}</li>
-                ))}
-              </ul>
-              <ul className="list list--2">
-                {subtrack.subtrackData[1].map((data) => (
-                  <li className="list__item list__item--2" key={data}>{data}</li>
-                ))}
-              </ul>
-            </ul>
-            {/* <ul>
-                {subtrack.subtrackData[1].map((data) => (
-                  <li>{data}</li>
-                ))}
-              </ul> */}
-            {/* </section> */}
-          </Fragment>
-        );
-      })}
-      <h1>{callForPaperList[1].title}</h1>
-
       {/* {callForPaperList[1].subtracks.map((subtrack) => {
         return (
           <Fragment>

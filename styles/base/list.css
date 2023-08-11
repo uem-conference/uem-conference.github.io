@@ -4,6 +4,7 @@
   }
   .list--2 {
     margin-left: 3rem;
+    margin-bottom: 1.5rem;
   }
   .list__item {
       position: relative;
@@ -30,6 +31,7 @@
   }
   .list__item--2 {
     color: blue;
+    font-size: 1.4rem;
   }
   .list__item--2::before {
     content: " ";
