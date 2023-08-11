@@ -162,7 +162,8 @@ function InternationAdvisoryCommittee() {
 					color: var(--color-dark);
 					// background-color: var(--color-primary);
 					background-color: white;
-					border: 2px solid var(--color-dark);
+					border-top: 2px solid var(--color-dark);
+					border-left: 2px solid var(--color-dark);
 				}
 				.technical-program-committee__affiliation {
 					font-size: 1.4rem;
