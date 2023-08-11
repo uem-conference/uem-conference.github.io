@@ -199,7 +199,8 @@ const Banner = () => {
           </div>
           <div className="banner__logo__container">
             <Image
-              src={"/assets/Springer_Logo.png"}
+              // src={"/assets/Springer_Logo.png"}
+              src={"/assets/Logo.png"}
               alt="springer logo"
               layout="fill"
               objectFit="contain"

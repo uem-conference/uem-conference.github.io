@@ -159,13 +159,15 @@ function InternationAdvisoryCommittee() {
 					font-size: 1.5rem;
 					font-weight: 500;
 					// margin-bottom: 0.5rem;
-					color: var(--color-light);
-					background-color: var(--color-primary);
+					color: var(--color-dark);
+					// background-color: var(--color-primary);
+					background-color: white;
+					border: 2px solid var(--color-dark);
 				}
 				.technical-program-committee__affiliation {
 					font-size: 1.4rem;
 					/* font-weight: 500; */
-					color: var(--color-primary-dark);
+					color: var(--color-dark);
 					transition: 0.1s ease-in-out;
 				}
 				.technical-program-committee__affiliation:hover {

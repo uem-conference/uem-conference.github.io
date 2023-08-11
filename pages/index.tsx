@@ -186,7 +186,7 @@ const HomePage = () => {
 				<section className="homepage__grid--about">
 					<div className="homepage__about">
 						<Heading
-							text={"About ICACS"}
+							text={"About AdComSys"}
 							class={"homepage__heading my--2"}
 						></Heading>
 						{/* <h2 className="heading heading--2 homepage__heading">About ICACS</h2> */}
