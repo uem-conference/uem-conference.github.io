@@ -13,6 +13,7 @@ body {
 	font-family: var(--font-roboto);
 	background-color: var(--color-bg);
 	color: var(--color-dark);
+	padding: 1.5rem;
 }
 /* body.expanded {
 	opacity: 0.3;

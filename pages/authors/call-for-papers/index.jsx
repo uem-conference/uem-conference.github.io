@@ -8,97 +8,26 @@ const CallForPapers = () => {
   }, []);
   return (
     <>
+     
+
       <style jsx>{`
-        .call-for-papers {
-          width: 100%;
-        }
-
-        .conference-table {
-          width: 100%;
-          /* max-width: 100%; */
-          margin-bottom: 20px;
-          border-collapse: collapse;
-        }
-
-        .conference-table th,
-        .conference-table td {
-          padding: 12px;
+        .call-for-papers__track {
+          padding: 1.5rem;
+          font-size: 2.5rem;
+          color: white;
+          background-color: var(--color-primary-dark);
           text-align: center;
         }
-
-        .conference-table thead th {
-          background-color: #f2f2f2;
-          font-weight: bold;
-          color: #333;
-          text-transform: uppercase;
-          font-size: 14px;
-          border-bottom: 2px solid #ddd;
+        .call-for-papers__sub-track {
+          padding: 1rem;
+          font-size: 2rem;
+          color: white;
+          background-color: var(--color-primary);
         }
 
-        .conference-table .track-heading {
-          font-size: 18px;
-          font-weight: bold;
-          color: #555;
-        }
-
-        .conference-table .subtrack-heading {
-          font-size: 16px;
-          font-weight: bold;
-          background-color: #eaeaea;
-          color: #333;
-        }
-
-        .conference-table .subtrack {
-          font-size: 14px;
-          color: #666;
-        }
-
-        .conference-table tbody tr:nth-child(2n) {
-          background-color: #f9f9f9;
-        }
-
-        .conference-table tbody tr:hover {
-          background-color: #f5f5f5;
-        }
-
-        /* @media (max-width: 991px) {
-      .conference-table .track-heading,
-      .conference-table .subtrack-heading,
-      .conference-table .subtrack {
-        font-size: 16px;
-      }
-    } */
-
-        @media (max-width: 768px) {
-          .conference-table .track-heading,
-          .conference-table .subtrack-heading,
-          .conference-table .subtrack {
-            font-size: 14px;
-          }
-        }
-
-        @media (max-width: 450px) {
-          .conference-table .track-heading,
-          .conference-table .subtrack-heading,
-          .conference-table .subtrack {
-            font-size: 9px;
-            padding: 8px;
-          }
-        }
-
-        /* @media screen and (max-width: 450px) {
-        .subtrack{
-        font-size: var(--font-size-5);
-      }
-    } */
-
-        @media (max-width: 375px) {
-          .conference-table .track-heading,
-          .conference-table .subtrack-heading,
-          .conference-table .subtrack {
-            font-size: 8px;
-            padding: 7px;
-          }
+        .call-for-papers__grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
         }
       `}</style>
       <Heading
@@ -263,29 +192,36 @@ const CallForPapers = () => {
           </tbody>
         </table>
       </div> */}
-      <h1>{callForPaperList[0].title}</h1>
+      <h1 className="call-for-papers__track">{callForPaperList[0].title}</h1>
       {callForPaperList[0].subtracks.map((subtrack) => {
         return (
-          <Fragment>
-            <h2>{subtrack.title}</h2>
-            <section>
-              <ul>
+          <Fragment key={Math.random()}>
+            <ul className="list list--1 call-for-papers__sub-trac">
+              <li className="list__item list__item--1">{subtrack.title}</li>
+              {/* <section className="call-for-papers__grid call-for-papers__grid--2"> */}
+              <ul className="list list--2">
                 {subtrack.subtrackData[0].map((data) => (
-                  <li>{data}</li>
+                  <li className="list__item list__item--2" key={data}>{data}</li>
                 ))}
               </ul>
-              <ul>
+              <ul className="list list--2">
+                {subtrack.subtrackData[1].map((data) => (
+                  <li className="list__item list__item--2" key={data}>{data}</li>
+                ))}
+              </ul>
+            </ul>
+            {/* <ul>
                 {subtrack.subtrackData[1].map((data) => (
                   <li>{data}</li>
                 ))}
-              </ul>
-            </section>
+              </ul> */}
+            {/* </section> */}
           </Fragment>
         );
       })}
       <h1>{callForPaperList[1].title}</h1>
 
-      {callForPaperList[1].subtracks.map((subtrack) => {
+      {/* {callForPaperList[1].subtracks.map((subtrack) => {
         return (
           <Fragment>
             <h2>{subtrack.title}</h2>
@@ -299,11 +235,11 @@ const CallForPapers = () => {
                 {subtrack.subtrackData[1].map((data) => (
                   <li>{data}</li>
                 ))}
-              </ul> */}
+              </ul> *}
             </section>
           </Fragment>
         );
-      })}
+      })} */}
     </>
   );
 };

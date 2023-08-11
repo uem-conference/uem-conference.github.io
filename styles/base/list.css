@@ -1,0 +1,47 @@
+.list {
+    display: grid;
+    gap: 0.8rem;
+  }
+  .list--2 {
+    margin-left: 3rem;
+  }
+  .list__item {
+      position: relative;
+    padding-left: 1.5rem;
+  }
+  .list__item--1 {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    color: orangered;
+  }
+  .list__item--1::before {
+    content: " ";
+    width: 12px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    aspect-ratio: 1;
+    position: absolute;
+    /* Make slightly larger than the li font-size
+    but smaller than the li gap */
+    background-image: url("/list/9.png");
+    background-size: contain;
+    font-size: 1.25em;
+  }
+  .list__item--2 {
+    color: blue;
+  }
+  .list__item--2::before {
+    content: " ";
+    width: 12px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    aspect-ratio: 1;
+    position: absolute;
+    /* Make slightly larger than the li font-size
+    but smaller than the li gap */
+    background-image: url("/list/5.png");
+    background-size: contain;
+    font-size: 1.25em;
+  }
