@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import { useEffect } from "react";
 import { importantDeadlines } from "../data/importantDates";
 // const inter = Inter({ subsets: ['latin'] })
+import { FlagHitCounter } from "@/components/pieces";
 import Head from "next/head";
 const HomePage = () => {
 	useEffect(() => {
@@ -217,7 +218,7 @@ const HomePage = () => {
 							June 26th-27th, 2024.
 						</p>
 					</div>
-
+					<FlagHitCounter></FlagHitCounter>
 					<div className="homepage__right">
 						<div className="homepage__announcements">
 							<Heading
