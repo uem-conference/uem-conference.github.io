@@ -517,6 +517,7 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 							<SettingPanel
 								isSideNavBarVisible={isSideNavBarVisible}
 								showSideNavBar={showSideNavBar}
+								setIsSettingVisible={setIsSettingVisible}
 							></SettingPanel>
 						</div>
 					</div>
