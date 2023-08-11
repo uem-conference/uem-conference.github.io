@@ -1,6 +1,6 @@
 .wrapper {
 	width: 100%;
-	max-width: max(60%, 90rem);
+	/* max-width: max(60%, 90rem); */
 
 	/* border: 2px solid black; */
 }

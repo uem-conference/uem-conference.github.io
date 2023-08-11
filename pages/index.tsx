@@ -19,7 +19,7 @@ const HomePage = () => {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
-					padding-top: 2rem;
+					padding: 2rem 4rem 0rem;
 				}
 
 				.homepage__section {
@@ -227,8 +227,10 @@ const HomePage = () => {
 
 							<p className="homepage__text text text--normal">
 								All accepted and presented manuscripts will be published in the
-								Springer book series, named Smart Innovation, Systems and
-								Technologies(SIST) (APPROVAL PENDING).
+								Springer book series
+								 {/* <span>, named Smart Innovation, Systems and
+								Technologies(SIST) </span>  */}
+								(APPROVAL PENDING).
 							</p>
 						</div>
 

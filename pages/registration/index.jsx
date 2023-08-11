@@ -39,7 +39,7 @@ const RegistrationPage = () => {
 				<p className="text text--normal mb--1">
 					According to the AdComSys 2024 conference registration policy, after
 					obtaining the formal acceptance by e-mail, at least one author of each
-					paper must complete registration formalities including payment of full
+					paper must complete regular registration formalities including payment of full
 					registration fees.
 				</p>
 
@@ -101,17 +101,19 @@ const RegistrationPage = () => {
 				<p className="text text--normal mb--1">
 					This fee is only applicable for single author from each paper who will
 					be coming to present his/her paper in the respective venue of the
-					conference. For each paper, if more than one author will come to
+					conference.
+					 Necessary details for the registration process will be intimidated to the corresponding authors of accepted papers through email. 
+					 {/* <span> For each paper, if more than one author will come to
 					present the paper then INR 2000 (Indian author) or 100 USD(for the
 					foreign author) will be paid by each author at the conference venue
 					(this includes registration kit, breakfast, and lunch coupon for three
-					days of the conference ).
+					days of the conference ).</span> */}
 				</p>
-				<p className="text text--normal mb--1">
+				{/* <p className="text text--normal mb--1">
 					The above registration fees include tickets for the meals (Admission
 					in opening ceremony, registration kit, breakfasts and lunches) for
 					each author and one copy of the proceeding on a pen drive.
-				</p>
+				</p> */}
 
 				<h4
 					className="heading heading--3 mb--1"
