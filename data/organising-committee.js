@@ -6,43 +6,7 @@ const organisingCommittee = [
 			{
 				name: "Prof. Dr. Satyajit Chakrabarti",
 				role: "Chancellor",
-				organization: "UEM Kolkata",
-			},
-		],
-	},
-	// Patrons
-	{
-		title: "Patrons",
-		data: [
-			{
-				name: "Prof. Dr. Sajal Dasgupta",
-				role: "Vice Chancellor",
-				organization: "UEM Kolkata",
-			},
-			{
-				name: "Prof. Dr. Satyajit Chakrabarti",
-				role: "Pro-Vice Chancellor",
-				organization: "UEM Kolkata",
-			},
-			{
-				name: "Prof. Dr. Rajashree Paul",
-				role: "Deputy-Dean",
-				organization: "UEM Kolkata",
-			},
-			{
-				name: "Prof. Dr. Kamakhya Prasad Ghatak",
-				role: "Dean-Engineering",
-				organization: "UEM Kolkata",
-			},
-			{
-				name: "Prof. Dr. Rajiv Ganguly",
-				role: "Dean-Science",
-				organization: "UEM Kolkata",
-			},
-			{
-				name: "Prof. Dr. Abir Chatterjee",
-				role: "Dean-Research",
-				organization: "UEM Kolkata",
+				organization: "University of Engineering and Management, Kolkata",
 			},
 		],
 	},
@@ -73,7 +37,29 @@ const organisingCommittee = [
 		data: [
 			{
 				name: "Prof. Dr. Maumita Chakraborty",
-				organization: "UEM Kolkata, India",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+		],
+	},
+	// Co-Convener
+	{
+		title: "Co-Convener",
+		data: [
+			{
+				name: "Prof. Dr. Subhalaxmi Chakraborty",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Dr. Sudipta Basu Pal",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Dr. Chiradeep Mukherjee",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Dr. Sankhadeep Chatterjee",
+				organization: "University of Engineering and Management Kolkata, India",
 			},
 		],
 	},
@@ -106,67 +92,69 @@ const organisingCommittee = [
 	{
 		title: "Industry Chair",
 		data: [
-			{
-				name: "Mr. Sushovan Chanda",
-				organization: "TCS Innovation Cell",
-			},
+			{ name: "Mr. Sushovan Chanda", organization: "TCS Innovation Cell" },
 		],
 	},
 	// Organizing Committee Members
 	{
 		title: "Organizing Committee Members",
 		data: [
-			{ name: "Prof. Sankhadeep Chatterjee" },
-			{ name: "Dr. Sudipta Basu Pal" },
-			{ name: "Dr. Subhalaxmi Chakraborty" },
-			{ name: "Dr. Chiradeep Mukherjee" },
-			{ name: "Dr. Srilekha Mukherjee" },
-			{ name: "Dr. Panchali Datta Choudhury" },
-			{ name: "Dr. Anirban Chakraborty" },
-			{ name: "Prof. Stobak Dutta" },
-			{ name: "Prof. Prasenjit Das" },
-			{ name: "Prof. Piyali Chandra" },
-			{ name: "Prof. Subha Ghosh" },
-			{ name: "Prof. Poly Sil Sen" },
-			{ name: "Prof. Pradipta Sarkar" },
-			{ name: "Prof. Sanjukta Mishra" },
-			{ name: "Prof. Kamalika Bhowal" },
-			{ name: "Prof. Sudipta Sikdar" },
-		],
-	},
-	// Finance Chair
-	{
-		title: "Finance Chair",
-		data: [
 			{
-				name: "Mr. Indranil Banerjee",
-				role: "CFO",
-				organization: "University of Engineering and Management, Kolkata",
+				name: "Dr. Srilekha Mukherjee",
+				organization: "University of Engineering and Management Kolkata, India",
 			},
-		],
-	},
-	// Registration Reception Chair
-	{
-		title: "Registration Reception Chair",
-		data: [
-			{ name: "Dr. Subhalaxmi Chakraborty " },
-			{ name: "Dr. Sudipta Basu Pal " },
-			{ name: "Prof. Sankhadeep Chatterjee  " },
-			{ name: "Dr. Chiradeep Mukherjee" },
-			{ name: "Prof. Subha Ghosh" },
-		],
-	},
-	// Publicity Chair
-	{
-		title: "Publicity Chair",
-		data: [{ name: "Prof. Piyali Chandra " }],
-	},
-	// Publicity Co Chair
-	{
-		title: "Publicity Co Chair",
-		data: [
-			{ name: "Prof. Sanjukta Mishra " },
-			{ name: "Prof. Kamalika Bhowal " },
+			{
+				name: "Dr. Panchali Datta Choudhury",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Dr. Anirban Chakraborty",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Stobak Dutta",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Prasenjit Das",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Piyali Chandra",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Subha Ghosh",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Poly Sil Sen",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Pradipta Sarkar",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Sanjukta Mishra",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Kamalika Bhowal",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Prof. Sudipta Sikdar",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Dr. Rajendrani Mukherjee",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
+			{
+				name: "Dr. Tapas Guha",
+				organization: "University of Engineering and Management Kolkata, India",
+			},
 		],
 	},
 ];
