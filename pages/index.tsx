@@ -214,7 +214,7 @@ const HomePage = () => {
 							computing and systems to discuss the practical challenges
 							encountered and solutions adopted. <br /> AdComSys 2024 will be
 							held at the University of Engineering and Management, Kolkata, on
-							June 27th-28th, 2024.
+							June 26th-27th, 2024.
 						</p>
 					</div>
 

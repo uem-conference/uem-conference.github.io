@@ -268,7 +268,7 @@ export default function AboutUem() {
 					</div>
 				</section>
 
-				<section className="about-uem">
+				{/* <section className="about-uem">
 					<div className="about-uem-content">
 						<h2 className="heading heading--2 sub-title">Recognition</h2>
 						<ul className=" text-2 text--normal list">
@@ -505,7 +505,9 @@ export default function AboutUem() {
 							</li>
 						</ul>
 					</div>
-				</section>
+				</section> */}
+
+<p className=" text-2 text--normal description">To learn more about UEM, please visit</p>
 			</div>
 		</>
 	);
