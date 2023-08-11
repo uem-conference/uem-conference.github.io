@@ -228,7 +228,7 @@ const HomePage = () => {
 							<p className="homepage__text text text--normal">
 								All accepted and presented manuscripts will be published in the
 								Springer book series
-								 {/* <span>, named Smart Innovation, Systems and
+								{/* <span>, named Smart Innovation, Systems and
 								Technologies(SIST) </span>  */}
 								(APPROVAL PENDING).
 							</p>
@@ -241,7 +241,10 @@ const HomePage = () => {
 							<ul>
 								{importantDeadlines.map((data) => {
 									return (
-										<p key={data} className="homepage__deadlines__text">
+										<p
+											key={Math.random()}
+											className="homepage__deadlines__text"
+										>
 											{data}
 										</p>
 									);
