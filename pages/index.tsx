@@ -4,6 +4,7 @@ import { Carousel, Heading } from "@/components/pieces";
 import styles from "@/styles/Home.module.css";
 import { useEffect } from "react";
 import { importantDeadlines } from "../data/importantDates";
+import FlagCounter from "../components/pieces/FlagCounter/FlagCounter"
 // const inter = Inter({ subsets: ['latin'] })
 import Head from "next/head";
 const HomePage = () => {
@@ -181,6 +182,7 @@ const HomePage = () => {
       } */
 				}
 			`}</style>
+			
 			<Carousel></Carousel>
 			<div className="homepage invalid-selection">
 				<section className="homepage__grid--about">
@@ -234,7 +236,7 @@ const HomePage = () => {
 							</p>
 						</div>
 
-						<div className="homepage__deadlines">
+						{/* <div className="homepage__deadlines">
 							<h3 className="heading heading--3 homepage__deadlines__heading">
 								Important Deadlines
 							</h3>
@@ -250,7 +252,8 @@ const HomePage = () => {
 									);
 								})}
 							</ul>
-						</div>
+						</div> */}
+						{/* <FlagCounter></FlagCounter>	 */}
 					</div>
 				</section>
 			</div>

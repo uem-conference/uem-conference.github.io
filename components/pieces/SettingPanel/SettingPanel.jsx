@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { handleThemeChange, hsl } from "../../../data/colors";
 import styles from "./settingpanel.module.css";
 
-const SettingPanel = ({ isSideNavBarVisible, showSideNavBar }) => {
+const SettingPanel = ({ isSideNavBarVisible, showSideNavBar, setIsSettingVisible }) => {
 	//   const [isHover, setIsHover] = useState(false);
 	const [colors, setColors] = useState({});
 
@@ -79,6 +79,7 @@ const SettingPanel = ({ isSideNavBarVisible, showSideNavBar }) => {
 								onClick={() => {
 									handleThemeChange(colors[key]);
 									showSideNavBar();
+									setIsSettingVisible(false);
 									// toggleSideBarContainer();
 								}}
 							></div>
