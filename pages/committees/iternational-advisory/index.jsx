@@ -2,10 +2,11 @@ import React from "react";
 import { useEffect } from "react";
 import { Fragment } from "react";
 import { Heading } from "../../../components/pieces";
-const technicalProgramCommittee = require("../../../data/technical-program-committee");
+const internationalAdvisoryCommittee = require("../../../data/international-advisory-committee");
 function InternationAdvisoryCommittee() {
 	useEffect(() => {
-		document.title = "International Advisory Committee | Committees | " + process.env.app_name;
+		document.title =
+			"International Advisory Committee | Committees | " + process.env.app_name;
 	}, []);
 	return (
 		<>
@@ -15,29 +16,39 @@ function InternationAdvisoryCommittee() {
 			></Heading>
 			<div className="technical-program-committee">
 				<div className="technical-program-committee__grid">
-					{technicalProgramCommittee.map((member, index) => {
+					{internationalAdvisoryCommittee.map((member, index) => {
 						return (
-			// 				<div
-			// 					key={Math.random()}
-			// 					className="technical-program-committee__card"
-			// 				>
-			// 					<p className="technical-program-committee__card_number">
-			// 						{index + 1}
-			// 					</p>
-			// 					<p className="technical-program-committee__text technical-program-committee__name text text--small">
-			// 						{member.name}
-			// 					</p>
-			// 					<p
-			// 						className="technical-program-committee__text 
-			// technical-program-committee__affiliation text text--small"
-			// 					>
-			// 						{member.affiliation}
-			// 					</p>
-			// 				</div>
-			<Fragment key={member.name + member.affiliation}>
-			<p className="technical-program-committee__name technical-program-committee__content">{member.name}</p>
-			<p className={`technical-program-committee__affiliation ${index%2===0? "technical-program-committee__affiliation-even" : "technical-program-committee__affiliation-odd" } technical-program-committee__content`}>{member.affiliation}</p>
-			</Fragment>
+							// 				<div
+							// 					key={Math.random()}
+							// 					className="technical-program-committee__card"
+							// 				>
+							// 					<p className="technical-program-committee__card_number">
+							// 						{index + 1}
+							// 					</p>
+							// 					<p className="technical-program-committee__text technical-program-committee__name text text--small">
+							// 						{member.name}
+							// 					</p>
+							// 					<p
+							// 						className="technical-program-committee__text
+							// technical-program-committee__affiliation text text--small"
+							// 					>
+							// 						{member.affiliation}
+							// 					</p>
+							// 				</div>
+							<Fragment key={member.name + member.affiliation}>
+								<p className="technical-program-committee__name technical-program-committee__content">
+									{member.name}
+								</p>
+								<p
+									className={`technical-program-committee__affiliation ${
+										index % 2 === 0
+											? "technical-program-committee__affiliation-even"
+											: "technical-program-committee__affiliation-odd"
+									} technical-program-committee__content`}
+								>
+									{member.affiliation}
+								</p>
+							</Fragment>
 						);
 					})}
 				</div>
@@ -136,7 +147,7 @@ function InternationAdvisoryCommittee() {
 					z-index: 0;
 				}
 
-				.technical-program-committee__content{
+				.technical-program-committee__content {
 					height: 100%;
 					display: flex;
 					align-items: center;
