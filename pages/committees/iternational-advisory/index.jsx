@@ -133,7 +133,7 @@ function InternationAdvisoryCommittee() {
 					margin: 4rem 0rem 2rem;
 					display: grid;
 					grid-template-columns: 1fr 2fr;
-					gap: 2px 0px;
+					// gap: 2px 0px;
 				}
 
 				.technical-program-committee__card_number {
@@ -162,8 +162,8 @@ function InternationAdvisoryCommittee() {
 					color: var(--color-dark);
 					// background-color: var(--color-primary);
 					background-color: white;
-					border-top: 2px solid var(--color-dark);
-					border-left: 2px solid var(--color-dark);
+					border: 2px solid var(--color-dark);
+					border-bottom: none;
 				}
 				.technical-program-committee__affiliation {
 					font-size: 1.4rem;

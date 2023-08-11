@@ -122,7 +122,7 @@ function TechnicalProgramCommittee() {
 					margin: 4rem 0rem 2rem;
 					display: grid;
 					grid-template-columns: 1fr 2fr;
-					gap: 2px 0px;
+					// gap: 2px 0px;
 				}
 
 				.technical-program-committee__card_number {
@@ -136,7 +136,7 @@ function TechnicalProgramCommittee() {
 					z-index: 0;
 				}
 
-				.technical-program-committee__content{
+				.technical-program-committee__content {
 					height: 100%;
 					display: flex;
 					align-items: center;
@@ -148,13 +148,19 @@ function TechnicalProgramCommittee() {
 					font-size: 1.5rem;
 					font-weight: 500;
 					// margin-bottom: 0.5rem;
-					color: var(--color-light);
-					background-color: var(--color-primary);
+					color: var(--color-dark);
+					// background-color: var(--color-primary);
+					background-color: white;
+					border: 2px solid var(--color-dark);
+					border-bottom: none;
+				}
+				.technical-program-committee__name:nth-last-child(1){
+					border-bottom: 2px solid var(--color-dark);
 				}
 				.technical-program-committee__affiliation {
 					font-size: 1.4rem;
 					/* font-weight: 500; */
-					color: var(--color-primary-dark);
+					color: var(--color-dark);
 					transition: 0.1s ease-in-out;
 				}
 				.technical-program-committee__affiliation:hover {
