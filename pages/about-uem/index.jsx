@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 // import "./aboutuem.css";
 import { Heading } from "../../components/pieces";
+import Link from "next/link";
 
 export default function AboutUem() {
 	useEffect(() => {
@@ -507,7 +508,7 @@ export default function AboutUem() {
 					</div>
 				</section> */}
 
-<p className=" text-2 text--normal description">To learn more about UEM, please visit</p>
+<p className=" text-2 text--normal description">To learn more about UEM, please visit <Link href={"https://uem.edu.in/"}>our site</Link> </p>
 			</div>
 		</>
 	);

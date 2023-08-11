@@ -9,6 +9,7 @@ function Schedule() {
 		<>
 			<Heading text={"Schedule"} class={"mb--2"}></Heading>
 		<div className="content-container">
+		<h3 className=" heading heading--2 sub-title"><center>To be updated</center></h3>
 		</div>
 		</>
 	);

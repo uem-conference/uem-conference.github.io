@@ -9,6 +9,7 @@ function AcceptedAndRegisteredPapers() {
 		<>
 			<Heading text={"Accepted And Registered Papers"} class={"mb--2"}></Heading>
 		<div className="content-container">
+		<h3 className=" heading heading--2 sub-title"><center>To be updated</center></h3>
 		</div>
 		</>
 	);

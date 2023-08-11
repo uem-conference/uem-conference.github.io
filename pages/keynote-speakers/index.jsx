@@ -9,6 +9,7 @@ function KeynoteSpeakers() {
 		<>
 			<Heading text={"Keynote Speakers"} class={"mb--2"}></Heading>
 		<div className="content-container">
+		<h3 className=" heading heading--2 sub-title"><center>Coming Soon</center></h3>
 		</div>
 		</>
 	);

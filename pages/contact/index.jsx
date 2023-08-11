@@ -142,6 +142,34 @@ const ContactPage = () => {
 							Dr. Subhalaxmi Chakraborty - 7003720703
 						</p>
 					</div>
+					<div className="contact__container">
+						<Image
+							src="/assets/icons/call.png"
+							alt="menu"
+							width={25}
+							height={25}
+						></Image>
+						<p
+							style={{ margin: "0", marginBottom: "5px" }}
+							className="contact__text text text--normal"
+						>
+							Prof. Sankhadeep Chatterjee - Add Number
+						</p>
+					</div>
+					<div className="contact__container">
+						<Image
+							src="/assets/icons/call.png"
+							alt="menu"
+							width={25}
+							height={25}
+						></Image>
+						<p
+							style={{ margin: "0", marginBottom: "5px" }}
+							className="contact__text text text--normal"
+						>
+							Dr. Sudipta Basu Pal - Add Number
+						</p>
+					</div>
 					<div onClick={clickMailHandler} className="contact__container">
 						<div className="email-icon">
 							<Image
