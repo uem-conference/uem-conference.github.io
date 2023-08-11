@@ -153,7 +153,7 @@ const ContactPage = () => {
 							style={{ margin: "0", marginBottom: "5px" }}
 							className="contact__text text text--normal"
 						>
-							Prof. Sankhadeep Chatterjee - Add Number
+							Prof. Sankhadeep Chatterjee - 8910874737
 						</p>
 					</div>
 					<div className="contact__container">
@@ -167,7 +167,7 @@ const ContactPage = () => {
 							style={{ margin: "0", marginBottom: "5px" }}
 							className="contact__text text text--normal"
 						>
-							Dr. Sudipta Basu Pal - Add Number
+							Dr. Sudipta Basu Pal - 9674335060
 						</p>
 					</div>
 					<div onClick={clickMailHandler} className="contact__container">

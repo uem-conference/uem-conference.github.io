@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import {Heading} from "../../components/pieces"
+import React, { useEffect } from "react";
+import { Heading } from "../../components/pieces";
 
 function KeynoteSpeakers() {
 	useEffect(() => {
@@ -8,9 +8,11 @@ function KeynoteSpeakers() {
 	return (
 		<>
 			<Heading text={"Keynote Speakers"} class={"mb--2"}></Heading>
-		<div className="content-container">
-		<h3 className=" heading heading--2 sub-title"><center>Coming Soon</center></h3>
-		</div>
+			<div className="content-container">
+				<h3 className=" heading heading--2 sub-title">
+					<center>To Be Updated</center>
+				</h3>
+			</div>
 		</>
 	);
 }
