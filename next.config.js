@@ -6,7 +6,7 @@ const nextConfig = {
 		app_name: "International Conference on Advanced Computing Systems",
 	},
 	images: {
-		domains: ["flagsapi.com"],
+		domains: ["flaghitcounter.com"],
 	},
 };
 
