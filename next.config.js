@@ -5,9 +5,6 @@ const nextConfig = {
 	env: {
 		app_name: "International Conference on Advanced Computing Systems",
 	},
-	images: {
-		domains: ["flaghitcounter.com"],
-	},
 };
 
 module.exports = nextConfig;
