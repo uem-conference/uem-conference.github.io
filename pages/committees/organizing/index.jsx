@@ -188,9 +188,10 @@ function Organizing() {
 				}
 
 				.organizing-committee__grid {
+					// padding: 0rem 2rem;
 					width: 100%;
 					display: grid;
-					grid-template-columns: repeat(3, 1fr);
+					grid-template-columns: repeat(4, 1fr);
 					gap: 2rem;
 				}
 

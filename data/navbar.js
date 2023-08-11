@@ -20,6 +20,11 @@ export const navMenuItems = [
                 "text": "Technical Program Committee",
                 "path": "/committees/technical-program",
                 "heading": "Technical Program Committee"
+            },
+            {
+                "text": "international advisory Committee",
+                "path": "/committees/iternational-advisory",
+                "heading": "International Advisory Committee"
             }
         ]
     },
