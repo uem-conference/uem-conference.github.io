@@ -1,9 +1,9 @@
-import image1 from "../../../public/assets/image_1.jpeg";
-import image2 from "../../../public/assets/image_2.jpeg";
-import image3 from "../../../public/assets/image_3.jpg";
-import image4 from "../../../public/assets/image_4.jpeg";
-import image5 from "../../../public/assets/image_5.jpg";
-import image6 from "../../../public/assets/image_6.jpg";
+import image1 from "../../../public/assets/carousel_images/UEMK-pic-nice.jpg";
+import image2 from "../../../public/assets/carousel_images/UEMK_Building_1.jpg";
+import image3 from "../../../public/assets/carousel_images/UEMK_Building_Final1.jpg";
+import image4 from "../../../public/assets/carousel_images/UEMK-pic-nice - Copy.jpg";
+import image5 from "../../../public/assets/carousel_images/UEMK_Building_1 - Copy.jpg";
+import image6 from "../../../public/assets/carousel_images/UEMK_Building_Final1 - Copy.jpg";
 
 const imageArray = [
 	{ title: "Image-1", urls: image1 },
