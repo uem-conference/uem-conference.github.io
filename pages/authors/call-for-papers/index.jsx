@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import { Heading } from "../../../components/pieces";
+import callForPaperList from "../../../data/callForPaperList";
 
 const CallForPapers = () => {
   useEffect(() => {
-		document.title = "Call For Papers | Authors | " + process.env.app_name;
-	}, []);
+    document.title = "Call For Papers | Authors | " + process.env.app_name;
+  }, []);
   return (
     <>
       <style jsx>{`
@@ -104,7 +105,7 @@ const CallForPapers = () => {
         text={"Call for papers"}
         class={"mb--2 invalid-selection"}
       ></Heading>
-      <div className="call-for-papers">
+      {/* <div className="call-for-papers">
         <table border="1" className="conference-table">
           <thead>
             <tr>
@@ -261,7 +262,48 @@ const CallForPapers = () => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </div> */}
+      <h1>{callForPaperList[0].title}</h1>
+      {callForPaperList[0].subtracks.map((subtrack) => {
+        return (
+          <Fragment>
+            <h2>{subtrack.title}</h2>
+            <section>
+              <ul>
+                {subtrack.subtrackData[0].map((data) => (
+                  <li>{data}</li>
+                ))}
+              </ul>
+              <ul>
+                {subtrack.subtrackData[1].map((data) => (
+                  <li>{data}</li>
+                ))}
+              </ul>
+            </section>
+          </Fragment>
+        );
+      })}
+      <h1>{callForPaperList[1].title}</h1>
+
+      {callForPaperList[1].subtracks.map((subtrack) => {
+        return (
+          <Fragment>
+            <h2>{subtrack.title}</h2>
+            <section>
+              <ul>
+                {subtrack.subtrackData.map((data) => (
+                  <li>{data}</li>
+                ))}
+              </ul>
+              {/* <ul>
+                {subtrack.subtrackData[1].map((data) => (
+                  <li>{data}</li>
+                ))}
+              </ul> */}
+            </section>
+          </Fragment>
+        );
+      })}
     </>
   );
 };
