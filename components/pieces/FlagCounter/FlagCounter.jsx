@@ -69,27 +69,37 @@ const FlagCounter = () => {
 
   const getFlagCount = async () => {
     // const response = await fetch('/api/flag-count')
-    const response = await fetch('/api/flag-count', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }});
-    const data = await response.json();
-    console.log(data.message);
-    setFlagCount(data.message)
+    try {
+        const response = await fetch('/api/flag-count', {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json'
+            }});
+        const data = await response.json();
+        console.log(data.message);
+        setFlagCount(data.message)
+    } catch (error) {
+        console.log("Error in get")
+        console.log(error)
+    }
   }
 
 
   const saveFlagCount = async (code) => {
-    const response = await fetch('/api/flag-count', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ code:  code})
-      });
-      const data = await response.json();
-      console.log(data);
+    try {
+        const response = await fetch('/api/flag-count', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ code:  code})
+          });
+          const data = await response.json();
+          console.log(data);
+    } catch (error) {
+        console.log("Error in post")
+        console.log(error)
+    }
   }
 
 //   const handleVisit = (countryCode) => {
