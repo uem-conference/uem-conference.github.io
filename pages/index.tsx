@@ -7,6 +7,10 @@ import { importantDeadlines } from "../data/importantDates";
 import FlagCounter from "../components/pieces/FlagCounter/FlagCounter"
 // const inter = Inter({ subsets: ['latin'] })
 import Head from "next/head";
+
+
+
+
 const HomePage = () => {
 	useEffect(() => {
 		document.title = "Home | " + process.env.app_name;
@@ -253,7 +257,7 @@ const HomePage = () => {
 								})}
 							</ul>
 						</div> */}
-						{/* <FlagCounter></FlagCounter>	 */}
+						<FlagCounter></FlagCounter>	
 					</div>
 				</section>
 			</div>
