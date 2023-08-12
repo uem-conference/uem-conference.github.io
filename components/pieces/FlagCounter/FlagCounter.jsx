@@ -49,7 +49,7 @@ const FlagCounter = () => {
 
   async function getIPInfo(ipAddress) {
     const apiKey = "92ab4c1f9d9847"; // Replace with your actual IPinfo API key
-    const apiUrl = `http://ipinfo.io/${ipAddress}/json?token=${apiKey}`;
+    const apiUrl = `https://ipinfo.io/${ipAddress}/json?token=${apiKey}`;
 
     try {
       const response = await fetch(apiUrl);
