@@ -80,7 +80,7 @@ const FlagCounter = () => {
               'Content-Type': 'application/json'
             }});
         const data = await response.json();
-        console.log(data.message);
+        // console.log(data.message);
         setFlagCount(data.message)
     } catch (error) {
         console.log("Error in get")
@@ -128,10 +128,10 @@ const FlagCounter = () => {
       userIP = ip;
       if(!ip){return}
       getIPInfo(userIP).then((info) => {
-        console.log(`Country: ${info.country}`);
+        // console.log(`Country: ${info.country}`);
         // handleVisit(info.country);
         saveFlagCount(info.country)
-        console.log(`City: ${info.city}`);
+        // console.log(`City: ${info.city}`);
       });
     });
 
