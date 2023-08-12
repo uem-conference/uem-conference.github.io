@@ -40,6 +40,7 @@ const FlagCounter = () => {
       const response = await fetch("https://api.ipify.org?format=json");
       const data = await response.json();
       setIpAddress(data.ip);
+      console.log("IP Address: ", data.ip)
       return data.ip;
     } catch (error) {
       console.error("Error fetching IP address:", error);
@@ -58,6 +59,9 @@ const FlagCounter = () => {
       // Extract country information from the response
       const country = data.country || "Unknown";
       const city = data.city || "Unknown";
+
+      console.log("IP Info: ", { country, city })
+
 
       return { country, city };
     } catch (error) {
