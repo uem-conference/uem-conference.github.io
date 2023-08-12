@@ -4,7 +4,7 @@ import { Carousel, Heading } from "@/components/pieces";
 import styles from "@/styles/Home.module.css";
 import { useEffect } from "react";
 import { importantDeadlines } from "../data/importantDates";
-import FlagCounter from "../components/pieces/FlagCounter/FlagCounter"
+import FlagCounter from "../components/pieces/FlagCounter/FlagCounter";
 // const inter = Inter({ subsets: ['latin'] })
 import Head from "next/head";
 
@@ -186,7 +186,7 @@ const HomePage = () => {
       } */
 				}
 			`}</style>
-			
+
 			<Carousel></Carousel>
 			<div className="homepage invalid-selection">
 				<section className="homepage__grid--about">
@@ -223,7 +223,6 @@ const HomePage = () => {
 							June 26th-27th, 2024.
 						</p>
 					</div>
-
 					<div className="homepage__right">
 						<div className="homepage__announcements">
 							<Heading
