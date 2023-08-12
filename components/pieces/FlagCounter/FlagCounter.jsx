@@ -24,7 +24,7 @@ import Image from "next/image";
 // const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const FlagCounter = () => {
-  const [flagCount, setFlagCount] = useState({});
+  const [flagCount, setFlagCount] = useState([]);
   const [ipAddress, setIpAddress] = useState("Loading...");
 
 //   const [visitCounts, setVisitCounts] = useState({});
@@ -70,8 +70,8 @@ const FlagCounter = () => {
   const getFlagCount = async () => {
     const response = await fetch('/api/flag-count')
     const data = await response.json();
-    // alert(data);
-    setFlagCount(data)
+    console.log(data.message);
+    setFlagCount(data.message)
   }
 
 
@@ -81,7 +81,7 @@ const FlagCounter = () => {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ countryCode:  code})
+        body: JSON.stringify({ code:  code})
       });
       const data = await response.json();
       console.log(data);
@@ -174,7 +174,7 @@ const FlagCounter = () => {
 
       {/* {JSON.stringify(data)} */}
       <>
-        {JSON.stringify(flagCount)}
+        {/* {JSON.stringify(flagCount)} */}
         <h1 className="flag-counter__heading heading heading--3 mb--1">
           <center>World Participation</center>
         </h1>
@@ -187,24 +187,29 @@ const FlagCounter = () => {
           ))}
         </ul> */}
           {/* {JSON.stringify(flagCount)} */}
-          {/* {Object.keys(flagCount).map((country) => {
+
+
+
+
+
+          {flagCount && flagCount.map((country) => {
             return (
               <div
                 className="flag-counter__card"
-                key={`${Math.random()}${country}`}
+                key={`${Math.random()}${JSON.stringify(country)}`}
               >
                 <div className="flag-counter__flag">
                   <Image
-                    src={`https://flagsapi.com/${country}/flat/64.png`}
+                    src={`https://flagsapi.com/${country.countryCode}/shiny/64.png`}
                     layout="fill"
                     objectFit="contain"
-                    alt={country}
+                    alt={country.countryCode}
                   ></Image>
                 </div>
-                <p className="flag-counter__count">{flagCount[country]}</p>
+                <p className="flag-counter__count">{country.count}</p>
               </div>
             );
-          })} */}
+          })}
         </div>
       </>
     </>

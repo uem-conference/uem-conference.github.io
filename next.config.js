@@ -5,6 +5,10 @@ const nextConfig = {
 	env: {
 		app_name: "International Conference on Advanced Computing Systems",
 	},
+	images: {
+		domains: ['flagsapi.com'], // Add 'flagsapi.com' to the array
+	  },
+
 };
 
 module.exports = nextConfig;
