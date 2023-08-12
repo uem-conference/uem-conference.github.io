@@ -68,7 +68,12 @@ const FlagCounter = () => {
 
 
   const getFlagCount = async () => {
-    const response = await fetch('/api/flag-count')
+    // const response = await fetch('/api/flag-count')
+    const response = await fetch('/api/flag-count', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }});
     const data = await response.json();
     console.log(data.message);
     setFlagCount(data.message)
