@@ -79,7 +79,9 @@ const FlagCounter = () => {
       userIP = ip;
       if(!ip){return}
       getIPInfo(userIP).then((info) => {
-        saveFlagCount(info.country)
+        if(info && info.country){
+          saveFlagCount(info.country)
+        }
       });
     });
 
@@ -133,6 +135,7 @@ const FlagCounter = () => {
 
 
           {flagCount && flagCount.map((country) => {
+            if(!country.countryCode || country.countryCode==="Error"){return null}
             return (
               <div
                 className="flag-counter__card"
