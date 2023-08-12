@@ -126,6 +126,7 @@ const FlagCounter = () => {
     getPublicIP().then((ip) => {
       // alert(ip)
       userIP = ip;
+      if(!ip){return}
       getIPInfo(userIP).then((info) => {
         console.log(`Country: ${info.country}`);
         // handleVisit(info.country);
