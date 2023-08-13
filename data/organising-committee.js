@@ -10,7 +10,42 @@ const organisingCommittee = [
 			},
 		],
 	},
-	// General Chair
+	// Patrons
+	{
+		title: "Patrons",
+		data: [
+			{
+				name: "Prof. Dr. Sajal Dasgupta",
+				role: "Vice Chancellor",
+				organization: " University of Engineering and Management, Kolkata",
+			},
+			{
+				name: "Prof. Dr. Satyajit Chakrabarti,",
+				role: "Pro-Vice Chancellor",
+				organization: " University of Engineering and Management, Kolkata",
+			},
+			{
+				name: "Prof. Dr. Rajashree Paul",
+				role: "Deputy-Dean",
+				organization: "  University of Engineering and Management, Kolkata",
+			},
+			{
+				name: "Prof. Dr. Kamakhya Prasad Ghatak",
+				role: "Dean-Engineering",
+				organization: "  University of Engineering and Management, Kolkata",
+			},
+			{
+				name: "Prof. Dr. Rajiv Ganguly",
+				role: "Dean-Science",
+				organization: "  University of Engineering and Management, Kolkata",
+			},
+			{
+				name: "Prof. Dr. Abir Chatterjee",
+				role: "Dean-Research",
+				organization: "  University of Engineering and Management, Kolkata",
+			},
+		],
+	},
 	{
 		title: "General Chair",
 		data: [
