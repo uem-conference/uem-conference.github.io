@@ -1060,4 +1060,4 @@ const uniqueTechnicalProgramCommittee = removeDuplicates(
 	technicalProgramCommittee,
 	"name"
 );
-module.exports = technicalProgramCommittee;
+module.exports = uniqueTechnicalProgramCommittee;
