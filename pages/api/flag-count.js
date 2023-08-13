@@ -12,6 +12,11 @@ async function getPosts(req,res){
         // connect to the database
         let { db } = await connectToDatabase();
         // fetch the posts
+
+        await db
+            .collection('daily-count')
+            .deleteOne({countryCode: "Error"})
+
         let posts = await db
             .collection('count')
             .find({})
@@ -50,7 +55,7 @@ async function addCount(req, res) {
         let { db } = await connectToDatabase();
 
         // console.log(req.body)
-
+        
 
         let posts = await db
             .collection('count')
