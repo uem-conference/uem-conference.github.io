@@ -42,7 +42,7 @@ function TechnicalProgramCommittee() {
 					{/* <Image src={`https://flagsapi.com/${"IN"}/shiny/64.png`} layout="fill" objectFit="contain" alt={member.country}></Image> */}
 					<Image src={`https://flagsapi.com/${member.country}/shiny/64.png`} layout="fill" objectFit="contain" alt={member.country}></Image>
 				  </span>
-                  {member.name}
+                  {member.name} 
                 </p>
                 <p
                   className={`committee-table__affiliation committee-table__field ${

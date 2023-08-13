@@ -1044,6 +1044,8 @@ const technicalProgramCommittee = [
 		country: "MY",
 	},
 ];
+
+
 function removeDuplicates(array, key) {
 	const seen = new Set();
 	return array.filter((item) => {
@@ -1060,4 +1062,4 @@ const uniqueTechnicalProgramCommittee = removeDuplicates(
 	technicalProgramCommittee,
 	"name"
 );
-module.exports = technicalProgramCommittee;
+module.exports = uniqueTechnicalProgramCommittee;
