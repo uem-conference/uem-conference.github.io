@@ -57,7 +57,7 @@ const CallForPapers = () => {
         class={"mb--2 invalid-selection"}
       ></Heading>
 
-      <section className="call-for-papers call-for-papers__grid" style={{"--num-col": "2"}}>
+      <section className="call-for-papers call-for-papers__gri" style={{"--num-col": "2"}}>
         <div className="call-for-papers__grid" style={{"--num-col": "1"}}>
           <h1 className="call-for-papers__track" style={{"--colspan": "1/2"}}>
             {callForPaperList[0].title}

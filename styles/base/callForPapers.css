@@ -2,6 +2,11 @@
     width: 100%;   
     max-width: 100rem;
     margin: auto;
+    background-color: var(--color-primary-dark);;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 0.2rem;
+    padding: 0.2rem;
 }
 .call-for-papers__grid{
     display: grid;
@@ -16,8 +21,8 @@
     justify-content: center;
     width: 100%;
     padding: 1rem;
-    background-color: aqua;
-    border-bottom: 2px solid black;
+    color: white;
+    background-color: var(--color-primary);
     grid-column: var(--colspan);
     --height: 5rem;
     max-height: var(--height);
@@ -28,15 +33,9 @@
 
 
 .call-for-papers__column{
-    background-color: rgb(107, 107, 155);
     display: grid;
     grid-template-columns: repeat(var(--num-col), 1fr);
-    /* gap: 2px; */
-    /* height: 50rem; */
-    /* align-self: stretch; */
-    /* grid-template-rows: 1fr min-content; */
-    /* grid-template-columns: 1fr; */
-
+    gap: 2px;
 }
 
 
@@ -50,17 +49,12 @@
     --height: 7rem;
     max-height: var(--height);
     height: var(--height);
+    text-align: center;
 }
 
 .call-for-papers__list{
-    /* align-self: stretch; */
-    /* height: 4rem; */
     display: grid;
-    /* display: flex; */
     height: 80rem;
-    /* gap: 0.5rem; */
-    /* flex-direction: column; */
-    /* flex-direction: column; */
     grid-template-rows: repeat(var(--num-rows), 1fr);
     /* grid-template-rows: 1fr min-content;
     grid-template-columns: 1fr; */
@@ -76,8 +70,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: beige;
-    border: 2px solid;
+    background-color: var(--color-bg);
+    /* color: black; */
+    /* border: 2px solid; */
     font-size: 1.4rem;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+    .call-for-papers{
+        grid-template-columns: 1fr;
+    }
+    
+  }
+@media screen and (max-width: 450px) {
+    .call-for-papers__list{
+        /* display: grid; */
+        height: 90rem;
+        /* grid-template-rows: repeat(var(--num-rows), 1fr); */
+        /* grid-template-rows: 1fr min-content;
+        grid-template-columns: 1fr; */
+    }
+  }
