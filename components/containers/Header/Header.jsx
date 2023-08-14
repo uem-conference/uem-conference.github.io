@@ -89,6 +89,13 @@ const Header = () => {
             transform: translateX(-100%);
           }
         }
+
+
+		@media screen and (max-width: 450px) {
+			.marquee__container{
+				grid-template-columns: 3fr 1fr;
+			  }
+		  }
       `}</style>
       <header className={"header wrapper"}>
         <Banner></Banner>
