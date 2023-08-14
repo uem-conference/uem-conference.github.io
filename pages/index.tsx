@@ -8,9 +8,6 @@ import FlagCounter from "../components/pieces/FlagCounter/FlagCounter";
 // const inter = Inter({ subsets: ['latin'] })
 import Head from "next/head";
 
-
-
-
 const HomePage = () => {
 	useEffect(() => {
 		document.title = "Home | " + process.env.app_name;
@@ -239,7 +236,7 @@ const HomePage = () => {
 							</p>
 						</div>
 
-						{/* <div className="homepage__deadlines">
+						<div className="homepage__deadlines">
 							<h3 className="heading heading--3 homepage__deadlines__heading">
 								Important Deadlines
 							</h3>
@@ -255,8 +252,8 @@ const HomePage = () => {
 									);
 								})}
 							</ul>
-						</div> */}
-						<FlagCounter></FlagCounter>	
+						</div>
+						<FlagCounter></FlagCounter>
 					</div>
 				</section>
 			</div>

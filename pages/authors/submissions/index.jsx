@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from "react";
 import { Heading } from "../../../components/pieces";
 import Image from "next/image";
@@ -59,11 +60,22 @@ const Submissions = () => {
 				class={"my--2"}
 			></Heading>
 			<div className="submissions content-container">
+				<p className="submissions__heading heading heading--2 heading--line my--2">
+					GUIDELINES FOR SUBMISSION:
+				</p>
+
 				<p className="submissions__text text text--normal">
-					The Conference Management Toolkit (CMT) portal is to be used for the
-					submission link and all reviews are to be done as per the double-blind
-					mode. Here authors must submit the paper without including their names
-					and affiliation.
+					Prospective authors are invited to submit original technical papers
+					that have not been submitted elsewhere for publication (copyright
+					infringement issues will be the authors' responsibility) in the
+					AdComSys 2024 Conference Proceedings. Papers must be written in good
+					english. The Conference Management Toolkit (CMT) portal will be used
+					for the submission link. All manuscripts will be double-blind reviewed
+					for technical content and scope by a technical program committee. The
+					authors must submit the paper without including their names and
+					affiliation. If you are new to Conference Management Toolkit (CMT),
+					please visit
+					<a href="https://cmt3.research.microsoft.com/About">this page.</a>
 				</p>
 
 				<p className="submissions__heading heading heading--2 heading--line my--2">
@@ -170,8 +182,8 @@ const Submissions = () => {
 					{/* <span>The proceedings and certificates will be sent to the
 					corresponding authors through the post in case of an online
 					presentation.</span> */}
-					 However, all matters related to publication and indexing
-					will remain unchanged.
+					However, all matters related to publication and indexing will remain
+					unchanged.
 				</p>
 
 				<p className="submissions__heading heading heading--3 mb--1">

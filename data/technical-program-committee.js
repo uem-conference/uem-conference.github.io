@@ -843,7 +843,7 @@ const technicalProgramCommittee = [
 	},
 	{
 		name: "Dr. Indranil Chakrabarty",
-		affiliation: "Indian Institute of Information Technology, Hyderabad, India",
+		affiliation: "International Institute of Information Technology, Hyderabad",
 		country: "IN",
 	},
 	{
@@ -1044,7 +1044,6 @@ const technicalProgramCommittee = [
 		country: "MY",
 	},
 ];
-
 
 function removeDuplicates(array, key) {
 	const seen = new Set();
