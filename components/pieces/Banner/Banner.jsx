@@ -18,7 +18,7 @@ const Banner = () => {
         }
 
         .banner::before{
-          content: "";
+          // content: "";
           position: absolute;
           width: 100%;
           height: 1.5rem;
@@ -200,13 +200,23 @@ const Banner = () => {
           <div className="banner__logo__container">
             <Image
               // src={"/assets/Springer_Logo.png"}
+              src={"/assets/independence.png"}
+              alt="independence logo"
+              layout="fill"
+              objectFit="contain"
+              className="banner__logo"
+            ></Image>
+          </div>
+          {/* <div className="banner__logo__container">
+            <Image
+              // src={"/assets/Springer_Logo.png"}
               src={"/assets/Logo.png"}
               alt="springer logo"
               layout="fill"
               objectFit="contain"
               className="banner__logo"
             ></Image>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
