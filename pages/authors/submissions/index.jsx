@@ -48,11 +48,11 @@ const Submissions = () => {
 				{/* Add a relevant image URL */}
 			</Head>
 			<style jsx>{`
-				p {
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-				}
+				// p {
+				// 	display: flex;
+				// 	flex-direction: row;
+				// 	align-items: center;
+				// }
 			`}</style>
 
 			<Heading
@@ -74,8 +74,7 @@ const Submissions = () => {
 					for technical content and scope by a technical program committee. The
 					authors must submit the paper without including their names and
 					affiliation. If you are new to Conference Management Toolkit (CMT),
-					please visit
-					<a href="https://cmt3.research.microsoft.com/About">this page.</a>
+					please visit&nbsp;<a href="https://cmt3.research.microsoft.com/About">this page.</a>
 				</p>
 
 				<p className="submissions__heading heading heading--2 heading--line my--2">
