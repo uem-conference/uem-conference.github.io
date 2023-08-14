@@ -169,6 +169,15 @@ const FlagCounter = () => {
           text-align: center;
           // border: 1px solid;
         }
+        @media screen and (max-width: 450px) {
+          .flag-counter {
+            width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+          }
+          .flag-counter__card--full-width{
+          grid-column: 1/4;
+        }
+        }
       `}</style>
 
       {/* {JSON.stringify(data)} */}
