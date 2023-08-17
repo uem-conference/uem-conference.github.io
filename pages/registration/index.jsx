@@ -82,7 +82,7 @@ const RegistrationPage = () => {
 							<td className="table__data">120 USD</td>
 						</tr>
 						<tr className="table__row">
-							<td className="table__data">Extra Paper</td>
+							<td className="table__data">Additional Charges (upto 2 pages)</td>
 							<td className="table__data">INR 2500</td>
 							<td className="table__data">100 USD</td>
 						</tr>
@@ -94,6 +94,8 @@ const RegistrationPage = () => {
 					</tbody>
 				</table>
 
+				<p>* All rates are inclusive of GST.</p>
+
 				<p className="text text--normal mb--1">
 					Final submissions can only be uploaded with regular registration and
 					at least one author of each paper must register at the regular rate.
@@ -103,6 +105,9 @@ const RegistrationPage = () => {
 					be coming to present his/her paper in the respective venue of the
 					conference.
 					 Necessary details for the registration process will be intimidated to the corresponding authors of accepted papers through email. 
+					 <br />
+					 <br />
+					 <strong>If an author has got more than one accepted papers, each paper has also to be registered.</strong>
 					 {/* <span> For each paper, if more than one author will come to
 					present the paper then INR 2000 (Indian author) or 100 USD(for the
 					foreign author) will be paid by each author at the conference venue

@@ -185,7 +185,7 @@ const HomePage = () => {
 			`}</style>
 
 			<Carousel></Carousel>
-			<div className="homepage invalid-selection">
+			<div className="homepage">
 				<section className="homepage__grid--about">
 					<div className="homepage__about">
 						<Heading
