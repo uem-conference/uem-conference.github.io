@@ -597,52 +597,52 @@ const technicalProgramCommittee = [
 	// 	affiliation: "University of District of Columbia, USA",
 	// 	country: "US",
 	// },
-	{
-		name: "Dr. Karina Aragon Gaxiola",
-		affiliation: "University of Waterloo, Canada",
-		country: "CA",
-	},
-	{
-		name: "Dr. Mohammad Al Azawi",
-		affiliation: "Oman College of Management & Technology, Oman",
-		country: "OM",
-	},
-	{
-		name: "Dr. Mohammed Beitsuwaflim",
-		affiliation: "Sultan Qaboos University, Oman",
-		country: "OM",
-	},
-	{
-		name: "Dr. Dena McMartin",
-		affiliation: "University of Saskatchewan, Canada",
-		country: "CA",
-	},
+	// {
+	// 	name: "Dr. Karina Aragon Gaxiola",
+	// 	affiliation: "University of Waterloo, Canada",
+	// 	country: "CA",
+	// },
+	// {
+	// 	name: "Dr. Mohammad Al Azawi",
+	// 	affiliation: "Oman College of Management & Technology, Oman",
+	// 	country: "OM",
+	// },
+	// {
+	// 	name: "Dr. Mohammed Beitsuwaflim",
+	// 	affiliation: "Sultan Qaboos University, Oman",
+	// 	country: "OM",
+	// },
+	// {
+	// 	name: "Dr. Dena McMartin",
+	// 	affiliation: "University of Saskatchewan, Canada",
+	// 	country: "CA",
+	// },
 	{
 		name: "Dr. Surajit Kumar Roy",
 		affiliation:
 			"Indian Institute of Engineering Science and Technology, Shibpur, India",
 		country: "IN",
 	},
-	{
-		name: "Dr. David deMontigny",
-		affiliation: "University of Regina, Canada",
-		country: "CA",
-	},
-	{
-		name: "Dr. Mohd Hafiz Bin Fazalul Rahiman",
-		affiliation: "Universiti Malaysia Perlis, Malaysia",
-		country: "MY",
-	},
-	{
-		name: "Dr. Marian Langbridge",
-		affiliation: "School of Engineering & Material Science, UK",
-		country: "GB",
-	},
-	{
-		name: "Dr. March",
-		affiliation: "Shannon\tUniversity of Newfoundland, Canada",
-		country: "CA",
-	},
+	// {
+	// 	name: "Dr. David deMontigny",
+	// 	affiliation: "University of Regina, Canada",
+	// 	country: "CA",
+	// },
+	// {
+	// 	name: "Dr. Mohd Hafiz Bin Fazalul Rahiman",
+	// 	affiliation: "Universiti Malaysia Perlis, Malaysia",
+	// 	country: "MY",
+	// },
+	// {
+	// 	name: "Dr. Marian Langbridge",
+	// 	affiliation: "School of Engineering & Material Science, UK",
+	// 	country: "GB",
+	// },
+	// {
+	// 	name: "Dr. March",
+	// 	affiliation: "Shannon\tUniversity of Newfoundland, Canada",
+	// 	country: "CA",
+	// },
 	{
 		name: " Dr. Lei Zhu",
 		affiliation: "National Renewable Energy Laboratory, USA",
@@ -658,52 +658,52 @@ const technicalProgramCommittee = [
 		affiliation: "National Institute of Technology, Silchar, Assam, India",
 		country: "IN",
 	},
-	{
-		name: "Dr. Michael Osborne",
-		affiliation: "University of Oxford, UK",
-		country: "GB",
-	},
-	{
-		name: "Dr. Robert F Davis ",
-		affiliation: "Carnegie Mellon University, USA",
-		country: "US",
-	},
-	{
-		name: "Dr. Burak O Ozdoganlar",
-		affiliation: "Carnegie Mellon University, USA",
-		country: "US",
-	},
-	{
-		name: "Dr. Nathalie Tourigny",
-		affiliation: "University of Waterloo, Canada",
-		country: "CA",
-	},
-	{
-		name: "Dr. Boudreault",
-		affiliation: "Mathieu, Montreal Heart Institute, Canada",
-		country: "CA",
-	},
-	{
-		name: "Dr. Obermayer",
-		affiliation: "Klaus, Technische University, Netherland",
-		country: "US",
-	},
-	{
-		name: "Dr. Boukadoum",
-		affiliation: "A. Mounir, Montreal Heart Institute, Canada",
-		country: "CA",
-	},
+	// {
+	// 	name: "Dr. Michael Osborne",
+	// 	affiliation: "University of Oxford, UK",
+	// 	country: "GB",
+	// },
+	// {
+	// 	name: "Dr. Robert F Davis ",
+	// 	affiliation: "Carnegie Mellon University, USA",
+	// 	country: "US",
+	// },
+	// {
+	// 	name: "Dr. Burak O Ozdoganlar",
+	// 	affiliation: "Carnegie Mellon University, USA",
+	// 	country: "US",
+	// },
+	// {
+	// 	name: "Dr. Nathalie Tourigny",
+	// 	affiliation: "University of Waterloo, Canada",
+	// 	country: "CA",
+	// },
+	// {
+	// 	name: "Dr. Boudreault",
+	// 	affiliation: "Mathieu, Montreal Heart Institute, Canada",
+	// 	country: "CA",
+	// },
+	// {
+	// 	name: "Dr. Obermayer",
+	// 	affiliation: "Klaus, Technische University, Netherland",
+	// 	country: "US",
+	// },
+	// {
+	// 	name: "Dr. Boukadoum",
+	// 	affiliation: "A. Mounir, Montreal Heart Institute, Canada",
+	// 	country: "CA",
+	// },
 	{
 		name: "Dr. Malay Kule",
 		affiliation:
 			"Indian Institute of Engineering Science and Technology, Shibpur, India",
 		country: "IN",
 	},
-	{
-		name: "Dr. Richard Linley",
-		affiliation: "University of Cambridge, UK",
-		country: "GB",
-	},
+	// {
+	// 	name: "Dr. Richard Linley",
+	// 	affiliation: "University of Cambridge, UK",
+	// 	country: "GB",
+	// },
 	{
 		name: "Dr. Sankhayan Choudhury",
 		affiliation: "University of Calcutta, India",
@@ -729,11 +729,11 @@ const technicalProgramCommittee = [
 		affiliation: "National Institute of Technology, Durgapur, India",
 		country: "IN",
 	},
-	{
-		name: "Dr. Qusay Mahmoud",
-		affiliation: "Ontario Tech University, Canada",
-		country: "CA",
-	},
+	// {
+	// 	name: "Dr. Qusay Mahmoud",
+	// 	affiliation: "Ontario Tech University, Canada",
+	// 	country: "CA",
+	// },
 	{
 		name: "Dr. Tanvi Agrawal",
 		affiliation: "Indian Institute of Technology, Mumbai",
@@ -958,12 +958,12 @@ const technicalProgramCommittee = [
 		affiliation: "Birla institute of Technology, Mesra, India",
 		country: "IN",
 	},
-	{
-		name: "Dr. Mekonnen",
-		affiliation:
-			"Gashaw, College of Health Sciences at Addis Ababa University, Ethiopia",
-		country: "ET",
-	},
+	// {
+	// 	name: "Dr. Mekonnen",
+	// 	affiliation:
+	// 		"Gashaw, College of Health Sciences at Addis Ababa University, Ethiopia",
+	// 	country: "ET",
+	// },
 	// {
 	// 	name: " Dr. Gregory Dudek",
 	// 	affiliation: "McGill University, Canada",
@@ -1028,21 +1028,21 @@ const technicalProgramCommittee = [
 		affiliation: "Birla Institute of Technology, India",
 		country: "IN",
 	},
-	{
-		name: " Dr. Basel Barakat",
-		affiliation: "University of Greenwich, UK",
-		country: "GB",
-	},
-	{
-		name: " Dr. Hosam El-Ocla",
-		affiliation: "Lakehead University, Canada",
-		country: "CA",
-	},
-	{
-		name: " Dr. Mohd Asyraf Zulkifley",
-		affiliation: "The National University of Malaysia, Malaysia",
-		country: "MY",
-	},
+	// {
+	// 	name: " Dr. Basel Barakat",
+	// 	affiliation: "University of Greenwich, UK",
+	// 	country: "GB",
+	// },
+	// {
+	// 	name: " Dr. Hosam El-Ocla",
+	// 	affiliation: "Lakehead University, Canada",
+	// 	country: "CA",
+	// },
+	// {
+	// 	name: " Dr. Mohd Asyraf Zulkifley",
+	// 	affiliation: "The National University of Malaysia, Malaysia",
+	// 	country: "MY",
+	// },
 ];
 
 function removeDuplicates(array, key) {

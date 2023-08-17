@@ -12,9 +12,16 @@ const HomePage = () => {
 	// code to check common names
 	const uniqueInternationalAdvisoryCommittee = require("../data/international-advisory-committee");
 	const uniqueTechnicalProgramCommittee = require("../data/technical-program-committee");
+	function removeSpaces(str: string) {
+		return str.replace(/\s+/g, "");
+	}
+
 	function findCommonNames(arr1: any[], arr2: any[]) {
-		const commonNames = arr1.filter((item1) =>
-			arr2.some((item2) => item2.name === item1.name)
+		const commonNames = arr1.filter((item1: { name: any }) =>
+			arr2.some(
+				(item2: { name: any }) =>
+					removeSpaces(item2.name) === removeSpaces(item1.name)
+			)
 		);
 		return commonNames;
 	}
@@ -235,10 +242,15 @@ const HomePage = () => {
 							encountered and solutions adopted. <br /> AdComSys 2024 will be
 							held at the University of Engineering and Management, Kolkata, on
 							June 26th-27th, 2024.
-
 							<br />
 							<br />
-							To download AdComSys Brochure, please <a href="/assets/downloads/AdComSys 2024 Brochure.pdf" target="_blank">click here</a>
+							To download AdComSys Brochure, please{" "}
+							<a
+								href="/assets/downloads/AdComSys 2024 Brochure.pdf"
+								target="_blank"
+							>
+								click here
+							</a>
 						</p>
 					</div>
 					<div className="homepage__right">
