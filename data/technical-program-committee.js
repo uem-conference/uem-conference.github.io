@@ -529,16 +529,16 @@ const technicalProgramCommittee = [
 		affiliation: "Jadavpur University",
 		country: "IN",
 	},
-	{
-		name: "Dr. Ahmad Zhafran Bin Ahmad Mazlan",
-		affiliation: "Universiti Sains Malaysia, Malaysia",
-		country: "MY",
-	},
-	{
-		name: "Dr. Nadine Akkari",
-		affiliation: "Jeddah International College, Saudi Arabia",
-		country: "SA",
-	},
+	// {
+	// 	name: "Dr. Ahmad Zhafran Bin Ahmad Mazlan",
+	// 	affiliation: "Universiti Sains Malaysia, Malaysia",
+	// 	country: "MY",
+	// },
+	// {
+	// 	name: "Dr. Nadine Akkari",
+	// 	affiliation: "Jeddah International College, Saudi Arabia",
+	// 	country: "SA",
+	// },
 	{
 		name: "Dr. Media Anugerah Ayu",
 		affiliation: "Sampoerna University, Indonesia",
@@ -592,11 +592,11 @@ const technicalProgramCommittee = [
 		affiliation: "National Sun Yat-sen University, Kaohsiung, Taiwan",
 		country: "TW",
 	},
-	{
-		name: "Dr. Lawrence Dalmarie",
-		affiliation: "University of District of Columbia, USA",
-		country: "US",
-	},
+	// {
+	// 	name: "Dr. Lawrence Dalmarie",
+	// 	affiliation: "University of District of Columbia, USA",
+	// 	country: "US",
+	// },
 	{
 		name: "Dr. Karina Aragon Gaxiola",
 		affiliation: "University of Waterloo, Canada",
@@ -964,21 +964,21 @@ const technicalProgramCommittee = [
 			"Gashaw, College of Health Sciences at Addis Ababa University, Ethiopia",
 		country: "ET",
 	},
-	{
-		name: " Dr. Gregory Dudek",
-		affiliation: "McGill University, Canada",
-		country: "CA",
-	},
-	{
-		name: " Dr. Sylvie Thiebaux",
-		affiliation: "ANU College of Computer Science, Australia",
-		country: "AU",
-	},
-	{
-		name: " Dr. Adam W. Skorek",
-		affiliation: "University of Québec at Trois-Rivières, Canada",
-		country: "CA",
-	},
+	// {
+	// 	name: " Dr. Gregory Dudek",
+	// 	affiliation: "McGill University, Canada",
+	// 	country: "CA",
+	// },
+	// {
+	// 	name: " Dr. Sylvie Thiebaux",
+	// 	affiliation: "ANU College of Computer Science, Australia",
+	// 	country: "AU",
+	// },
+	// {
+	// 	name: " Dr. Adam W. Skorek",
+	// 	affiliation: "University of Québec at Trois-Rivières, Canada",
+	// 	country: "CA",
+	// },
 	{
 		name: " Dr. Dhruba Jyoti Bora",
 		affiliation:

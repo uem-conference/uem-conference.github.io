@@ -9,6 +9,23 @@ import FlagCounter from "../components/pieces/FlagCounter/FlagCounter";
 import Head from "next/head";
 
 const HomePage = () => {
+	// code to check common names
+	const uniqueInternationalAdvisoryCommittee = require("../data/international-advisory-committee");
+	const uniqueTechnicalProgramCommittee = require("../data/technical-program-committee");
+	function findCommonNames(arr1: any[], arr2: any[]) {
+		const commonNames = arr1.filter((item1) =>
+			arr2.some((item2) => item2.name === item1.name)
+		);
+		return commonNames;
+	}
+
+	const commonNames = findCommonNames(
+		uniqueInternationalAdvisoryCommittee,
+		uniqueTechnicalProgramCommittee
+	);
+
+	console.log(commonNames);
+	// end of common code check function
 	useEffect(() => {
 		document.title = "Home | " + process.env.app_name;
 	}, []);
