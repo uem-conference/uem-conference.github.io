@@ -207,11 +207,11 @@ const internationalAdvisoryCommittee = [
 		affiliation: "Universiti Malaysia Perlis, Malaysia",
 		country: "MY",
 	},
-	{
-		name: " Dr. Bhaskar Karn",
-		affiliation: "Birla institute of Technology, Mesra, India",
-		country: "IN",
-	},
+	// {
+	// 	name: " Dr. Bhaskar Karn",
+	// 	affiliation: "Birla institute of Technology, Mesra, India",
+	// 	country: "IN",
+	// },
 	{
 		name: " Dr. Nathalie Tourigny",
 		affiliation: "University of Waterloo, Canada",
