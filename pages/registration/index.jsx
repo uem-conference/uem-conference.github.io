@@ -93,8 +93,7 @@ const RegistrationPage = () => {
 						</tr>
 					</tbody>
 				</table>
-
-				<p>* All rates are inclusive of GST.</p>
+				<p style={{textAlign: "right", color: "red", marginBottom: "2rem"}}>* All rates are inclusive of GST.</p>
 
 				<p className="text text--normal mb--1">
 					Final submissions can only be uploaded with regular registration and
