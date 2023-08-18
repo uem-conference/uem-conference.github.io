@@ -93,7 +93,7 @@ const organisingCommittee = [
 				organization: "University of Engineering and Management Kolkata, India",
 			},
 			{
-				name: "Prof. Dr. Sankhadeep Chatterjee",
+				name: "Prof. Sankhadeep Chatterjee",
 				organization: "University of Engineering and Management Kolkata, India",
 			},
 		],
