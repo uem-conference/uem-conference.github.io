@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // import Head from 'next/head'
 // import { Inter } from 'next/font/google'
 import { Carousel, Heading } from "@/components/pieces";
@@ -261,11 +262,12 @@ const HomePage = () => {
 							></Heading>
 
 							<p className="homepage__text text text--normal">
-								All accepted and presented manuscripts will be published in the
-								Springer book series
+								All accepted papers will be published by Scopus Indexed Springer
+								Nature book series "Studies in Computational Intelligence"
+								(Approval Pending).
 								{/* <span>, named Smart Innovation, Systems and
 								Technologies(SIST) </span>  */}
-								(APPROVAL PENDING).
+								{/* (APPROVAL PENDING). */}
 							</p>
 						</div>
 
