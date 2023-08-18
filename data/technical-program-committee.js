@@ -1028,6 +1028,11 @@ const technicalProgramCommittee = [
 		affiliation: "Birla Institute of Technology, India",
 		country: "IN",
 	},
+	{
+		name: "Prof. Dr. Ayan Banerjee",
+		affiliation: "Indian Institute of Engineering Science and Technology, Shibpur, India",
+		country: "IN",
+	},
 	// {
 	// 	name: " Dr. Basel Barakat",
 	// 	affiliation: "University of Greenwich, UK",
