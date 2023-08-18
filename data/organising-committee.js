@@ -20,8 +20,13 @@ const organisingCommittee = [
 				organization: " University of Engineering and Management, Kolkata",
 			},
 			{
-				name: "Prof. Dr. Satyajit Chakrabarti,",
+				name: "Prof. Dr. Satyajit Chakrabarti",
 				role: "Pro-Vice Chancellor",
+				organization: " University of Engineering and Management, Kolkata",
+			},
+			{
+				name: "Prof. Dr. Sukalyan Goswami",
+				role: "Registrar",
 				organization: " University of Engineering and Management, Kolkata",
 			},
 			{
