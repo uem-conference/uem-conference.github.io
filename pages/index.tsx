@@ -246,7 +246,7 @@ const HomePage = () => {
 							<br />
 							To download AdComSys Brochure, please{" "}
 							<a
-								href="/public/assets/downloads/AdComSys 2024 Brochure.pdf"
+								href="/assets/downloads/AdComSys 2024 Brochure.pdf"
 								target="_blank"
 							>
 								click here
