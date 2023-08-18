@@ -6,7 +6,7 @@ import { ChatBot } from "../pieces";
 const BodyTemplate = (props) => {
 	return (
 		<>
-			<ChatBot></ChatBot>
+			{/* <ChatBot></ChatBot> */}
 			<Header></Header>
 			<main className="wrapper" style={{ marginBottom: "4rem" }}>
 				{props.child}

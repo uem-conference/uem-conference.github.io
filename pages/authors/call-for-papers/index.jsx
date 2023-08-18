@@ -59,9 +59,9 @@ const CallForPapers = () => {
           <button className="btn btn--primary"> PDF</button>
         </a>
 
-        <a href="/assets/downloads/" target="_blank">
+        {/* <a href="/assets/downloads/" target="_blank">
           <button className="btn btn--primary">Text</button>
-        </a>
+        </a> */}
       </div>
       <section
         className="call-for-papers call-for-papers__gri"
