@@ -55,10 +55,7 @@ const Submissions = () => {
 				// }
 			`}</style>
 
-			<Heading
-				text={"INFORMATION FOR AUTHORS OF SPRINGER CONFERENCE PROCEEDINGS"}
-				class={"my--2"}
-			></Heading>
+			<Heading text={"INFORMATION FOR AUTHORS"} class={"my--2"}></Heading>
 			<div className="submissions content-container">
 				<p className="submissions__heading heading heading--2 heading--line my--2">
 					GUIDELINES FOR SUBMISSION:
