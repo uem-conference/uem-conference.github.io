@@ -74,9 +74,20 @@ const Submissions = () => {
 					for technical content and scope by a technical program committee. The
 					authors must submit the paper without including their names and
 					affiliation. If you are new to Conference Management Toolkit (CMT),
-					please visit&nbsp;<a href="https://cmt3.research.microsoft.com/About">this page.</a>
+					please visit&nbsp;
+					<a href="https://cmt3.research.microsoft.com/About">this page.</a>
 				</p>
-
+				<p className="submissions__text text text--normal">
+					The organizers of AdComSys 2024 are strict about Plagiarism. The
+					submitting authors should avoid the deliberate or reckless
+					representation of another’s words, thoughts, or ideas as one’s own
+					without attribution in connection with submitting academic work,
+					whether graded or otherwise. The Technical Program Committee will
+					check the plagiarism level of all the submitted papers to ensure the
+					originality of the content using Turnitin (Turnitin) plagiarism
+					checking software, and any paper having a similarity score above 15%
+					will not be processed further.
+				</p>
 				<p className="submissions__heading heading heading--2 heading--line my--2">
 					In order to submit the paper at AdComSys:-
 				</p>
