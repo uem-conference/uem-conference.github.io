@@ -71,6 +71,7 @@ const organisingCommittee = [
 			},
 		],
 	},
+	
 	// Convener
 	{
 		title: "Convener",
@@ -133,6 +134,16 @@ const organisingCommittee = [
 		title: "Industry Chair",
 		data: [
 			{ name: "Mr. Sushovan Chanda", organization: "TCS Innovation Cell" },
+		],
+	},
+	{
+		title: "Finance Chair",
+		data: [
+			{
+				name: "Mr. Indraneel Banerjee",
+				organization:
+					"University of Engineering and Management Kolkata",
+			},
 		],
 	},
 	// Organizing Committee Members
