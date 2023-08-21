@@ -153,9 +153,9 @@ const CallForPapers = () => {
 				</div>
 
 				<div className="call-for-papers__grid" style={{ "--num-col": "3" }}>
-					<h2 className="call-for-papers__track" style={{ "--colspan": "1/4" }}>
+					<h5 className="call-for-papers__track" style={{ "--colspan": "1/4" }}>
 						{callForPaperList[1].title}
-					</h2>
+					</h5>
 
 					{callForPaperList[1].subtracks.map((subtrack) => {
 						return (
@@ -164,9 +164,9 @@ const CallForPapers = () => {
 									className="call-for-papers__column"
 									style={{ "--num-col": "1" }}
 								>
-									<h3 className="call-for-papers__subtrack">
+									<h4 className="call-for-papers__subtrack">
 										{subtrack.title}
-									</h3>
+									</h4>
 									<div
 										className="call-for-papers__list"
 										style={{ "--num-rows": `${subtrack.subtrackData.length}` }}

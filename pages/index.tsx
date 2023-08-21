@@ -295,6 +295,7 @@ const HomePage = () => {
 							<Heading
 								text={"Announcements"}
 								class={"homepage__heading my--2"}
+								element="h3"
 							></Heading>
 
 							<p className="homepage__text text text--normal">

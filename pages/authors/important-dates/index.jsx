@@ -160,9 +160,9 @@ const index = () => {
 			`}</style>
 
 			<div className="homepage__deadlines">
-				<h2 className="heading heading--3 homepage__deadlines__heading">
+				<h1 className="heading heading--3 homepage__deadlines__heading">
 					Important Deadlines
-				</h2>
+				</h1>
 				<ul>
 					{importantDeadlines.map((data) => {
 						return (
