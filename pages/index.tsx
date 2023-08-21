@@ -1,14 +1,10 @@
+/* eslint-disable @next/next/next-script-for-ga */
 /* eslint-disable react/no-unescaped-entities */
-// import Head from 'next/head'
-// import { Inter } from 'next/font/google'
 import { Carousel, Heading } from "@/components/pieces";
-import styles from "@/styles/Home.module.css";
 import { useEffect } from "react";
 import { importantDeadlines } from "../data/importantDates";
 import FlagCounter from "../components/pieces/FlagCounter/FlagCounter";
-// const inter = Inter({ subsets: ['latin'] })
 import Head from "next/head";
-
 const HomePage = () => {
 	// code to check common names
 	const uniqueInternationalAdvisoryCommittee = require("../data/international-advisory-committee");
@@ -32,13 +28,52 @@ const HomePage = () => {
 		uniqueTechnicalProgramCommittee
 	);
 
-	console.log(commonNames);
+	// console.log(commonNames);
 	// end of common code check function
 	useEffect(() => {
 		document.title = "Home | " + process.env.app_name;
 	}, []);
 	return (
 		<>
+			<Head>
+				<title>Home | AdComSys Conference</title>
+				<meta
+					name="description"
+					content="International Conference on Advanced Computing and Systems - AdComSys 2024"
+				/>
+				<meta
+					name="keywords"
+					content="AdComSys, conference, computing, systems, AI, IoT, cybersecurity, blockchain, adcomsys 2024"
+				/>
+
+				<meta property="og:title" content="AdComSys Conference" />
+				<meta
+					property="og:description"
+					content="International Conference on Advanced Computing and Systems - AdComSys 2024"
+				/>
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://adcomsys.vercel.app/" />
+				<meta
+					property="og:image"
+					content="https://adcomsys.vercel.app/_next/image?url=%2Fassets%2FLogo.png&w=1920&q=75"
+				/>
+				<meta property="og:image:alt" content="AdComSys Conference Logo" />
+				<meta property="og:locale" content="en_US" />
+
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+				<meta name="author" content="Ankur Halder" />
+				<meta name="robots" content="index, follow" />
+				<meta name="language" content="en" />
+				<meta charSet="UTF-8" />
+				<link rel="icon" href="/favicon.ico" />
+
+				<meta name="geo.region" content="IN-WB" />
+				<meta name="geo.placename" content="Kolkata, India" />
+				<meta name="geo.position" content="22.572645;88.363892" />
+				<meta name="ICBM" content="22.572645, 88.363892" />
+			</Head>
+
 			<style jsx>{`
 				.homepage {
 					width: 100%;
@@ -216,8 +251,8 @@ const HomePage = () => {
 						<Heading
 							text={"About AdComSys"}
 							class={"homepage__heading my--2"}
+							element="h1"
 						></Heading>
-						{/* <h2 className="heading heading--2 homepage__heading">About ICACS</h2> */}
 						<p className="homepage__text text text--normal">
 							The International Conference on Advanced Computing and Systems
 							(AdComSys) will foster an excellent international forum for
@@ -259,22 +294,20 @@ const HomePage = () => {
 							<Heading
 								text={"Announcements"}
 								class={"homepage__heading my--2"}
+								element="h3"
 							></Heading>
 
 							<p className="homepage__text text text--normal">
 								All accepted papers will be published by Scopus Indexed Springer
 								Nature book series "Studies in Computational Intelligence"
 								(Approval Pending).
-								{/* <span>, named Smart Innovation, Systems and
-								Technologies(SIST) </span>  */}
-								{/* (APPROVAL PENDING). */}
 							</p>
 						</div>
 
 						<div className="homepage__deadlines">
-							<h3 className="heading heading--3 homepage__deadlines__heading">
+							<h2 className="heading heading--3 homepage__deadlines__heading">
 								Important Deadlines
-							</h3>
+							</h2>
 							<ul>
 								{importantDeadlines.map((data) => {
 									return (
