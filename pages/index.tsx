@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/next-script-for-ga */
 /* eslint-disable react/no-unescaped-entities */
 // import Head from 'next/head'
 // import { Inter } from 'next/font/google'
@@ -8,7 +9,7 @@ import { importantDeadlines } from "../data/importantDates";
 import FlagCounter from "../components/pieces/FlagCounter/FlagCounter";
 // const inter = Inter({ subsets: ['latin'] })
 import Head from "next/head";
-
+import Script from "next/script";
 const HomePage = () => {
 	// code to check common names
 	const uniqueInternationalAdvisoryCommittee = require("../data/international-advisory-committee");
@@ -39,6 +40,72 @@ const HomePage = () => {
 	}, []);
 	return (
 		<>
+			<Head>
+				<title>Home | AdComSys Conference</title>
+				<meta
+					name="description"
+					content="International Conference on Advanced Computing and Systems - AdComSys 2024"
+				/>
+				<meta
+					name="keywords"
+					content="AdComSys, conference, computing, systems, AI, IoT, cybersecurity, blockchain , adcomsys 2024"
+				/>
+
+				<meta property="og:title" content="AdComSys Conference" />
+				<meta
+					property="og:description"
+					content="International Conference on Advanced Computing and Systems - AdComSys 2024"
+				/>
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://adcomsys.vercel.app/" />
+				<meta
+					property="og:image"
+					content="https://adcomsys.vercel.app/_next/image?url=%2Fassets%2FLogo.png&w=1920&q=75"
+				/>
+				<meta property="og:image:alt" content="AdComSys Conference Logo" />
+				<meta property="og:locale" content="en_US" />
+
+				<meta name="twitter:card" content="saccomsys" />
+				<meta name="twitter:site" content="@adcomsysconf" />
+				<meta name="twitter:title" content="AdComSys Conference" />
+				<meta
+					name="twitter:description"
+					content="International Conference on Advanced Computing and Systems - AdComSys 2024"
+				/>
+
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+				<meta name="author" content="Ankur Halder" />
+				<meta name="robots" content="index, follow" />
+				<meta name="language" content="English" />
+				<meta charSet="UTF-8" />
+				<link rel="icon" href="../favicon.ico" />
+
+				<meta name="geo.region" content="IN-WB" />
+				<meta name="geo.placename" content="Kolkata, India" />
+				<meta name="geo.position" content="22.572645;88.363892" />
+				<meta name="ICBM" content="22.572645, 88.363892" />
+
+				<meta http-equiv="content-language" content="en" />
+
+				<script type="application/ld+json">
+					{JSON.stringify({
+						"@context": "https://adcomsys.vercel.app/",
+						"@type": "adcomsys",
+						name: "AdComSys Conference",
+						url: "https://adcomsys.vercel.app/",
+						logo: "https://adcomsys.vercel.app/_next/image?url=%2Fassets%2FLogo.png&w=1920&q=75",
+						description:
+							"International Conference on Advanced Computing and Systems",
+						contactPoint: {
+							"@type": "ContactPoint",
+							telephone: "+919748903490",
+							contactType: "customer support",
+						},
+					})}
+				</script>
+			</Head>
+
 			<style jsx>{`
 				.homepage {
 					width: 100%;

@@ -10,43 +10,7 @@ const Submissions = () => {
 	// }, []);
 	return (
 		<>
-			<Head>
-				{/* regular */}
-				<title>
-					{"Submissions | Authors | AdComSys |" + process.env.app_name}
-				</title>
-				<meta
-					name="description"
-					content="Learn how to submit your paper for AdComSys conference proceedings. Find templates, guidelines, and agreements for authors. Mode of presentation and paper categories explained."
-				/>
-				<meta
-					name="keywords"
-					content="Submissions, Authors, AdComSys, conference proceedings, templates, guidelines, agreements, presentation, paper categories"
-				/>
-				{/* social media */}
-				<meta property="og:title" content="Submissions | Authors | AdComSys" />
-				<meta
-					property="og:description"
-					content="Learn how to submit your paper for AdComSys conference proceedings. Find templates, guidelines, and agreements for authors. Mode of presentation and paper categories explained."
-				/>
-				{/* <meta property="og:image" content="/path/to/your/image.jpg" /> Add a
-				relevant image URL */}
-				<meta
-					property="og:url"
-					content="https://adcomsys.vercel.app/authors/submissions"
-				/>
-				<meta property="og:type" content="website" />
-				{/* for twitter */}
-				<meta name="twitter:card" content="summary" />
-				{/* <meta name="twitter:site" content="@yourtwitterhandle" /> */}
-				<meta name="twitter:title" content="Submissions | Authors | AdComSys" />
-				<meta
-					name="twitter:description"
-					content="Learn how to submit your paper for AdComSys conference proceedings. Find templates, guidelines, and agreements for authors. Mode of presentation and paper categories explained."
-				/>
-				{/* <meta name="twitter:image" content="/path/to/your/image.jpg" />{" "} */}
-				{/* Add a relevant image URL */}
-			</Head>
+			<Head></Head>
 			<style jsx>{`
 				// p {
 				// 	display: flex;
