@@ -48,7 +48,7 @@ export default function AboutUem() {
 				<meta name="robots" content="index, follow" />
 				<meta name="language" content="English" />
 				<meta charSet="UTF-8" />
-				<link rel="icon" href="../favicon.ico" />
+				<link rel="icon" href="/favicon.ico" />
 
 				<meta name="geo.region" content="IN-WB" />
 				<meta name="geo.placename" content="Kolkata, India" />

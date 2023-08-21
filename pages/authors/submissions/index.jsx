@@ -5,12 +5,54 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 const Submissions = () => {
-	// useEffect(() => {
-	// 	document.title = "Submissions | Authors |" + process.env.app_name;
-	// }, []);
 	return (
 		<>
-			<Head></Head>
+			<Head>
+				<Head>
+					<title>Information for Authors | Submissions</title>
+					<meta
+						name="description"
+						content="Learn about the submission guidelines and information for authors at the conference."
+					/>
+
+					<meta
+						property="og:title"
+						content="Information for Authors | Submissions"
+					/>
+					<meta
+						property="og:description"
+						content="Learn about the submission guidelines and information for authors at the conference."
+					/>
+					<meta property="og:type" content="website" />
+					<meta
+						property="og:url"
+						content="https://adcomsys.vercel.app/authors/submissions"
+					/>
+					<meta
+						property="og:image"
+						content="https://adcomsys.vercel.app/_next/image?url=%2Fassets%2FLogo.png&w=1920&q=75"
+					/>
+					<meta property="og:image:alt" content="Information for Authors" />
+					<meta property="og:locale" content="en_US" />
+					<meta
+						name="viewport"
+						content="width=device-width, initial-scale=1.0"
+					/>
+
+					<meta name="author" content="Ankur Halder" />
+					<meta name="robots" content="index, follow" />
+					<meta name="language" content="English" />
+					<meta charSet="UTF-8" />
+					<link rel="icon" href="/favicon.ico" />
+
+					<meta name="geo.region" content="IN-WB" />
+					<meta name="geo.placename" content="Kolkata, India" />
+					<meta name="geo.position" content="22.572645;88.363892" />
+					<meta name="ICBM" content="22.572645, 88.363892" />
+
+					<meta http-equiv="content-language" content="en" />
+				</Head>
+			</Head>
 			<style jsx>{`
 				// p {
 				// 	display: flex;
@@ -107,40 +149,6 @@ const Submissions = () => {
 						></Image>
 					</Link>
 				</p>
-
-				{/* <p className="submissions__text text text--normal">
-					After getting the acceptance e-mail of the Paper, the author needs to
-					submit the following agreement to the conference e-mail-
-					adcomsys@uem.edu.in. Otherwise, the accepted paper will not be
-					published in the conference proceedings. The agreements are given
-					below:-
-				</p> */}
-
-				{/* <p className="submissions__heading heading heading--3 mb--1">
-					Publishing Agreement Form(Copy Right Form):- Soon
-					<Link href="/authors/submissions">
-						<Image
-							className="download-icon"
-							src="/assets/icons/download.png"
-							alt="download-icon"
-							width={25}
-							height={25}
-						></Image>
-					</Link>
-				</p> */}
-				{/* <p className="submissions__heading heading heading--3 mb--1">
-					Permission Guideline:- Soon
-					<Link href="/authors/submissions">
-						<Image
-							className="download-icon"
-							src="/assets/icons/download.png"
-							alt="download-icon"
-							width={25}
-							height={25}
-						></Image>
-					</Link>
-				</p> */}
-
 				<p className="submissions__heading heading heading--2 heading--line my--2">
 					Mode of Presentation:-
 				</p>

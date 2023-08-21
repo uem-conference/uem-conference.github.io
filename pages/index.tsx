@@ -65,21 +65,13 @@ const HomePage = () => {
 				<meta property="og:image:alt" content="AdComSys Conference Logo" />
 				<meta property="og:locale" content="en_US" />
 
-				<meta name="twitter:card" content="saccomsys" />
-				<meta name="twitter:site" content="@adcomsysconf" />
-				<meta name="twitter:title" content="AdComSys Conference" />
-				<meta
-					name="twitter:description"
-					content="International Conference on Advanced Computing and Systems - AdComSys 2024"
-				/>
-
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 				<meta name="author" content="Ankur Halder" />
 				<meta name="robots" content="index, follow" />
 				<meta name="language" content="English" />
 				<meta charSet="UTF-8" />
-				<link rel="icon" href="../favicon.ico" />
+				<link rel="icon" href="/favicon.ico" />
 
 				<meta name="geo.region" content="IN-WB" />
 				<meta name="geo.placename" content="Kolkata, India" />
