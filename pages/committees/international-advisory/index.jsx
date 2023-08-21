@@ -4,45 +4,42 @@ import { Fragment } from "react";
 import { Heading } from "../../../components/pieces";
 import Image from "next/image";
 import Head from "next/head";
-const technicalProgramCommittee = require("../../../data/technical-program-committee");
-function TechnicalProgramCommittee() {
+const internationalAdvisoryCommittee = require("../../../data/international-advisory-committee");
+function InternationAdvisoryCommittee() {
 	useEffect(() => {
 		document.title =
-			"Technical Program Committee | Committees | " + process.env.app_name;
+			"International Advisory Committee | Committees | " + process.env.app_name;
 	}, []);
 	return (
 		<>
-			<Heading
-				text={"Technical Program Committee"}
-				class={"mb--2 invalid-selection"}
-			></Heading>
 			<Head>
-				<title>
-					Technical Program Committee | Committees | Your Conference Name
-				</title>
+				<title>International Advisory Committee | Committees</title>
 				<meta
 					name="description"
-					content="Learn about the Technical Program Committee for your conference."
+					content="Learn about the International Advisory Committee for your conference."
 				/>
 
 				<meta
 					property="og:title"
-					content="Technical Program Committee | Committees "
+					content="International Advisory Committee | Committees"
 				/>
 				<meta
 					property="og:description"
-					content="Learn about the Technical Program Committee for your conference."
+					content="Learn about the International Advisory Committee for your conference."
 				/>
 				<meta property="og:type" content="website" />
 				<meta
 					property="og:url"
-					content="https://adcomsys.vercel.app/committees/technical-program"
+					content="https://adcomsys.vercel.app/committees/international-advisory"
 				/>
 				<meta
 					property="og:image"
 					content="https://adcomsys.vercel.app/_next/image?url=%2Fassets%2FLogo.png&w=1920&q=75"
 				/>
-				<meta property="og:image:alt" content="Technical Program Committee" />
+				<meta
+					property="og:image:alt"
+					content="International Advisory Committee"
+				/>
 				<meta property="og:locale" content="en_US" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -59,12 +56,16 @@ function TechnicalProgramCommittee() {
 
 				<meta http-equiv="content-language" content="en" />
 			</Head>
-			<div className="technical-program-committee ">
+			<Heading
+				text={"International Advisory Committee"}
+				class={"mb--2 invalid-selection"}
+			></Heading>
+			<div className="technical-program-committee">
 				<div className="committee-table">
-					{technicalProgramCommittee.map((member, index) => {
+					{internationalAdvisoryCommittee.map((member, index) => {
 						return (
 							<Fragment key={member.name + member.affiliation}>
-								<p className="committee-table__field committee-table__name">
+								<p className="committee-table__field  committee-table__name">
 									<span className="committee-table__flag--conatiner">
 										<Image
 											src={`https://flagsapi.com/${member.country}/shiny/64.png`}
@@ -76,11 +77,11 @@ function TechnicalProgramCommittee() {
 									{member.name}
 								</p>
 								<p
-									className={`committee-table__affiliation committee-table__field ${
+									className={`committee-table__field committee-table__affiliation ${
 										index % 2 === 0
 											? "committee-table__affiliation--even"
 											: "committee-table__affiliation--odd"
-									} technical-program-committee__ontent`}
+									} technical-program-committee__conte`}
 								>
 									{member.affiliation}
 								</p>
@@ -97,4 +98,4 @@ function TechnicalProgramCommittee() {
 		</>
 	);
 }
-export default TechnicalProgramCommittee;
+export default InternationAdvisoryCommittee;

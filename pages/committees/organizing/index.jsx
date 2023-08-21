@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { Heading } from "../../../components/pieces";
+import Head from "next/head";
 const organisingCommittee = require("../../../data/organising-committee");
 function Organizing() {
 	useEffect(() => {
@@ -9,8 +10,49 @@ function Organizing() {
 	}, []);
 	return (
 		<>
+			<Head>
+				<title>Organizing Committee | Committees | Your Conference Name</title>
+				<meta
+					name="description"
+					content="Learn about the organizing committee of the conference and its members."
+				/>
+
+				<meta
+					property="og:title"
+					content="Organizing Committee | Committees "
+				/>
+				<meta
+					property="og:description"
+					content="Learn about the organizing committee of the conference and its members."
+				/>
+				<meta property="og:type" content="website" />
+				<meta
+					property="og:url"
+					content="https://adcomsys.vercel.app/committees/organizing"
+				/>
+				<meta
+					property="og:image"
+					content="https://adcomsys.vercel.app/_next/image?url=%2Fassets%2FLogo.png&w=1920&q=75"
+				/>
+				<meta property="og:image:alt" content="Your Conference Logo" />
+				<meta property="og:locale" content="en_US" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+				<meta name="author" content="Ankur Halder" />
+				<meta name="robots" content="index, follow" />
+				<meta name="language" content="English" />
+				<meta charSet="UTF-8" />
+				<link rel="icon" href="../favicon.ico" />
+
+				<meta name="geo.region" content="IN-WB" />
+				<meta name="geo.placename" content="Kolkata, India" />
+				<meta name="geo.position" content="22.572645;88.363892" />
+				<meta name="ICBM" content="22.572645, 88.363892" />
+
+				<meta http-equiv="content-language" content="en" />
+			</Head>
 			<Heading
-				text={"Organizing committee"}
+				text={"Organising Program Committee"}
 				class={"mb--2 invalid-selection"}
 			></Heading>
 			<div className="conference-details">
