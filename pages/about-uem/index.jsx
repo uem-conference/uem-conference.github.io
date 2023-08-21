@@ -3,13 +3,61 @@ import { useEffect } from "react";
 // import "./aboutuem.css";
 import { Heading } from "../../components/pieces";
 import Link from "next/link";
-
+import Head from "next/head";
 export default function AboutUem() {
 	useEffect(() => {
 		document.title = "About UEM | " + process.env.app_name;
 	}, []);
 	return (
 		<>
+			<Head>
+				<title>About UEM | Your Conference Name</title>
+				<meta
+					name="description"
+					content="Learn about University of Engineering & Management (UEM) and its vision, mission, and values."
+				/>
+
+				<meta property="og:title" content="About UEM | Your Conference Name" />
+				<meta
+					property="og:description"
+					content="Learn about University of Engineering & Management (UEM) and its vision, mission, and values."
+				/>
+				<meta property="og:type" content="website" />
+				<meta
+					property="og:url"
+					content="https://adcomsys.vercel.app/about-uem"
+				/>
+				<meta
+					property="og:image"
+					content="https://adcomsys.vercel.app/_next/image?url=%2Fassets%2FLogo.png&w=1920&q=75"
+				/>
+				<meta property="og:image:alt" content="UEM Logo" />
+				<meta property="og:locale" content="en_US" />
+
+				<meta name="twitter:card" content="summary" />
+				<meta name="twitter:site" content="@yourtwitterhandle" />
+				<meta name="twitter:title" content="About UEM | Your Conference Name" />
+				<meta
+					name="twitter:description"
+					content="Learn about University of Engineering & Management (UEM) and its vision, mission, and values."
+				/>
+
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+				<meta name="author" content="Ankur Halder" />
+				<meta name="robots" content="index, follow" />
+				<meta name="language" content="English" />
+				<meta charSet="UTF-8" />
+				<link rel="icon" href="../favicon.ico" />
+
+				<meta name="geo.region" content="IN-WB" />
+				<meta name="geo.placename" content="Kolkata, India" />
+				<meta name="geo.position" content="22.572645;88.363892" />
+				<meta name="ICBM" content="22.572645, 88.363892" />
+
+				<meta http-equiv="content-language" content="en" />
+			</Head>
+
 			<style jsx>{`
 				.about-uem {
 					background-image: var(--color-primary-light);
@@ -269,246 +317,10 @@ export default function AboutUem() {
 					</div>
 				</section>
 
-				{/* <section className="about-uem">
-					<div className="about-uem-content">
-						<h2 className="heading heading--2 sub-title">Recognition</h2>
-						<ul className=" text-2 text--normal list">
-							<li className="list-item">
-								University of Engineering &amp; Management (UEM) is a fully
-								government approved and UGC recognized University with the right
-								to confer degrees as per the sections 22 of the UGC Act and as
-								per UGC nomenclature of the degrees.
-							</li>
-							<li className="list-item">
-								Engineering &amp; Management courses approved by AICTE.
-							</li>
-							<li className="list-item">
-								University of Engineering &amp; Management (UEM) is a
-								full-fledged university and not a deemed university.
-							</li>
-							<li className="list-item">
-								University of Engineering &amp; Management (UEM) is recognized
-								by Ministry of HRD, Government of India.
-							</li>
-							<li className="list-item">
-								University of Engineering &amp; Management (UEM) has been
-								established by IEM Trust, Act no. XXV of 2014 has been notified
-								by Government notification.
-							</li>
-							<li className="list-item">Approved by Bar Council of India</li>
-						</ul>
-					</div>
-				</section>
-
-				<section className="about-uem">
-					<div className="about-uem-content">
-						<h2 className="heading heading--2 sub-title">Courses</h2>
-						<ul className=" text-2 text--normal list">
-							<li className="list-item">B.Tech</li>
-							<ul className="sub-list">
-								<li>
-									Computer Science &amp; Engineering (CSE), CSIT, CST, CSE
-									[Artificial Intelligence and Machine Learning], CSE [Internet
-									of Things and Cyber Security including BlockChain Technology]
-								</li>
-								<li>Electronics &amp; Communication Engineering (ECE)</li>
-								<li>Electrical Engineering (EE)</li>
-								<li>Mechanical Engineering (ME)</li>
-								<li>Biotechnology</li>
-							</ul>
-							<li className="list-item">
-								BBA (Bachelor of Business Administration)
-							</li>
-							<ul className="sub-list">
-								<li>Marketing</li>
-								<li>Human Resource</li>
-								<li>Finance</li>
-							</ul>
-							<li className="list-item">
-								MBA (Master of Business Administration)
-							</li>
-							<ul className="sub-list">
-								<li>Marketing</li>
-								<li>Human Resources</li>
-								<li>Finance</li>
-								<li>Business Analytics</li>
-							</ul>
-							<li className="list-item">BCA, BHM, BBA-LLB, MCA </li>
-						</ul>
-					</div>
-				</section>
-
-				<section className="about-uem">
-					<div className="about-uem-content">
-						<h2 className="heading heading--2 sub-title">Placements</h2>
-						<p className=" text-2 text--normal description">
-							Highest salary offers at UEM Kolkata: Rs. 72 Lakhs per annum.
-						</p>
-						<p className=" text-2 text--normal description">
-							All eligible students of all pass out batches of UEM Kolkata got 1
-							to 2 job offers on average.
-						</p>
-						<p className=" text-2 text--normal description">
-							Placement of UEM continues till the last student is offered a job.
-						</p>
-						<p className=" text-2 text--normal description">
-							Numerous number of companies visited UEM Kolkata and did campus
-							recruitment of the students.
-						</p>
-					</div>
-				</section>
-
-				<section className="about-uem">
-					<div className="about-uem-content">
-						<h2 className="heading heading--2 sub-title">Internships</h2>
-						<ul className=" text-2 text--normal list">
-							<li className="list-item">
-								Few companies – NTPC Ltd., WBSETCL, N.F. Railway, Damodar Valley
-								Corporation, Metal &amp; Steel Factory Ishapore and so on.
-							</li>
-							<li className="list-item">
-								Internship opportunities in all top reputed companies of the
-								country
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section className="about-uem">
-					<div className="about-uem-content">
-						<h2 className="heading heading--2 sub-title">Students’ projects</h2>
-						<ul className=" text-2 text--normal list">
-							<li className="list-item">
-								Manufacturing Tesla Coil for Wireless Power transmission.
-							</li>
-							<li className="list-item">
-								Image Capturing and Maneuvering Drone.
-							</li>
-							<li className="list-item">
-								Manufacturing Electric Bike, Formula 1 Car, Electric Go-Kart.
-							</li>
-							<li className="list-item">Development of Surveillance Drone.</li>
-							<li className="list-item">
-								IOT Based Solar Energy-Controlled Cooling System for Vehicles.
-							</li>
-							<li className="list-item">
-								Design, Simulation and development of a gorlov turbine.
-							</li>
-							<li className="list-item">
-								Three Dimensional wind, airspeed calculation, and prediction
-								method for aerial drones using deep learning.
-							</li>
-							<li className="list-item">
-								Localization method using integrated sensors in autonomous
-								scrubbing robots for industrial cleaning.
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section className="about-uem">
-					<div className="about-uem-content">
-						<h2 className="heading heading--2 sub-title">Library</h2>
-						<ul className=" text-2 text--normal list">
-							<li className="list-item">Open 24x7x365 hours</li>
-							<li className="list-item">
-								Online Public Access Catalog (OPAC) is available through which
-								user search in library catalog to locate books.
-							</li>
-							<li className="list-item">
-								Subscription to internationally renowned digital libraries like
-								IEEE, DELNET, JGATE, EBSCO, Springer, Elsvier- Scopus, IEI, NDL
-								(National Digital Library), India Business Insight (IBI),
-								Magzter, SSC Online case finder.
-							</li>
-							<li className="list-item">
-								Library operates through Koha ILM software.
-							</li>
-							<li className="list-item">
-								Well-equipped Reading room for students & faculty members
-								protected with CCTV security systems & high-speed internet
-								facilities.
-							</li>
-							<li className="list-item">
-								Availability of MOOCs like NPTEL, Swayam, ePG, Pathshala etc.
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section className="about-uem">
-					<div className="about-uem-content">
-						<h2 className="heading heading--2 sub-title">Student Chapters</h2>
-						<ul className=" text-2 text--normal list">
-							<li className="list-item">IEEE Antenna and Propagation</li>
-							<li className="list-item">IEEE Communication</li>
-							<li className="list-item">
-								Association for Computing Machinery (ACM)
-							</li>
-							<li className="list-item">Computer Society Of India (CSI)</li>
-							<li className="list-item">Microbiologists Society</li>
-							<li className="list-item">ISHRAE (Mechanical+EE)</li>
-							<li className="list-item">Indian Plumbing Association</li>
-							<li className="list-item">
-								Institution of Electronics and Telecommunication Engineers
-							</li>
-							<li className="list-item">UEM Toastmasters International club</li>
-							<li className="list-item">UEM Model United Nations</li>
-							<li className="list-item">OPTICA Student Chapter</li>
-							<li className="list-item">SPIE Chapter</li>
-							<li className="list-item">CODECHEF Student Chapter</li>
-							<li className="list-item">SPIE – OSA Students’ Chapter</li>
-						</ul>
-					</div>
-				</section>
-
-				<section className="about-uem">
-					<div className="about-uem-content">
-						<h2 className="heading heading--2 sub-title">Faculty</h2>
-						<p className=" text-2 text--normal description">
-							Our faculty consisting of professors from renowned institutes such
-							as IIT Kharagpur and IIM Kolkata.
-						</p>
-						<p className=" text-2 text--normal description">
-							The educational group is a true realm of the finest faculty
-							members who have the spirit and standards to bring the best out of
-							their students.
-						</p>
-
-						<h2 className="heading heading--2 sub-title">Startups</h2>
-						<p className=" text-2 text--normal description">
-							University has got an existing very prominent incubation center
-							from where students are supported to start-up with their own
-							industry.
-						</p>
-						<p className=" text-2 text--normal description">
-							Notable start-ups from UEM Kolkata are RMB Technologies,
-							Robostalkers Automation and Tech. Solutions, Midnight Reapers,
-							Thunder Hound, Flappify, Better India, Illicium motors Pvt. Ltd.
-						</p>
-
-						<h2 className="heading heading--2 sub-title">
-							Online Study Materials
-						</h2>
-						<ul className=" text-2 text--normal list">
-							<li className="list-item">
-								Adopted to the most modern way of international teaching namely
-								flip classes.
-							</li>
-							<li className="list-item">
-								All lecture videos are available in the University’s media
-								channel Gymkhana TV.
-							</li>
-							<li className="list-item">
-								All lecture notes are available online. Students come prepared
-								to classes from lecture notes and videos as stated above and
-								they discuss application-oriented studies in class hours, which
-								leads to better industry acceptable engineers/managers.
-							</li>
-						</ul>
-					</div>
-				</section> */}
-
-<p className=" text-2 text--normal description">To learn more about UEM, please visit <Link href={"https://uem.edu.in/"}>our site</Link> </p>
+				<p className=" text-2 text--normal description">
+					To learn more about UEM, please visit{" "}
+					<Link href={"https://uem.edu.in/"}>our site</Link>{" "}
+				</p>
 			</div>
 		</>
 	);
