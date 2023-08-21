@@ -40,20 +40,19 @@ function Organizing() {
 
 				<meta name="author" content="Ankur Halder" />
 				<meta name="robots" content="index, follow" />
-				<meta name="language" content="English" />
-				<meta charSet="UTF-8" />
+				<meta name="language" content="en" />
+				<meta charset="UTF-8" />
 				<link rel="icon" href="/favicon.ico" />
 
 				<meta name="geo.region" content="IN-WB" />
 				<meta name="geo.placename" content="Kolkata, India" />
 				<meta name="geo.position" content="22.572645;88.363892" />
 				<meta name="ICBM" content="22.572645, 88.363892" />
-
-				<meta http-equiv="content-language" content="en" />
 			</Head>
 			<Heading
 				text={"Organising Program Committee"}
 				class={"mb--2 invalid-selection"}
+				element="h1"
 			></Heading>
 			<div className="conference-details">
 				{organisingCommittee.map((category) => {
@@ -62,9 +61,9 @@ function Organizing() {
 							key={Math.random()}
 							className="organizing-committee__section"
 						>
-							<h1 className="organizing-committee__title heading heading--3">
+							<h2 className="organizing-committee__title heading heading--3">
 								{category.title}
-							</h1>
+							</h2>
 							<div className="organizing-committee__grid">
 								{category.data.map((individual) => {
 									return (

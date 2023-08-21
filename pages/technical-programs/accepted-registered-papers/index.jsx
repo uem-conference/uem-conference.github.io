@@ -45,25 +45,24 @@ function AcceptedAndRegisteredPapers() {
 
 				<meta name="author" content="Ankur Halder" />
 				<meta name="robots" content="index, follow" />
-				<meta name="language" content="English" />
-				<meta charSet="UTF-8" />
+				<meta name="language" content="en" />
+				<meta charset="UTF-8" />
 				<link rel="icon" href="/favicon.ico" />
 
 				<meta name="geo.region" content="IN-WB" />
 				<meta name="geo.placename" content="Kolkata, India" />
 				<meta name="geo.position" content="22.572645;88.363892" />
 				<meta name="ICBM" content="22.572645, 88.363892" />
-
-				<meta http-equiv="content-language" content="en" />
 			</Head>
 			<Heading
 				text={"Accepted And Registered Papers"}
 				class={"mb--2"}
+				element="h1"
 			></Heading>
 			<div className="content-container">
-				<h3 className=" heading heading--2 sub-title">
+				<h2 className=" heading heading--2 sub-title">
 					<center>To be updated</center>
-				</h3>
+				</h2>
 			</div>
 		</>
 	);

@@ -35,16 +35,14 @@ const CallForPapers = () => {
 
 				<meta name="author" content="Ankur Halder" />
 				<meta name="robots" content="index, follow" />
-				<meta name="language" content="English" />
-				<meta charSet="UTF-8" />
+				<meta name="language" content="en" />
+				<meta charset="UTF-8" />
 				<link rel="icon" href="/favicon.ico" />
 
 				<meta name="geo.region" content="IN-WB" />
 				<meta name="geo.placename" content="Kolkata, India" />
 				<meta name="geo.position" content="22.572645;88.363892" />
 				<meta name="ICBM" content="22.572645, 88.363892" />
-
-				<meta http-equiv="content-language" content="en" />
 			</Head>
 
 			<style jsx>{`
@@ -91,6 +89,7 @@ const CallForPapers = () => {
 			<Heading
 				text={"Call for papers"}
 				class={"mb--2 invalid-selection"}
+				element="h1"
 			></Heading>
 			<div className="btn__container">
 				<p>DOWNLOAD CALL FOR PAPERS / TOPICS</p>
@@ -107,9 +106,9 @@ const CallForPapers = () => {
 				style={{ "--num-col": "2" }}
 			>
 				<div className="call-for-papers__grid" style={{ "--num-col": "1" }}>
-					<h1 className="call-for-papers__track" style={{ "--colspan": "1/2" }}>
+					<h2 className="call-for-papers__track" style={{ "--colspan": "1/2" }}>
 						{callForPaperList[0].title}
-					</h1>
+					</h2>
 					{callForPaperList[0].subtracks.map((subtrack) => {
 						return (
 							<Fragment key={Math.random()}>
@@ -117,12 +116,12 @@ const CallForPapers = () => {
 									className="call-for-papers__column"
 									style={{ "--num-col": "2" }}
 								>
-									<h2
+									<h3
 										className="call-for-papers__row call-for-papers__subtrack"
 										style={{ "--colspan": "1/3" }}
 									>
 										{subtrack.title}
-									</h2>
+									</h3>
 									<div
 										className="call-for-papers__list"
 										style={{
@@ -154,9 +153,9 @@ const CallForPapers = () => {
 				</div>
 
 				<div className="call-for-papers__grid" style={{ "--num-col": "3" }}>
-					<h1 className="call-for-papers__track" style={{ "--colspan": "1/4" }}>
+					<h2 className="call-for-papers__track" style={{ "--colspan": "1/4" }}>
 						{callForPaperList[1].title}
-					</h1>
+					</h2>
 
 					{callForPaperList[1].subtracks.map((subtrack) => {
 						return (
@@ -165,9 +164,9 @@ const CallForPapers = () => {
 									className="call-for-papers__column"
 									style={{ "--num-col": "1" }}
 								>
-									<h2 className="call-for-papers__subtrack">
+									<h3 className="call-for-papers__subtrack">
 										{subtrack.title}
-									</h2>
+									</h3>
 									<div
 										className="call-for-papers__list"
 										style={{ "--num-rows": `${subtrack.subtrackData.length}` }}

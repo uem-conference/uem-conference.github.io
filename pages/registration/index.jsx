@@ -35,16 +35,14 @@ const RegistrationPage = () => {
 
 				<meta name="author" content="Ankur Halder" />
 				<meta name="robots" content="index, follow" />
-				<meta name="language" content="English" />
-				<meta charSet="UTF-8" />
+				<meta name="language" content="en" />
+				<meta charset="UTF-8" />
 				<link rel="icon" href="/favicon.ico" />
 
 				<meta name="geo.region" content="IN-WB" />
 				<meta name="geo.placename" content="Kolkata, India" />
 				<meta name="geo.position" content="22.572645;88.363892" />
 				<meta name="ICBM" content="22.572645, 88.363892" />
-
-				<meta http-equiv="content-language" content="en" />
 			</Head>
 			<style jsx>{`
 				.registration-page {
@@ -77,6 +75,7 @@ const RegistrationPage = () => {
 			<Heading
 				text={"Registration Policy"}
 				class={"mb--2 invalid-selection"}
+				element="h1"
 			></Heading>
 			<div className="registration-page content-container">
 				<p className="text text--normal mb--1">
@@ -159,12 +158,12 @@ const RegistrationPage = () => {
 					</strong>
 				</p>
 
-				<h4
+				<h2
 					className="heading heading--3 mb--1"
 					style={{ textTransform: "uppercase" }}
 				>
 					Paper Registration Link
-				</h4>
+				</h2>
 
 				<p className="text text--normal mb--1">
 					To register your Paper please{" "}
@@ -181,12 +180,12 @@ const RegistrationPage = () => {
 					treated as invalid.
 				</p>
 
-				<h4
+				<h3
 					className="heading heading--3 mb--1"
 					style={{ textTransform: "uppercase" }}
 				>
 					Cancellation Policy
-				</h4>
+				</h3>
 
 				<p className="text text--normal mb--1">
 					There will be no cancellation after Registration

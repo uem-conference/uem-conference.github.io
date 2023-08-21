@@ -45,16 +45,13 @@ const ContactPage = () => {
 
 				<meta name="author" content="Ankur Halder" />
 				<meta name="robots" content="index, follow" />
-				<meta name="language" content="English" />
-				<meta charSet="UTF-8" />
+				<meta name="language" content="en" />
+				<meta charset="UTF-8" />
 				<link rel="icon" href="/favicon.ico" />
-
 				<meta name="geo.region" content="IN-WB" />
 				<meta name="geo.placename" content="Kolkata, India" />
 				<meta name="geo.position" content="22.572645;88.363892" />
 				<meta name="ICBM" content="22.572645, 88.363892" />
-
-				<meta http-equiv="content-language" content="en" />
 			</Head>
 			<style jsx>{`
 				.contact__grid {
@@ -124,7 +121,11 @@ const ContactPage = () => {
 					}
 				}
 			`}</style>
-			<Heading text={"Contact"} className={"mb--2 invalid-selection"}></Heading>
+			<Heading
+				text={"Contact"}
+				className={"mb--2 invalid-selection"}
+				element="h1"
+			></Heading>
 			<div className="contact__grid">
 				<div className="contact__details">
 					<p className="contact__heading text text--normal">

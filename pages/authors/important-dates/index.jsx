@@ -33,15 +33,13 @@ const index = () => {
 				<meta name="author" content="Ankur Halder" />
 				<meta name="robots" content="index, follow" />
 				<meta name="language" content="English" />
-				<meta charSet="UTF-8" />
-				<link rel="icon" href="/favicon.ico" />
+				<meta name="language" content="en" />
+				<meta charset="UTF-8" />
 
 				<meta name="geo.region" content="IN-WB" />
 				<meta name="geo.placename" content="Kolkata, India" />
 				<meta name="geo.position" content="22.572645;88.363892" />
 				<meta name="ICBM" content="22.572645, 88.363892" />
-
-				<meta http-equiv="content-language" content="en" />
 			</Head>
 
 			<style jsx>{`
@@ -162,9 +160,9 @@ const index = () => {
 			`}</style>
 
 			<div className="homepage__deadlines">
-				<h3 className="heading heading--3 homepage__deadlines__heading">
+				<h2 className="heading heading--3 homepage__deadlines__heading">
 					Important Deadlines
-				</h3>
+				</h2>
 				<ul>
 					{importantDeadlines.map((data) => {
 						return (

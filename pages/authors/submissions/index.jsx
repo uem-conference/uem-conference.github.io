@@ -41,16 +41,14 @@ const Submissions = () => {
 
 					<meta name="author" content="Ankur Halder" />
 					<meta name="robots" content="index, follow" />
-					<meta name="language" content="English" />
-					<meta charSet="UTF-8" />
+					<meta name="language" content="en" />
+					<meta charset="UTF-8" />
 					<link rel="icon" href="/favicon.ico" />
 
 					<meta name="geo.region" content="IN-WB" />
 					<meta name="geo.placename" content="Kolkata, India" />
 					<meta name="geo.position" content="22.572645;88.363892" />
 					<meta name="ICBM" content="22.572645, 88.363892" />
-
-					<meta http-equiv="content-language" content="en" />
 				</Head>
 			</Head>
 			<style jsx>{`
@@ -61,7 +59,11 @@ const Submissions = () => {
 				// }
 			`}</style>
 
-			<Heading text={"INFORMATION FOR AUTHORS"} class={"my--2"}></Heading>
+			<Heading
+				text={"INFORMATION FOR AUTHORS"}
+				class={"my--2"}
+				element="h1"
+			></Heading>
 			<div className="submissions content-container">
 				<p className="submissions__heading heading heading--2 heading--line my--2">
 					GUIDELINES FOR SUBMISSION:
@@ -157,12 +159,8 @@ const Submissions = () => {
 					Mode of presentation – AdComSys2524 will be held in HYBRID MODE where
 					authors shall present their papers either in physical mode at the
 					conference venue or through ONLINE as per their preference and
-					convenience. &nbsp;
-					{/* <span>The proceedings and certificates will be sent to the
-					corresponding authors through the post in case of an online
-					presentation.</span> */}
-					However, all matters related to publication and indexing will remain
-					unchanged.
+					convenience. &nbsp; However, all matters related to publication and
+					indexing will remain unchanged.
 				</p>
 
 				<p className="submissions__heading heading heading--3 mb--1">

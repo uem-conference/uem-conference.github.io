@@ -1,15 +1,10 @@
 /* eslint-disable @next/next/next-script-for-ga */
 /* eslint-disable react/no-unescaped-entities */
-// import Head from 'next/head'
-// import { Inter } from 'next/font/google'
 import { Carousel, Heading } from "@/components/pieces";
-import styles from "@/styles/Home.module.css";
 import { useEffect } from "react";
 import { importantDeadlines } from "../data/importantDates";
 import FlagCounter from "../components/pieces/FlagCounter/FlagCounter";
-// const inter = Inter({ subsets: ['latin'] })
 import Head from "next/head";
-import Script from "next/script";
 const HomePage = () => {
 	// code to check common names
 	const uniqueInternationalAdvisoryCommittee = require("../data/international-advisory-committee");
@@ -33,7 +28,7 @@ const HomePage = () => {
 		uniqueTechnicalProgramCommittee
 	);
 
-	console.log(commonNames);
+	// console.log(commonNames);
 	// end of common code check function
 	useEffect(() => {
 		document.title = "Home | " + process.env.app_name;
@@ -48,7 +43,7 @@ const HomePage = () => {
 				/>
 				<meta
 					name="keywords"
-					content="AdComSys, conference, computing, systems, AI, IoT, cybersecurity, blockchain , adcomsys 2024"
+					content="AdComSys, conference, computing, systems, AI, IoT, cybersecurity, blockchain, adcomsys 2024"
 				/>
 
 				<meta property="og:title" content="AdComSys Conference" />
@@ -69,7 +64,7 @@ const HomePage = () => {
 
 				<meta name="author" content="Ankur Halder" />
 				<meta name="robots" content="index, follow" />
-				<meta name="language" content="English" />
+				<meta name="language" content="en" />
 				<meta charSet="UTF-8" />
 				<link rel="icon" href="/favicon.ico" />
 
@@ -77,25 +72,7 @@ const HomePage = () => {
 				<meta name="geo.placename" content="Kolkata, India" />
 				<meta name="geo.position" content="22.572645;88.363892" />
 				<meta name="ICBM" content="22.572645, 88.363892" />
-
-				<meta http-equiv="content-language" content="en" />
 				<meta name="seobility" content="0e429993c89cc5d4d1885df786ee8c6f" />
-				<script type="application/ld+json">
-					{JSON.stringify({
-						"@context": "https://adcomsys.vercel.app/",
-						"@type": "adcomsys",
-						name: "AdComSys Conference",
-						url: "https://adcomsys.vercel.app/",
-						logo: "https://adcomsys.vercel.app/_next/image?url=%2Fassets%2FLogo.png&w=1920&q=75",
-						description:
-							"International Conference on Advanced Computing and Systems",
-						contactPoint: {
-							"@type": "ContactPoint",
-							telephone: "+919748903490",
-							contactType: "customer support",
-						},
-					})}
-				</script>
 			</Head>
 
 			<style jsx>{`
@@ -275,8 +252,8 @@ const HomePage = () => {
 						<Heading
 							text={"About AdComSys"}
 							class={"homepage__heading my--2"}
+							element="h1"
 						></Heading>
-						{/* <h2 className="heading heading--2 homepage__heading">About ICACS</h2> */}
 						<p className="homepage__text text text--normal">
 							The International Conference on Advanced Computing and Systems
 							(AdComSys) will foster an excellent international forum for
@@ -324,16 +301,13 @@ const HomePage = () => {
 								All accepted papers will be published by Scopus Indexed Springer
 								Nature book series "Studies in Computational Intelligence"
 								(Approval Pending).
-								{/* <span>, named Smart Innovation, Systems and
-								Technologies(SIST) </span>  */}
-								{/* (APPROVAL PENDING). */}
 							</p>
 						</div>
 
 						<div className="homepage__deadlines">
-							<h3 className="heading heading--3 homepage__deadlines__heading">
+							<h2 className="heading heading--3 homepage__deadlines__heading">
 								Important Deadlines
-							</h3>
+							</h2>
 							<ul>
 								{importantDeadlines.map((data) => {
 									return (
