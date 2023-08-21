@@ -72,10 +72,6 @@ const HomePage = () => {
 				<meta name="geo.placename" content="Kolkata, India" />
 				<meta name="geo.position" content="22.572645;88.363892" />
 				<meta name="ICBM" content="22.572645, 88.363892" />
-				<meta
-					name="seobility"
-					content="967cce2c62e87c0333e1a69b04f60798"
-				></meta>
 			</Head>
 
 			<style jsx>{`
