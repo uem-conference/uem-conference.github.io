@@ -79,7 +79,7 @@ const HomePage = () => {
 				<meta name="ICBM" content="22.572645, 88.363892" />
 
 				<meta http-equiv="content-language" content="en" />
-
+				<meta name="seobility" content="0e429993c89cc5d4d1885df786ee8c6f" />
 				<script type="application/ld+json">
 					{JSON.stringify({
 						"@context": "https://adcomsys.vercel.app/",
