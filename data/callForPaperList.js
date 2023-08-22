@@ -172,8 +172,6 @@ const callForPaperList = [
           "IoT in Everything",
           "AIIoT",
           "Industry 4.0",
-
-          
         ],
       },
       {
