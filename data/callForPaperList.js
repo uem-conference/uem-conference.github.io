@@ -147,12 +147,12 @@ const callForPaperList = [
           "Generative Models",
           "Generative Adversarial Network",
           "Soft Computing",
-          "NLP-basd Smart Systems",
+          "NLP-based Smart Systems",
           "Robotics Systems",
           "Data Analytics Systems",
           "Big Data",
           "Data Mining",
-          "Automaton"
+          "Automation"
 
           
         ],
