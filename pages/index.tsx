@@ -298,8 +298,7 @@ const HomePage = () => {
 							></Heading>
 
 							<p className="homepage__text text text--normal">
-								All accepted papers will be published by Scopus Indexed Springer
-								Nature book series "Studies in Computational Intelligence"
+								All accepted papers will be published by Springer Book Series
 								(Approval Pending).
 							</p>
 						</div>

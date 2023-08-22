@@ -128,8 +128,8 @@ const Submissions = () => {
 					</Link>
 				</p>
 				<p className="submissions__heading heading heading--3 mb--1">
-					Details can also be found in the Call for Papers: Soon
-					<Link href="/authors/submissions">
+					Details can also be found in the Call for Papers:-
+					<Link href={"/assets/downloads/Call-For-Papers.pdf"}>
 						<Image
 							className="download-icon"
 							src="/assets/icons/download.png"
@@ -140,8 +140,8 @@ const Submissions = () => {
 					</Link>
 				</p>
 				<p className="submissions__heading heading heading--3 mb--1">
-					To download Conference Brochure:- Soon
-					<Link href="/authors/submissions">
+					To download Conference Brochure:-
+					<Link href={"/assets/downloads/AdComSys 2024 Brochure.pdf"}>
 						<Image
 							className="download-icon"
 							src="/assets/icons/download.png"
