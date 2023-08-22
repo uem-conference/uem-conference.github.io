@@ -298,8 +298,8 @@ const HomePage = () => {
 							></Heading>
 
 							<p className="homepage__text text text--normal">
-								All accepted papers will be published by Springer Book Series
-								(Approval Pending).
+								All accepted papers will be published by only Springer Book
+								Series (Approval Pending).
 							</p>
 						</div>
 
