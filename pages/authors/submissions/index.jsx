@@ -80,7 +80,7 @@ const Submissions = () => {
 					authors must submit the paper without including their names and
 					affiliation. If you are new to Conference Management Toolkit (CMT),
 					please visit&nbsp;
-					<a href="https://cmt3.research.microsoft.com/About">this page.</a>
+					<a href="https://cmt3.research.microsoft.com/AdComSys2024">this page.</a>
 				</p>
 				<p className="submissions__text text text--normal">
 					The organizers of AdComSys 2024 are strict about Plagiarism. The
@@ -164,8 +164,8 @@ const Submissions = () => {
 				</p>
 
 				<p className="submissions__heading heading heading--3 mb--1">
-					PPT Template of AdComSYs 2024:- Soon
-					<Link href="/authors/submissions">
+					PPT Template of AdComSYs 2024:- Will Be Provided Soon
+					{/* <Link href="/authors/submissions">
 						<Image
 							className="download-icon"
 							src="/assets/icons/download.png"
@@ -173,7 +173,7 @@ const Submissions = () => {
 							width={25}
 							height={25}
 						></Image>
-					</Link>
+					</Link> */}
 				</p>
 
 				<p className="submissions__heading heading heading--2 heading--line my--2">
