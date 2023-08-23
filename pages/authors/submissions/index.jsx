@@ -78,9 +78,12 @@ const Submissions = () => {
 					for the submission link. All manuscripts will be double-blind reviewed
 					for technical content and scope by a technical program committee. The
 					authors must submit the paper without including their names and
-					affiliation. If you are new to Conference Management Toolkit (CMT),
+					affiliation.
+					{/* If you are new to Conference Management Toolkit (CMT),
 					please visit&nbsp;
-					<a href="https://cmt3.research.microsoft.com/AdComSys2024">this page.</a>
+					<a href="https://cmt3.research.microsoft.com/AdComSys2024">
+						this page.
+					</a> */}
 				</p>
 				<p className="submissions__text text text--normal">
 					The organizers of AdComSys 2024 are strict about Plagiarism. The
@@ -104,7 +107,7 @@ const Submissions = () => {
 				</p>
 
 				<p className="submissions__heading heading heading--3 mb--1">
-					Template in Microsoft Word (US Letter):-
+					The word template is available at :-
 					<Link href={"/assets/downloads/Word+Template.zip"}>
 						<Image
 							className="download-icon"
@@ -115,7 +118,7 @@ const Submissions = () => {
 						></Image>
 					</Link>
 				</p>
-				<p className="submissions__heading heading heading--3 mb--1">
+				{/* <p className="submissions__heading heading heading--3 mb--1">
 					LaTeX format:-{" "}
 					<Link href={"/assets/downloads/LaTex+Package.zip"}>
 						<Image
@@ -126,7 +129,7 @@ const Submissions = () => {
 							height={25}
 						></Image>
 					</Link>
-				</p>
+				</p> */}
 				<p className="submissions__heading heading heading--3 mb--1">
 					Details can also be found in the Call for Papers:-
 					<Link href={"/assets/downloads/Call-For-Papers.pdf"}>
