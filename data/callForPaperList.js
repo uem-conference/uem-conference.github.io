@@ -94,7 +94,7 @@ const callForPaperList = [
     title: "Track 1. Advanced Computing",
     subtracks: [
       {
-        title: "Emerging Computing",
+        title: "Track 1: Emerging Computing",
         subtrackData: [
           [
             "Cloud Computing",
@@ -133,7 +133,7 @@ const callForPaperList = [
     title: "Track 2. Advanced Systems",
     subtracks: [
       {
-        title: "AI Systems",
+        title: "Track 2: AI Systems",
         subtrackData: [
           "Intelligent Systems",
           "AI with Robotics",
@@ -158,7 +158,7 @@ const callForPaperList = [
         ],
       },
       {
-        title: "IoT Systems",
+        title: "Track 3: IoT Systems",
         subtrackData: [
           "IoT in Healthcare",
           "IoT in Vehicular Network",
@@ -175,7 +175,7 @@ const callForPaperList = [
         ],
       },
       {
-        title: "Cyber Security Systems and Blockchain",
+        title: "Track 4: Cyber Security Systems and Blockchain",
         subtrackData: [
           "Blockchain Authentication",
           "Cryptocurrency",

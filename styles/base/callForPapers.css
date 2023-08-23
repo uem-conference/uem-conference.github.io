@@ -20,11 +20,12 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
+    text-align: center;
     color: white;
     background-color: var(--color-primary);
     grid-column: var(--colspan);
-    --height: 5rem;
+    --height: 8rem;
     max-height: var(--height);
     height: var(--height);
 }
