@@ -106,10 +106,7 @@ const Submissions = () => {
 				</p>
 
 				<p className="submissions__heading heading heading--3 mb--1">
-					Prospective authors are invited to submit manuscripts reporting
-					original unpublished research and recent developments in the topics
-					related to the SCOPE of the conference. The word template
-					is available at:-
+					The word template is available at :-
 					<Link href={"/assets/downloads/Word+Template.zip"}>
 						<Image
 							className="download-icon"
@@ -120,7 +117,7 @@ const Submissions = () => {
 						></Image>
 					</Link>
 				</p>
-				<p className="submissions__heading heading heading--3 mb--1">
+				{/* <p className="submissions__heading heading heading--3 mb--1">
 					LaTeX format:-{" "}
 					<Link href={"/assets/downloads/LaTex+Package.zip"}>
 						<Image
@@ -131,7 +128,7 @@ const Submissions = () => {
 							height={25}
 						></Image>
 					</Link>
-				</p>
+				</p> */}
 				<p className="submissions__heading heading heading--3 mb--1">
 					Details can also be found in the Call for Papers:-
 					<Link href={"/assets/downloads/Call-For-Papers.pdf"}>
