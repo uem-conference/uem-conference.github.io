@@ -84,7 +84,7 @@ const organisingCommittee = [
 	},
 	// Co-Convener
 	{
-		title: "Co-Convener",
+		title: "Co-Conveners",
 		data: [
 			{
 				name: "Prof. Dr. Subhalaxmi Chakraborty",
