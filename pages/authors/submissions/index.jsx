@@ -78,11 +78,12 @@ const Submissions = () => {
 					for the submission link. All manuscripts will be double-blind reviewed
 					for technical content and scope by a technical program committee. The
 					authors must submit the paper without including their names and
-					affiliation. If you are new to Conference Management Toolkit (CMT),
+					affiliation.
+					{/* If you are new to Conference Management Toolkit (CMT),
 					please visit&nbsp;
 					<a href="https://cmt3.research.microsoft.com/AdComSys2024">
 						this page.
-					</a>
+					</a> */}
 				</p>
 				<p className="submissions__text text text--normal">
 					The organizers of AdComSys 2024 are strict about Plagiarism. The
