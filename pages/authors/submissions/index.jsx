@@ -80,7 +80,9 @@ const Submissions = () => {
 					authors must submit the paper without including their names and
 					affiliation. If you are new to Conference Management Toolkit (CMT),
 					please visit&nbsp;
-					<a href="https://cmt3.research.microsoft.com/AdComSys2024">this page.</a>
+					<a href="https://cmt3.research.microsoft.com/AdComSys2024">
+						this page.
+					</a>
 				</p>
 				<p className="submissions__text text text--normal">
 					The organizers of AdComSys 2024 are strict about Plagiarism. The
@@ -104,7 +106,10 @@ const Submissions = () => {
 				</p>
 
 				<p className="submissions__heading heading heading--3 mb--1">
-					Template in Microsoft Word (US Letter):-
+					Prospective authors are invited to submit manuscripts reporting
+					original unpublished research and recent developments in the topics
+					related to the SCOPE of the conference. The word template
+					is available at:-
 					<Link href={"/assets/downloads/Word+Template.zip"}>
 						<Image
 							className="download-icon"
