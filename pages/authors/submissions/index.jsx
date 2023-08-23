@@ -101,9 +101,7 @@ const Submissions = () => {
 				</p>
 
 				<p className="submissions__text text text--normal">
-					Prospective authors are invited to submit manuscripts reporting
-					original unpublished research and recent developments in the topics
-					related to the SCOPE of the conference.
+				Prospective authors are invited to submit manuscripts at <a href="https://cmt3.research.microsoft.com/AdComSys2024">https://cmt3.research.microsoft.com/AdComSys2024</a> reporting original unpublished research and recent developments in the topics related to the SCOPE of the conference.
 				</p>
 
 				<p className="submissions__heading heading heading--3 mb--1">
