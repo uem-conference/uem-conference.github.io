@@ -174,14 +174,6 @@ const organisingCommittee = [
 				organization: "University of Engineering and Management Kolkata, India",
 			},
 			{
-				name: "Prof. Subha Ghosh",
-				organization: "University of Engineering and Management Kolkata, India",
-			},
-			{
-				name: "Prof. Poly Sil Sen",
-				organization: "University of Engineering and Management Kolkata, India",
-			},
-			{
 				name: "Prof. Pradipta Sarkar",
 				organization: "University of Engineering and Management Kolkata, India",
 			},
