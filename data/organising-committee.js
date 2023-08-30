@@ -166,7 +166,7 @@ const organisingCommittee = [
 				organization: "University of Engineering and Management Kolkata, India",
 			},
 			{
-				name: "Prof. Prasenjit Das",
+				name: "Prof. Prasenjit Kumar Das",
 				organization: "University of Engineering and Management Kolkata, India",
 			},
 			{
