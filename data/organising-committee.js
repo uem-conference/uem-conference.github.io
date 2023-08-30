@@ -55,6 +55,11 @@ const organisingCommittee = [
 		title: "General Chair",
 		data: [
 			{
+				name: "Prof. Dr. Maumita Chakraborty",
+				organization:
+					"Department of Computer Science and Technology & Computer Science and Information Technology, University of Engineering and Management Kolkata",
+			},
+			{
 				name: "Prof. Dr. Weiping Ding",
 				organization:
 					"Deputy Dean of School of Information Science and Technology, Nantong University, Nantong, Jiangsu, China",
@@ -64,14 +69,9 @@ const organisingCommittee = [
 				organization:
 					"Department of Computer Science & Technology, Women's Polytechnic, Chandernagore, Government of West Bengal, Chandannagar, Hooghly, West Bengal, India",
 			},
-			{
-				name: "Prof. Dr. Maumita Chakraborty",
-				organization:
-					"Department of Computer Science and Technology & Computer Science and Information Technology, University of Engineering and Management Kolkata",
-			},
 		],
 	},
-	
+
 	// Convener
 	{
 		title: "Convener",
@@ -141,8 +141,7 @@ const organisingCommittee = [
 		data: [
 			{
 				name: "Mr. Indraneel Banerjee",
-				organization:
-					"University of Engineering and Management Kolkata",
+				organization: "University of Engineering and Management Kolkata",
 			},
 		],
 	},
