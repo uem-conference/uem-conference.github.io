@@ -307,7 +307,7 @@ const HomePage = () => {
 								All accepted and presented papers will be published by the Web
 								of Science (WoS) indexed Springer Nature Book Series "Algorithms
 								for Intelligent Systems"
-								<a href="https://www.springer.com/series/16171">
+								<a target="_blank" href="https://www.springer.com/series/16171">
 									(https://www.springer.com/series/16171)
 								</a>
 							</p>
