@@ -72,15 +72,17 @@
 .chat-panel .chat-title h4 {
   font-family: var(--font-tektur);
   font-size: var(--font-10);
-  color: var(--black);
+  color: black;
   font-weight: 500;
   letter-spacing: 2px;
 }
 .chat-panel .chat-title .close-button {
   position: relative;
+  background: transparent;
   cursor: pointer;
   width: 30px;
   height: 30px;
+  border: none;
 }
 .chat-panel .messages {
   flex-grow: 1;
@@ -102,8 +104,8 @@
   font-size: 16px;
 }
 .chat-panel .messages .messages-content .message-personal {
-  background: var(--primary-color-1);
-  color: var(--white);
+  background: var(--color-primary);
+  color: white;
   align-self: flex-end;
 }
 .chat-panel .message-box {
@@ -137,13 +139,14 @@
 }
 .chat-panel .message-box .message-submit {
   position: relative;
-  background: #007bff;
+  background: var(--color-primary-light);
   height: 30px;
   width: 30px;
   border-radius: 25px;
   margin-left: 2%;
   cursor: pointer;
+  border: none;
 }
 .chat-panel .message-box .message-submit:hover {
-  background-color: #004a99;
+  background-color: var(--color-primary);
 }/*# sourceMappingURL=chatbot.css.map */
