@@ -27,6 +27,11 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 		}
 	};
 
+
+	const changePage = (link)=>{
+		window.location.href(link)
+	}
+
 	return (
 		<>
 			<style jsx>{`
@@ -119,9 +124,9 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 									className="navbar__menu__item bg-gradient--primary"
 									key={item.path}
 								>
-									<a href={item.path} style={{ color: "white" }}>
+									<Link href={item.path} style={{ color: "white" }} onClick={()=>{changePage(item.path)}}>
 										{item.text}
-									</a>
+									</Link>
 								</li>
 							);
 						}
@@ -139,9 +144,9 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 												className="navbar__menu__sub__item"
 												key={subItem.path}
 											>
-												<a href={subItem.path} style={{ color: "white" }}>
+												<Link href={subItem.path} style={{ color: "white" }} onClick={()=>{changePage(subItem.path)}}>
 													{subItem.text}
-												</a>
+												</Link>
 											</li>
 										);
 									})}
