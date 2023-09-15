@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { importantDeadlines } from "../data/importantDates";
 import FlagCounter from "../components/pieces/FlagCounter/FlagCounter";
 import Head from "next/head";
+import Image from "next/image";
 const HomePage = () => {
 	// code to check common names
 	const uniqueInternationalAdvisoryCommittee = require("../data/international-advisory-committee");
@@ -297,10 +298,26 @@ const HomePage = () => {
 								element="h3"
 							></Heading>
 
-							<p className="homepage__text text text--normal">
+							{/* <p className="homepage__text text text--normal">
 								All accepted and presented papers will be published by Springer
 								Book Series(Approval Pending).
+							</p> */}
+
+							<p className="invalid-selection homepage__text text text--normal">
+								All accepted and presented papers will be published by the Web
+								of Science (WoS) indexed Springer Nature Book Series "Algorithms
+								for Intelligent Systems"
+								<a href="https://www.springer.com/series/16171">
+									(https://www.springer.com/series/16171)
+								</a>
 							</p>
+							<Image
+								style={{ margin: "2rem 0" }}
+								src={"/AIS-springer.jpg"}
+								alt="springer"
+								width={120}
+								height={190}
+							></Image>
 						</div>
 
 						<div className="homepage__deadlines">
