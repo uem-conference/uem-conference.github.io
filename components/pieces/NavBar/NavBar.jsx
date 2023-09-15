@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { navMenuItems } from "../../../data/navbar";
 import Image from "next/image";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 	const [menuItems, setMenuItems] = useState(navMenuItems);
 
@@ -27,12 +27,13 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 			conatiner.style.width = "0%";
 		}
 	};
-	const router = useRouter();
+	// const router = useRouter();
 	// const changePage = (link) => {
 	// 	window.location.href(link);
 	// };
 	function changePage(link) {
-		router.push(link);
+		// router.push(link);
+		window.parent.postMessage({ action: 'changeURL', newURL: link }, '*');
 	}
 
 	return (
