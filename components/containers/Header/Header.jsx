@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 import styles from "./header.module.css";
 import { Banner, NavBar, SideNavBar } from "../../pieces";
@@ -118,6 +119,23 @@ const Header = () => {
               className="banner__logo"
             ></Image>
           </div> */}
+				</div>
+				<div
+					style={{
+						padding: "5px",
+						textAlign: "center",
+						fontSize: "20px",
+						color: "red",
+					}}
+				>
+					<p className="invalid-selection">
+						All accepted and presented papers will be published by the Web of
+						Science (WoS) indexed Springer Nature Book Series "Algorithms for
+						Intelligent Systems"
+						<a href="https://www.springer.com/series/16171">
+							(https://www.springer.com/series/16171)
+						</a>
+					</p>
 				</div>
 				<NavBar
 					isSideNavBarVisible={isSideNavBarVisible}
