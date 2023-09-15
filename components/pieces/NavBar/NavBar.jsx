@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { navMenuItems } from "../../../data/navbar";
 import Image from "next/image";
+import { useRouter } from "next/router";
 const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 	const [menuItems, setMenuItems] = useState(navMenuItems);
 
@@ -26,10 +27,12 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 			conatiner.style.width = "0%";
 		}
 	};
-
-
-	const changePage = (link)=>{
-		window.location.href(link)
+	const router = useRouter();
+	// const changePage = (link) => {
+	// 	window.location.href(link);
+	// };
+	function changePage(link) {
+		router.push(link);
 	}
 
 	return (
@@ -124,7 +127,13 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 									className="navbar__menu__item bg-gradient--primary"
 									key={item.path}
 								>
-									<Link href={item.path} style={{ color: "white" }} onClick={()=>{changePage(item.path)}}>
+									<Link
+										href={item.path}
+										style={{ color: "white" }}
+										onClick={() => {
+											changePage(item.path);
+										}}
+									>
 										{item.text}
 									</Link>
 								</li>
@@ -144,7 +153,13 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 												className="navbar__menu__sub__item"
 												key={subItem.path}
 											>
-												<Link href={subItem.path} style={{ color: "white" }} onClick={()=>{changePage(subItem.path)}}>
+												<Link
+													href={subItem.path}
+													style={{ color: "white" }}
+													onClick={() => {
+														changePage(subItem.path);
+													}}
+												>
 													{subItem.text}
 												</Link>
 											</li>
