@@ -6,7 +6,7 @@
 	transition: right 0.3s ease-in-out;
 	width: 60px;
 	height: 60px;
-	background-color: #007bff;
+	// background-color: #007bff;
 	border-radius: 50%;
 	cursor: pointer;
 	// @include flex-container(row, wrap, column, center);
@@ -19,11 +19,12 @@
 	transition: background-color 0.2s ease-in-out;
 
 	&:hover {
-		background-color: #0056b3;
+		background-color: var(--color-primary-dark);
 	}
 
 	&.open {
 		right: 20px;
+		background-color: var(--color-primary);
 	}
 
 	&-icon {
@@ -58,7 +59,7 @@
 		}
 
 		.chat-title {
-			background-color: #007bff;
+			background-color: var(--color-primary);
 			padding: 15px;
 			// @include flex-container(row, wrap, space-between, center);
 			display: flex;
@@ -79,15 +80,17 @@
 			h4 {
 				font-family: var(--font-tektur);
 				font-size: var(--font-10);
-				color: var(--black);
+				color: black;
 				font-weight: 500;
 				letter-spacing: 2px;
 			}
 			.close-button {
 				position: relative;
+				background: transparent;
 				cursor: pointer;
 				width: 30px;
 				height: 30px;
+				border: none;
 			}
 		}
 
@@ -110,8 +113,8 @@
 					font-size: 16px;
 				}
 				.message-personal {
-					background: var(--primary-color-1);
-					color: var(--white);
+					background: var(--color-primary);
+					color: white;
 					align-self: flex-end;
 				}
 			}
@@ -148,15 +151,15 @@
 
 			.message-submit {
 				position: relative;
-				background: #007bff;
+				background: var(--color-primary-light);
 				height: 30px;
 				width: 30px;
 				border-radius: 25px;
 				margin-left: 2%;
 				cursor: pointer;
-
+				border: none;
 				&:hover {
-					background-color: darken($color: #007bff, $amount: 20%);
+					background-color: var(--color-primary);
 				}
 			}
 		}
