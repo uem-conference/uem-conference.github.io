@@ -3,12 +3,12 @@ export const navMenuItems = [
 	{
 		text: "Home",
 		path: `${url}/`,
-		// path: "/",
+		endpoint: "/",
 	},
 	{
 		text: "About UEM",
 		path: `${url}/about-uem`,
-		// path: "/about-uem",
+		endpoint: "/about-uem",
 		heading: "Welcome To UEM Kolkata",
 	},
 	{
@@ -17,19 +17,19 @@ export const navMenuItems = [
 			{
 				text: "Organizing Committee",
 				path: `${url}/organizing-committee`,
-				// path: "/committees/organizing",
+				endpoint: "/committees/organizing",
 				heading: "Conference Details",
 			},
 			{
 				text: "Technical Program Committee",
 				path: `${url}/technical-program-committee`,
-				// path: "/committees/technical-program",
+				endpoint: "/committees/technical-program",
 				heading: "Technical Program Committee",
 			},
 			{
 				text: "international advisory Committee",
 				path: `${url}/international-advisory-committee`,
-				// path: "/committees/international-advisory",
+				endpoint: "/committees/international-advisory",
 				heading: "International Advisory Committee",
 			},
 		],
@@ -41,19 +41,19 @@ export const navMenuItems = [
 			{
 				text: "Submissions",
 				path: `${url}/submissions`,
-				// path: "/authors/submissions",
+				endpoint: "/authors/submissions",
 				heading: "INFORMATION FOR AUTHORS OF SPRINGER CONFERENCE PROCEEDINGS",
 			},
 			{
 				text: "Call For Papers",
 				heading: "Call For Papers",
 				path: `${url}/call-for-papers`,
-				// path: "/authors/call-for-papers",
+				endpoint: "/authors/call-for-papers",
 			},
 			{
 				// text: "Important ",
 				text: "Important Dates",
-				// path: "/authors/important-dates",
+				endpoint: "/authors/important-dates",
 				path: `${url}/important-dates`,
 				heading: "importatnt dates",
 			},
@@ -63,7 +63,7 @@ export const navMenuItems = [
 		text: "Keynote Speakers",
 		heading: "Keynote Speakers",
 		path: `${url}/keynote-speakers`,
-		// path: "/keynote-speakers",
+		endpoint: "/keynote-speakers",
 	},
 	
 	{
@@ -73,19 +73,19 @@ export const navMenuItems = [
 				text: "Technical Programs Schecdule",
 				heading: "Technical Programs Schecdule",
 				path: `${url}/technical-programs-schedule`,
-				// path: "/technical-programs/schedule",
+				endpoint: "/technical-programs/schedule",
 			},
 			{
 				text: "Accepted and Registered Papers",
 				heading: "Accepted and Registered Papers",
 				path: `${url}/accepted-and-registered-papers`,
-				// path: "/technical-programs/accepted-registered-papers",
+				endpoint: "/technical-programs/accepted-registered-papers",
 			},
 			{
 				text: "Best Paper",
 				heading: "Best Paper",
 				path: `${url}/best-papers`,
-				// path: "/technical-programs/best-paper",
+				endpoint: "/technical-programs/best-paper",
 			},
 		],
 	},
@@ -93,12 +93,12 @@ export const navMenuItems = [
 		text: "Registration",
 		heading: "Registration policy",
 		path: `${url}/registration`,
-		// path: "/registration",
+		endpoint: "/registration",
 	},
 	{
 		text: "Contact",
 		heading: "Contact",
 		path: `${url}/contact`,
-		// path: "/contact",
+		endpoint: "/contact",
 	},
 ];

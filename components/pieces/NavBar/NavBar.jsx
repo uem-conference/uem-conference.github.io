@@ -128,15 +128,15 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 									className="navbar__menu__item bg-gradient--primary"
 									key={item.path}
 								>
-									<p
-										// href={item.path}
+									<Link
+										href={item.endpoint}
 										style={{ color: "white" }}
 										onClick={() => {
 											changePage(item.path);
 										}}
 									>
 										{item.text}
-									</p>
+									</Link>
 								</li>
 							);
 						}
@@ -154,15 +154,15 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 												className="navbar__menu__sub__item"
 												key={subItem.path}
 											>
-												<p
-													// href={subItem.path}
+												<Link
+													href={subItem.endpoint}
 													style={{ color: "white" }}
 													onClick={() => {
 														changePage(subItem.path);
 													}}
 												>
 													{subItem.text}
-												</p>
+												</Link>
 											</li>
 										);
 									})}
