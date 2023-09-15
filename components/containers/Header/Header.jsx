@@ -124,7 +124,7 @@ const Header = () => {
 					style={{
 						padding: "5px",
 						textAlign: "center",
-						fontSize: "20px",
+						fontSize: "15px",
 						color: "red",
 					}}
 				>
