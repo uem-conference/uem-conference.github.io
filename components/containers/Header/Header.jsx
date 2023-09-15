@@ -109,16 +109,16 @@ const Header = () => {
 					</div>
 
 					{/* UNCOMMENT THE BELOW CODE TO PUT ON THE SPRINGER LOGO */}
-					{/* <div className="marquee__logo__container">
-            <Image
-              src={"/assets/Springer_Logo.png"}
-              //   src={"/assets/SLogo.png"}
-              alt="springer logo"
-              layout="fill"
-              objectFit="contain"
-              className="banner__logo"
-            ></Image>
-          </div> */}
+					<div className="marquee__logo__container">
+						<Image
+							src={"/assets/Springer_Logo.png"}
+							//   src={"/assets/SLogo.png"}
+							alt="springer logo"
+							layout="fill"
+							objectFit="contain"
+							className="banner__logo"
+						></Image>
+					</div>
 				</div>
 				<div
 					style={{

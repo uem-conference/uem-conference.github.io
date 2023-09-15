@@ -111,7 +111,7 @@ export default function ChatComponent() {
 		};
 
 		const fetchmsg = () => {
-			var url = "https://spaceotaku.onrender.com/send-msg";
+			var url = "https://adcomsys-chatbot.onrender.com/send-msg";
 
 			const data = new URLSearchParams();
 			for (const pair of new FormData(document.getElementById("mymsg"))) {
@@ -143,7 +143,7 @@ export default function ChatComponent() {
 		<div className={`chat ${open ? "open" : ""}`}>
 			<div className={`chat-icon ${open ? "open" : ""}`}>
 				<Image
-					src="/bot/owl.png"
+					src="/assets/LOGO.png"
 					layout="responsive"
 					width={20}
 					height={20}
