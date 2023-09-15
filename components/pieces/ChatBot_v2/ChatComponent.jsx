@@ -143,7 +143,7 @@ export default function ChatComponent() {
 		<div className={`chat ${open ? "open" : ""}`}>
 			<div className={`chat-icon ${open ? "open" : ""}`}>
 				<Image
-					src="/assets/LOGO.png"
+					src="/assets/Logo.png"
 					layout="fill"
 					alt="OrbitOwl"
 					onClick={handleChatIconClick}
@@ -152,7 +152,7 @@ export default function ChatComponent() {
 			<div className={`chat-panel ${open ? "open" : "close"}`}>
 				<div className="chat-title">
 					<figure className="avatar">
-						<Image src="/assets/LOGO.png" alt="Logo" width={20} height={20} />
+						<Image src="/assets/Logo.png" alt="Logo" width={20} height={20} />
 					</figure>
 					<h4>AdComSys</h4>
 					<button className="close-button" onClick={handleChatIconClick}>
