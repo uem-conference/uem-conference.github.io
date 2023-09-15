@@ -119,9 +119,9 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 									className="navbar__menu__item bg-gradient--primary"
 									key={item.path}
 								>
-									<Link href={item.path} style={{ color: "white" }}>
+									<a href={item.path} style={{ color: "white" }}>
 										{item.text}
-									</Link>
+									</a>
 								</li>
 							);
 						}
@@ -139,9 +139,9 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 												className="navbar__menu__sub__item"
 												key={subItem.path}
 											>
-												<Link href={subItem.path} style={{ color: "white" }}>
+												<a href={subItem.path} style={{ color: "white" }}>
 													{subItem.text}
-												</Link>
+												</a>
 											</li>
 										);
 									})}
