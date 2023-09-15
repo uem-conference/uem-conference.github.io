@@ -144,9 +144,7 @@ export default function ChatComponent() {
 			<div className={`chat-icon ${open ? "open" : ""}`}>
 				<Image
 					src="/assets/LOGO.png"
-					layout="responsive"
-					width={20}
-					height={20}
+					layout="fill"
 					alt="OrbitOwl"
 					onClick={handleChatIconClick}
 				></Image>
