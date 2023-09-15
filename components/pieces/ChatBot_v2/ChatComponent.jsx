@@ -154,9 +154,9 @@ export default function ChatComponent() {
 			<div className={`chat-panel ${open ? "open" : "close"}`}>
 				<div className="chat-title">
 					<figure className="avatar">
-						<Image src="/logo.png" alt="Logo" width={20} height={20} />
+						<Image src="/assets/LOGO.png" alt="Logo" width={20} height={20} />
 					</figure>
-					<h4>Orbit Owl</h4>
+					<h4>AdComSys</h4>
 					<button className="close-button" onClick={handleChatIconClick}>
 						<Image
 							src="/bot/close.png"
@@ -177,7 +177,7 @@ export default function ChatComponent() {
 						id="MSG"
 						name="MSG"
 						className="message-input"
-						placeholder="Your Space Encyclopedia..."
+						placeholder="Type your enquiry..."
 					/>
 					<button
 						type="button"

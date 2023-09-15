@@ -3,6 +3,7 @@ import styles from "./bodyTemplate.module.css";
 import Head from "next/head";
 import { Header, Footer } from "../containers";
 import { ChatBot } from "../pieces";
+import { ChatBot_v2 } from "../pieces";
 const BodyTemplate = (props) => {
 	return (
 		<>
@@ -12,6 +13,7 @@ const BodyTemplate = (props) => {
 				{props.child}
 			</main>
 			<Footer></Footer>
+			<ChatBot_v2></ChatBot_v2>
 		</>
 	);
 };

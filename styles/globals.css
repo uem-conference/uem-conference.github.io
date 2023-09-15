@@ -25,9 +25,8 @@
 // @import "vendors"; */
 @import "vendors/fonts";
 
-
-#__next{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#__next {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
