@@ -101,7 +101,15 @@ const Submissions = () => {
 				</p>
 
 				<p className="submissions__text text text--normal">
-				Prospective authors are invited to submit manuscripts at <a href="https://cmt3.research.microsoft.com/AdComSys2024" target="_blank">https://cmt3.research.microsoft.com/AdComSys2024</a> reporting original unpublished research and recent developments in the topics related to the SCOPE of the conference.
+					Prospective authors are invited to submit manuscripts at{" "}
+					<a
+						href="https://cmt3.research.microsoft.com/AdComSys2024"
+						target="_blank"
+					>
+						https://cmt3.research.microsoft.com/AdComSys2024
+					</a>{" "}
+					reporting original unpublished research and recent developments in the
+					topics related to the SCOPE of the conference.
 				</p>
 
 				<p className="submissions__heading heading heading--3 mb--1">
@@ -183,11 +191,11 @@ const Submissions = () => {
 
 				<ul className=" text-2 text--normal list">
 					<li className="list-item">
-						Regular Paper – 12 pages maximum (2 additional pages allowed but at
-						an extra charge).
+						Regular Paper – 10 pages minimum and 12 pages maximum.
 					</li>
 					<li className="list-item">
-						There is no provision for submitting short papers and poster.
+						There is no provision for submitting short papers and
+						posters (4 – 6 pages)
 					</li>
 					<li className="list-item">
 						Regular papers should present novel perspectives within the general
