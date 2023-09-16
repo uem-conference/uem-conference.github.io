@@ -58,8 +58,6 @@ const Header = () => {
 					height: 95%;
 					box-shadow: 0 0 0.5rem white, 0 0 1.0rem white, 0 0 1.5rem white, 0 0 2.5rem white, 0 0 3.5rem white;
 				}
-				.marquee__logo__container > img{
-				}
 
 				@-moz-keyframes scroll-left {
 					0% {
