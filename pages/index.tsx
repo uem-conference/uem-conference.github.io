@@ -316,9 +316,9 @@ const HomePage = () => {
 								width={120}
 								height={190}
 							></Image>
-							<p className="homepage__text text text--normal">
+							<strong className="homepage__text text text--normal">
 								This book-series is indexed in Web of Science and zbMath
-							</p>
+							</strong>
 							<div
 								className="announcement-image-container"
 								style={{ marginTop: "1rem" }}
