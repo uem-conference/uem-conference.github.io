@@ -107,37 +107,46 @@ const RegistrationPage = () => {
 						<tr className="table__row">
 							<td className="table__data">Regular Author Student</td>
 							<td className="table__data">4500</td>
-							<td className="table__data">100+12% Tax and Bank charges</td>
+							{/* <td className="table__data">100+12% Tax and Bank charges</td> */}
+							<td className="table__data">100*</td>
+
 							<td className="table__data">5500</td>
-							<td className="table__data">150+12% Tax and Bank charges</td>
+							{/* <td className="table__data">150+12% Tax and Bank charges</td> */}
+							<td className="table__data">150*</td>
 						</tr>
 						<tr className="table__row">
 							<td className="table__data">
 								Regular Author Academician,PhD Scholars
 							</td>
 							<td className="table__data">5000</td>
-							<td className="table__data">200+12% Tax and Bank charges</td>
+							{/* <td className="table__data">200+12% Tax and Bank charges</td> */}
+							<td className="table__data">200*</td>
 							<td className="table__data">6000</td>
-							<td className="table__data">250+12% Tax and Bank charges</td>
+							<td className="table__data">250*</td>
+							{/* <td className="table__data">250+12% Tax and Bank charges</td> */}
 						</tr>
 						<tr className="table__row">
 							<td className="table__data">Regular Author from Industry</td>
 							<td className="table__data">7000</td>
-							<td className="table__data">200+12% Tax and Bank charges</td>
+							{/* <td className="table__data">200+12% Tax and Bank charges</td> */}
+							<td className="table__data">200*</td>
 							<td className="table__data">8000</td>
-							<td className="table__data">250+12% Tax and Bank charges</td>
+							{/* <td className="table__data">250+12% Tax and Bank charges</td> */}
+							<td className="table__data">250*</td>
 						</tr>
 						<tr className="table__row">
 							<td className="table__data">Only Attending or Accompanying</td>
 							<td className="table__data">2500</td>
-							<td className="table__data">80+12% Tax and Bank charges</td>
+							{/* <td className="table__data">80+12% Tax and Bank charges</td> */}
+							<td className="table__data">80*</td>
 							<td className="table__data">2500</td>
-							<td className="table__data">80+12% Tax and Bank charges</td>
+							{/* <td className="table__data">80+12% Tax and Bank charges</td> */}
+							<td className="table__data">80*</td>
 						</tr>
 					</tbody>
 				</table>
 				<p style={{ textAlign: "right", color: "red", marginBottom: "2rem" }}>
-					* All rates are exclisive of GST.
+					* All rates are exclusive of GST.
 				</p>
 
 				<p className="text text--normal mb--1">
