@@ -177,7 +177,7 @@ export default function ChatComponent() {
 						className="message-input"
 						placeholder="Type your enquiry..."
 					/>
-					<button
+					{/* <button
 						type="button"
 						className="message-submit"
 						onClick={handleStartRecord}
@@ -189,7 +189,7 @@ export default function ChatComponent() {
 							height={20}
 							alt="MIC"
 						></Image>
-					</button>
+					</button> */}
 					<button type="submit" className="message-submit">
 						<Image
 							src="/bot/send.png"

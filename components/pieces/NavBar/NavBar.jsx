@@ -129,7 +129,7 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 									key={item.path}
 								>
 									<Link
-										href={item.path}
+										href={item.endpoint}
 										style={{ color: "white" }}
 										onClick={() => {
 											changePage(item.path);
@@ -155,7 +155,7 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 												key={subItem.path}
 											>
 												<Link
-													href={subItem.path}
+													href={subItem.endpoint}
 													style={{ color: "white" }}
 													onClick={() => {
 														changePage(subItem.path);
