@@ -94,8 +94,8 @@ const CallForPapers = () => {
 			<p
 				className="text--big"
 				style={{
-					position: "relative",
-					left: "33%",
+					// position: "relative",
+					marginLeft: "33%",
 					marginBottom: "5px",
 					fontWeight: "bold",
 				}}
