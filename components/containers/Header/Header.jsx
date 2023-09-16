@@ -99,14 +99,14 @@ const Header = () => {
 			<header className={"header wrapper"}>
 				<Banner></Banner>
 				<div className="marquee__container">
-					<div className="marquee">
+					{/* <div className="marquee">
 						<p className="invalid-selection">
 							Last date of Full Paper Submission: 6th December 2023 | Acceptance
 							will be notified by 6th March 2024 at the latest | All accepted
 							and presented papers will be published by Springer Book
 							Series(Approval Pending).
 						</p>
-					</div>
+					</div> */}
 
 					{/* UNCOMMENT THE BELOW CODE TO PUT ON THE SPRINGER LOGO */}
 					<div className="marquee__logo__container">
