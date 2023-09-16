@@ -162,35 +162,7 @@ const ContactPage = () => {
 							style={{ margin: "0", marginBottom: "5px" }}
 							className="contact__text text text--normal"
 						>
-							Dr. Chiradeep Mukherjee - 9804244362
-						</p>
-					</div>
-					<div className="contact__container">
-						<Image
-							src="/assets/icons/call.png"
-							alt="menu"
-							width={25}
-							height={25}
-						></Image>
-						<p
-							style={{ margin: "0", marginBottom: "5px" }}
-							className="contact__text text text--normal"
-						>
 							Dr. Subhalaxmi Chakraborty - 7003720703
-						</p>
-					</div>
-					<div className="contact__container">
-						<Image
-							src="/assets/icons/call.png"
-							alt="menu"
-							width={25}
-							height={25}
-						></Image>
-						<p
-							style={{ margin: "0", marginBottom: "5px" }}
-							className="contact__text text text--normal"
-						>
-							Prof. Sankhadeep Chatterjee - 8910874737
 						</p>
 					</div>
 					<div className="contact__container">
@@ -207,6 +179,36 @@ const ContactPage = () => {
 							Dr. Sudipta Basu Pal - 9674335060
 						</p>
 					</div>
+					<div className="contact__container">
+						<Image
+							src="/assets/icons/call.png"
+							alt="menu"
+							width={25}
+							height={25}
+						></Image>
+						<p
+							style={{ margin: "0", marginBottom: "5px" }}
+							className="contact__text text text--normal"
+						>
+							Dr. Chiradeep Mukherjee - 9804244362
+						</p>
+					</div>
+
+					<div className="contact__container">
+						<Image
+							src="/assets/icons/call.png"
+							alt="menu"
+							width={25}
+							height={25}
+						></Image>
+						<p
+							style={{ margin: "0", marginBottom: "5px" }}
+							className="contact__text text text--normal"
+						>
+							Prof. Sankhadeep Chatterjee - 8910874737
+						</p>
+					</div>
+
 					<div onClick={clickMailHandler} className="contact__container">
 						<div className="email-icon">
 							<Image
