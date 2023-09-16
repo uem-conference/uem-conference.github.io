@@ -304,9 +304,13 @@ const HomePage = () => {
 							</p> */}
 
 							<p className="invalid-selection homepage__text text text--normal">
-								All accepted and presented papers will be published by the Web
-								of Science (WoS) indexed Springer Nature Book Series "Algorithms
-								for Intelligent Systems"
+								All accepted and presented papers will be published by the{" "}
+								<strong>Web of Science (WoS)</strong> indexed
+								<strong>
+									{" "}
+									Springer Nature Book Series "Algorithms for Intelligent
+									Systems"
+								</strong>
 								<a target="_blank" href="https://www.springer.com/series/16171">
 									(https://www.springer.com/series/16171)
 								</a>
