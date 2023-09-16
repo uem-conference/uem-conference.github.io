@@ -91,6 +91,17 @@ const CallForPapers = () => {
 				class={"mb--2 invalid-selection"}
 				element="h1"
 			></Heading>
+			<p
+				className="text--big"
+				style={{
+					position: "relative",
+					left: "33%",
+					marginBottom: "5px",
+					fontWeight: "bold",
+				}}
+			>
+				Best Paper Award will be provided to each Track authors{" "}
+			</p>
 			<div className="btn__container">
 				<p>DOWNLOAD CALL FOR PAPERS / TOPICS</p>
 				<a href="/assets/downloads/Call-For-Papers.pdf" target="_blank">
@@ -164,9 +175,7 @@ const CallForPapers = () => {
 									className="call-for-papers__column"
 									style={{ "--num-col": "1" }}
 								>
-									<h4 className="call-for-papers__track">
-										{subtrack.title}
-									</h4>
+									<h4 className="call-for-papers__track">{subtrack.title}</h4>
 									<div
 										className="call-for-papers__list"
 										style={{ "--num-rows": `${subtrack.subtrackData.length}` }}
