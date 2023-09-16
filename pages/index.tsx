@@ -236,12 +236,6 @@ const HomePage = () => {
 						min-height: fit-content;
 						padding: 1rem;
 					}
-					/* .homepage__deadlines ul {
-        grid-template-columns: 1fr;
-        /* width: 100%;
-        height: auto; *
-        padding: 0.3rem;
-      } */
 				}
 			`}</style>
 
@@ -322,6 +316,28 @@ const HomePage = () => {
 								width={120}
 								height={190}
 							></Image>
+							<p className="homepage__text text text--normal">
+								This book-series is indexed in Web of Science and zbMath
+							</p>
+							<div
+								className="announcement-image-container"
+								style={{ marginTop: "1rem" }}
+							>
+								<Image
+									style={{ marginRight: "4rem" }}
+									src={"/WebofScience.png"}
+									alt="Web of Science"
+									width={100}
+									height={120}
+								></Image>
+								<Image
+									style={{ marginLeft: "4rem" }}
+									src={"/zbMath.png"}
+									alt="zbMath"
+									width={140}
+									height={80}
+								></Image>
+							</div>
 						</div>
 
 						<div className="homepage__deadlines">
