@@ -16,20 +16,20 @@ const Header = () => {
 				.marquee__container {
 					width: 100%;
 					display: grid;
-					gap: 1rem;
+					gap: 2rem;
 					background-color: black;
 					grid-template-columns: 11fr 1fr;
 				}
 				.marquee {
-					//   /* height: 3rem; */
+					// height: 6rem;
 					overflow: hidden;
 					position: relative;
 					background-color: black;
-					//   /* background: #fefefe; */
 					color: var(--color-light);
-					//   /* border-bottom: 2px solid var(--color-primary-dark); */
-					//   /* border: 2px solid #187900; */
 					padding: 1rem 0rem;
+					display: flex;
+					align-items:center;
+
 				}
 				.marquee p {
 					position: relative;
@@ -55,8 +55,10 @@ const Header = () => {
 					//   bottom: 0;
 					//   right: 0;
 					width: 100%;
-					height: 100%;
-					//   max-width: 10rem;
+					height: 95%;
+					box-shadow: 0 0 0.5rem white, 0 0 1.0rem white, 0 0 1.5rem white;
+				}
+				.marquee__logo__container > img{
 				}
 
 				@-moz-keyframes scroll-left {
@@ -128,9 +130,9 @@ const Header = () => {
 					}}
 				>
 					<p className="invalid-selection">
-						All accepted and presented papers will be published by the Web of
-						Science (WoS) indexed Springer Nature Book Series "Algorithms for
-						Intelligent Systems"
+						All accepted and presented papers will be published by the <strong>Web of
+						Science (WoS)</strong> indexed <strong>Springer Nature Book Series "Algorithms for
+						Intelligent Systems"</strong>
 						<a target="_blank" href="https://www.springer.com/series/16171">
 							(https://www.springer.com/series/16171)
 						</a>
