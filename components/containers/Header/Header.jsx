@@ -100,11 +100,9 @@ const Header = () => {
 				<Banner></Banner>
 				<div className="marquee__container">
 					<div className="marquee">
-						<p className="invalid-selection" style={{ opacity: "0" }}>
+						<p className="invalid-selection">
 							Last date of Full Paper Submission: 6th December 2023 | Acceptance
-							will be notified by 6th March 2024 at the latest | All accepted
-							and presented papers will be published by Springer Book
-							Series(Approval Pending).
+							will be notified by 6th March 2024 at the latest.
 						</p>
 					</div>
 
