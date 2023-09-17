@@ -12,6 +12,10 @@ export default function Footer() {
 	//     setMenuItems(navMenuItems);
 	//   }
 	// }, [menuItems]);
+
+	function changePage(link) {
+		window.parent.postMessage({ action: 'changeURL', newURL: link }, '*');
+	}
 	return (
 		<>
 			<style jsx>{`
@@ -141,10 +145,13 @@ export default function Footer() {
 								return (
 									<Link
 										// key={Math.random()}
-										href={item.path}
+										href={item.endpoint}
 										key={Math.random()}
 										className={`footer_item`}
 										style={{ color: "white" }}
+										onClick={() => {
+											changePage(item.path);
+										}}
 									>
 										<li key={Math.random()} className={`footer__list_option`}>
 											{item.text}
@@ -155,10 +162,13 @@ export default function Footer() {
 							const l = item.sub.map((subItem) => {
 								return (
 									<Link
-										href={subItem.path}
+										href={subItem.endpoint}
 										key={Math.random()}
 										className={`footer_item`}
 										style={{ color: "white" }}
+										onClick={() => {
+											changePage(subItem.path);
+										}}
 									>
 										<li className={`footer__list_option`}>{subItem.text}</li>
 									</Link>

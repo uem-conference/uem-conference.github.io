@@ -482,7 +482,7 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 															key={subItem.path}
 															style={{ color: "white" }}
 															onClick={() => {
-																changePage(item.path);
+																changePage(subItem.path);
 																showSideNavBar()
 															}}
 														>
