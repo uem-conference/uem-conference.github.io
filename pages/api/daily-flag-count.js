@@ -16,7 +16,7 @@ async function deleteAllCount(req,res){
             .collection('daily-count')
             .deleteMany({})
         // return the posts
-        return res.send({
+        return res.status(200).send({
             message: "Deleted",
             success: true,
         });
