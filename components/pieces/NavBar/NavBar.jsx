@@ -32,7 +32,6 @@ const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 	// 	window.location.href(link);
 	// };
 	function changePage(link) {
-		// router.push(link);
 		window.parent.postMessage({ action: 'changeURL', newURL: link }, '*');
 	}
 

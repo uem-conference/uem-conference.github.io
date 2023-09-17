@@ -273,6 +273,12 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 	const [menuItems, setMenuItems] = useState(navMenuItems);
 	const [isSettingVisible, setIsSettingVisible] = useState(false);
 	// const [isExpanded]
+
+	function changePage(link) {
+		window.parent.postMessage({ action: 'changeURL', newURL: link }, '*');
+	}
+
+
 	return (
 		<>
 			<style jsx>{`
@@ -448,9 +454,12 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 									return (
 										<li className="sideNavBar__menu__item" key={item.path}>
 											<Link
-												href={item.path}
+												href={item.endpoint}
 												style={{ color: "white" }}
-												onClick={showSideNavBar}
+												onClick={() => {
+													changePage(item.path);
+													showSideNavBar()
+												}}
 											>
 												{item.text}
 											</Link>
@@ -469,10 +478,13 @@ const SideNavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 														key={subItem.path}
 													>
 														<Link
-															href={subItem.path}
+															href={subItem.endpoint}
 															key={subItem.path}
 															style={{ color: "white" }}
-															onClick={showSideNavBar}
+															onClick={() => {
+																changePage(item.path);
+																showSideNavBar()
+															}}
 														>
 															{subItem.text}
 														</Link>
