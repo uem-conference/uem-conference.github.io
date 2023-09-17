@@ -319,25 +319,21 @@ const HomePage = () => {
 							<strong className="homepage__text text text--normal">
 								This book-series is indexed in Web of Science and zbMath
 							</strong>
-							<div
-								className="announcement-image-container"
-								style={{ marginTop: "1rem" }}
-							>
-								<Image
-									style={{ marginRight: "4rem" }}
-									src={"/WebofScience.png"}
-									alt="Web of Science"
-									width={100}
-									height={120}
-								></Image>
-								<Image
-									style={{ marginLeft: "4rem" }}
-									src={"/zbmath.png"}
-									alt="zbMath"
-									width={140}
-									height={80}
-								></Image>
-							</div>
+
+							<Image
+								style={{ marginRight: "4rem" }}
+								src={"/WebofScience.png"}
+								alt="Web of Science"
+								width={100}
+								height={120}
+							></Image>
+							<Image
+								style={{ marginLeft: "4rem" }}
+								src={"/zbmath.png"}
+								alt="zbMath"
+								width={140}
+								height={80}
+							></Image>
 						</div>
 
 						<div className="homepage__deadlines">
