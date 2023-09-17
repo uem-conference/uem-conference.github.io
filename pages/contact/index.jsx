@@ -6,19 +6,14 @@ const ContactPage = () => {
 	useEffect(() => {
 		document.title = "Contact | " + process.env.app_name;
 	}, []);
-	function clickMailHandler() {
-		const email = "adcomsys@uem.edu.in";
-		const subject = "Regarding AdComSys Conference";
+	function clickMailHandler(email, subject) {
 		const body =
 			"Hello, I would like to inquire about the AdComSys Conference.";
-
 		const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
 			subject
 		)}&body=${encodeURIComponent(body)}`;
-
 		window.location.href = mailtoUrl;
 	}
-
 	return (
 		<>
 			<Head>
@@ -131,9 +126,8 @@ const ContactPage = () => {
 					<p className="contact__heading text text--normal">
 						Prof. Dr. Maumita Chakraborty
 					</p>
-
 					<p className="contact__text text text--normal">
-						Convener, AdComSys 2024{" "}
+						Convener, AdComSys 2024
 					</p>
 					<div className="contact__container">
 						<Image
@@ -141,13 +135,12 @@ const ContactPage = () => {
 							alt="menu"
 							width={25}
 							height={25}
-						></Image>
+						/>
 						<p className="contact__text text text--normal">
 							University Area, Plot No. III – B/5, New Town, Action Area – III,
-							Kolkata, West Bengal 700160{" "}
+							Kolkata, West Bengal 700160
 						</p>
 					</div>
-
 					<p className="contact__text text text--normal">
 						<strong>For details you may contact the following:</strong>
 					</p>
@@ -157,12 +150,15 @@ const ContactPage = () => {
 							alt="menu"
 							width={25}
 							height={25}
-						></Image>
-						<p
-							style={{ margin: "0", marginBottom: "5px" }}
-							className="contact__text text text--normal"
-						>
-							Dr. Subhalaxmi Chakraborty - 7003720703
+						/>
+						<p className="contact__text text text--normal">
+							Dr. Subhalaxmi Chakraborty -{" "}
+							<a
+								href="mailto:subhalaxmi.chakraborty@uem.edu.in"
+								className="email"
+							>
+								subhalaxmi.chakraborty@uem.edu.in
+							</a>
 						</p>
 					</div>
 					<div className="contact__container">
@@ -171,12 +167,12 @@ const ContactPage = () => {
 							alt="menu"
 							width={25}
 							height={25}
-						></Image>
-						<p
-							style={{ margin: "0", marginBottom: "5px" }}
-							className="contact__text text text--normal"
-						>
-							Dr. Sudipta Basu Pal - 9674335060
+						/>
+						<p className="contact__text text text--normal">
+							Dr. Sudipta Basu Pal -{" "}
+							<a href="mailto:sudipta.basu@uem.edu.in" className="email">
+								sudipta.basu@uem.edu.in
+							</a>
 						</p>
 					</div>
 					<div className="contact__container">
@@ -185,31 +181,40 @@ const ContactPage = () => {
 							alt="menu"
 							width={25}
 							height={25}
-						></Image>
-						<p
-							style={{ margin: "0", marginBottom: "5px" }}
-							className="contact__text text text--normal"
-						>
-							Dr. Chiradeep Mukherjee - 9804244362
+						/>
+						<p className="contact__text text text--normal">
+							Dr. Chiradeep Mukherjee -{" "}
+							<a href="mailto:chiradeep.mukherjee@uem.edu.in" className="email">
+								chiradeep.mukherjee@uem.edu.in
+							</a>
 						</p>
 					</div>
-
 					<div className="contact__container">
 						<Image
 							src="/assets/icons/call.png"
 							alt="menu"
 							width={25}
 							height={25}
-						></Image>
-						<p
-							style={{ margin: "0", marginBottom: "5px" }}
-							className="contact__text text text--normal"
-						>
-							Prof. Sankhadeep Chatterjee - 8910874737
+						/>
+						<p className="contact__text text text--normal">
+							Prof. Sankhadeep Chatterjee -{" "}
+							<a
+								href="mailto:sankhadeep.chatterjee@uem.edu.in"
+								className="email"
+							>
+								sankhadeep.chatterjee@uem.edu.in
+							</a>
 						</p>
 					</div>
-
-					<div onClick={clickMailHandler} className="contact__container">
+					<div
+						onClick={() =>
+							clickMailHandler(
+								"adcomsys@uem.edu.in",
+								"Regarding AdComSys Conference"
+							)
+						}
+						className="contact__container"
+					>
 						<div className="email-icon">
 							<Image
 								className="email-icon"
@@ -217,13 +222,15 @@ const ContactPage = () => {
 								alt="menu"
 								width={25}
 								height={25}
-							></Image>
+							/>
 						</div>
 						<p
 							style={{ margin: "0", marginTop: "5px" }}
 							className="contact__text text text--normal email"
 						>
-							adcomsys@uem.edu.in
+							<a href="mailto:adcomsys@uem.edu.in" className="email">
+								adcomsys@uem.edu.in
+							</a>
 						</p>
 					</div>
 				</div>
