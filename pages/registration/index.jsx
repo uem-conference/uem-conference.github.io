@@ -90,16 +90,16 @@ const RegistrationPage = () => {
 						<tr className="table__row">
 							<th className="table__heading">Category</th>
 							<th className="table__heading">
-								India/ SAARC countries (Early Bird) (INR)
+								India/ SAARC countries (Early Bird) (INR)*
 							</th>
 							<th className="table__heading">
-								Foreign Countries (Early Bird) (USD)
+								Foreign Countries (Early Bird) (USD)*
 							</th>
 							<th className="table__heading">
-								India/ SAARC countries (Regular) (INR)
+								India/ SAARC countries (Regular) (INR)*
 							</th>
 							<th className="table__heading">
-								Foreign Countries (Regular) (USD)
+								Foreign Countries (Regular) (USD)*
 							</th>
 						</tr>
 					</thead>
@@ -108,11 +108,11 @@ const RegistrationPage = () => {
 							<td className="table__data">Regular Author Student</td>
 							<td className="table__data">4500</td>
 							{/* <td className="table__data">100+12% Tax and Bank charges</td> */}
-							<td className="table__data">100*</td>
+							<td className="table__data">100</td>
 
 							<td className="table__data">5500</td>
 							{/* <td className="table__data">150+12% Tax and Bank charges</td> */}
-							<td className="table__data">150*</td>
+							<td className="table__data">150</td>
 						</tr>
 						<tr className="table__row">
 							<td className="table__data">
@@ -120,28 +120,28 @@ const RegistrationPage = () => {
 							</td>
 							<td className="table__data">5000</td>
 							{/* <td className="table__data">200+12% Tax and Bank charges</td> */}
-							<td className="table__data">200*</td>
+							<td className="table__data">200</td>
 							<td className="table__data">6000</td>
-							<td className="table__data">250*</td>
+							<td className="table__data">250</td>
 							{/* <td className="table__data">250+12% Tax and Bank charges</td> */}
 						</tr>
 						<tr className="table__row">
 							<td className="table__data">Regular Author from Industry</td>
 							<td className="table__data">7000</td>
 							{/* <td className="table__data">200+12% Tax and Bank charges</td> */}
-							<td className="table__data">200*</td>
+							<td className="table__data">200</td>
 							<td className="table__data">8000</td>
 							{/* <td className="table__data">250+12% Tax and Bank charges</td> */}
-							<td className="table__data">250*</td>
+							<td className="table__data">250</td>
 						</tr>
 						<tr className="table__row">
 							<td className="table__data">Only Attending or Accompanying</td>
 							<td className="table__data">2500</td>
 							{/* <td className="table__data">80+12% Tax and Bank charges</td> */}
-							<td className="table__data">80*</td>
+							<td className="table__data">80</td>
 							<td className="table__data">2500</td>
 							{/* <td className="table__data">80+12% Tax and Bank charges</td> */}
-							<td className="table__data">80*</td>
+							<td className="table__data">80</td>
 						</tr>
 					</tbody>
 				</table>

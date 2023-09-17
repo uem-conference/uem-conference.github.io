@@ -332,7 +332,7 @@ const HomePage = () => {
 								></Image>
 								<Image
 									style={{ marginLeft: "4rem" }}
-									src={"/zbMath.png"}
+									src={"/zbmath.png"}
 									alt="zbMath"
 									width={140}
 									height={80}

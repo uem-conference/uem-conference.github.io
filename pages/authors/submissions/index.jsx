@@ -124,8 +124,8 @@ const Submissions = () => {
 						></Image>
 					</Link>
 				</p>
-				{/* <p className="submissions__heading heading heading--3 mb--1">
-					LaTeX format:-{" "}
+				<p className="submissions__heading heading heading--3 mb--1">
+					The Latex Template Is Available At:-{" "}
 					<Link href={"/assets/downloads/LaTex+Package.zip"}>
 						<Image
 							className="download-icon"
@@ -135,7 +135,7 @@ const Submissions = () => {
 							height={25}
 						></Image>
 					</Link>
-				</p> */}
+				</p>
 				<p className="submissions__heading heading heading--3 mb--1">
 					Details can also be found in the Call for Papers:-
 					<Link href={"/assets/downloads/Call-For-Papers.pdf"}>
