@@ -146,7 +146,8 @@ const RegistrationPage = () => {
 					</tbody>
 				</table>
 				<p style={{ textAlign: "right", color: "red", marginBottom: "2rem" }}>
-					* All rates are exclusive of GST.
+					* All rates are exclusive of GST and other monetary
+					transaction charges.
 				</p>
 
 				<p className="text text--normal mb--1">
