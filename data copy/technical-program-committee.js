@@ -97,10 +97,10 @@ const technicalProgramCommittee = [
 		affiliation:
 			"Indian Institute of Engineering Science and Technology, Shibpur, India",
 	},
-	{
-		name: "Dr. Tapas Chatterjee",
-		affiliation: "Indian Institute of Technology, Ropar",
-	},
+	// {
+	// 	name: "Dr. Tapas Chatterjee",
+	// 	affiliation: "Indian Institute of Technology, Ropar",
+	// },
 	{
 		name: "Dr. Hamid Abdullah Jalab al-Tulea",
 		affiliation: "University of Malaya, Kuala Lumpur, Malaysia",
@@ -160,7 +160,7 @@ const technicalProgramCommittee = [
 	},
 	{
 		name: "Dr. Annapa B",
-		affiliation: "National Institute of Technology, Silchar, Assam, India",
+		affiliation: "National Institute of Technology Karnataka Surathkal India",
 	},
 	{
 		name: "Dr. Michael Osborne",
