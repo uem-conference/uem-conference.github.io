@@ -1030,8 +1030,30 @@ const technicalProgramCommittee = [
 	},
 	{
 		name: "Prof. Dr. Ayan Banerjee",
-		affiliation: "Indian Institute of Engineering Science and Technology, Shibpur, India",
+		affiliation:
+			"Indian Institute of Engineering Science and Technology, Shibpur, India",
 		country: "IN",
+	},
+	//@ new Addition of 01/10/2023
+	{
+		name: "Mr. Shashwata Banerjee",
+		affiliation: "HCL Technologies",
+		country: "IN",
+	},
+	{
+		name: "Ms. Rishmita Saha",
+		affiliation: "Capgemini",
+		country: "IN",
+	},
+	{
+		name: "Mr. Aritra Dutta",
+		affiliation: "Accenture",
+		country: "IN",
+	},
+	{
+		name: "Mr. Aninda Sankar Shukla",
+		affiliation: "Mindshare Global",
+		country: "US",
 	},
 	// {
 	// 	name: " Dr. Basel Barakat",
