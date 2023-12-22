@@ -101,8 +101,8 @@ const Header = () => {
         <div className="marquee__container">
           <div className="marquee">
             <p className="invalid-selection">
-              Last date of Full Paper Submission: 20th December 2023 |
-              Acceptance will be notified by 6th March 2024 at the latest.
+              Last date of Full Paper Submission: 20th January 2024 | Acceptance
+              will be notified by 6th March 2024 at the latest.
             </p>
           </div>
 
