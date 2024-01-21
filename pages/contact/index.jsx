@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Heading } from "../../components/pieces";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Head from "next/head";
 const ContactPage = () => {
 	useEffect(() => {

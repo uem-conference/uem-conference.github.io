@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Fragment } from "react";
 import { Heading } from "../../../components/pieces";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Head from "next/head";
 const technicalProgramCommittee = require("../../../data/technical-program-committee");
 function TechnicalProgramCommittee() {

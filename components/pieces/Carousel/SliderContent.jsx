@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "./carousel.module.css";
 function SliderContent({ activeIndex, imageSlider }) {
 	return (

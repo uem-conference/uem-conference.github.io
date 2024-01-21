@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
 import { Banner, NavBar, SideNavBar } from "../../pieces";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Header = () => {
   const [isSideNavBarVisible, setIsSideNavBarVisible] = useState(false);
@@ -101,8 +101,8 @@ const Header = () => {
         <div className="marquee__container">
           <div className="marquee">
             <p className="invalid-selection">
-              Last date of Full Paper Submission: 20th January 2024 | Acceptance
-              will be notified by 6th March 2024 at the latest.
+              Last date of Full Paper Submission: 28th February 2024 |
+              Acceptance will be notified by 6th March 2024 at the latest.
             </p>
           </div>
 

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { importantDeadlines } from "../data/importantDates";
 import FlagCounter from "../components/pieces/FlagCounter/FlagCounter";
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 const HomePage = () => {
 	// code to check common names
 	const uniqueInternationalAdvisoryCommittee = require("../data/international-advisory-committee");

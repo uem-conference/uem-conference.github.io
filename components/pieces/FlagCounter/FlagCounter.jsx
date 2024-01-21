@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { data } from "../../../data/test";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 let total = 0;
 

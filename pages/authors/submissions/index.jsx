@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from "react";
 import { Heading } from "../../../components/pieces";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import Head from "next/head";
 const Submissions = () => {

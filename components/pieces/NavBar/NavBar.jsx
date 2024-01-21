@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { navMenuItems } from "../../../data/navbar";
-import Image from "next/image";
+import Image from "next/legacy/image";
 // import { useRouter } from "next/router";
 const NavBar = ({ isSideNavBarVisible, showSideNavBar }) => {
 	const [menuItems, setMenuItems] = useState(navMenuItems);

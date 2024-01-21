@@ -4,7 +4,7 @@ import Arrows from "./Arrows";
 import Dots from "./Dots";
 import { useEffect, useState } from "react";
 import styles from "./carousel.module.css";
-import Image from "next/image";
+import Image from "next/legacy/image";
 const len = imageSlider.length - 1;
 
 function Slider() {
