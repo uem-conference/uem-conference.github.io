@@ -7,9 +7,9 @@ import { Analytics } from "@vercel/analytics/react";
 // import firebase from 'firebase/app';
 
 export default function App({ Component, pageProps }: AppProps) {
-	return (
-		<BodyTemplate child={<Component {...pageProps} />}>
-			<Analytics />
-		</BodyTemplate>
-	);
+  return (
+    <BodyTemplate child={<Component {...pageProps} />}>
+      <Analytics />
+    </BodyTemplate>
+  );
 }

@@ -88,7 +88,6 @@
 //   },
 // ];
 
-
 const callForPaperList = [
   {
     title: "Track 1. Advanced Computing",
@@ -114,16 +113,15 @@ const callForPaperList = [
             "Human Centric Computing",
             "Quantum Cryptography",
             "Digital Forensics",
-          "Cognitive Intelligence",
-          "Fuzzy Systems",
-          "Affective Computing",
-          "Audio, Speech and Video Processing",
-          "Biomedical and Health Informatics",
-          "Bioinformatics",
-          "Quantum Computing",
-          "Bio-inspired Computing",
-          "Neuromorphic Computing"
-            
+            "Cognitive Intelligence",
+            "Fuzzy Systems",
+            "Affective Computing",
+            "Audio, Speech and Video Processing",
+            "Biomedical and Health Informatics",
+            "Bioinformatics",
+            "Quantum Computing",
+            "Bio-inspired Computing",
+            "Neuromorphic Computing",
           ],
         ],
       },
@@ -152,9 +150,7 @@ const callForPaperList = [
           "Data Analytics Systems",
           "Big Data",
           "Data Mining",
-          "Automation"
-
-          
+          "Automation",
         ],
       },
       {

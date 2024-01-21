@@ -68,7 +68,7 @@ const FlagCounter = () => {
     } catch (error) {
       console.log(error);
     }
-    setIsLoaded(true)
+    setIsLoaded(true);
   };
 
   const saveFlagCount = async (code) => {
@@ -112,7 +112,7 @@ const FlagCounter = () => {
   };
 
   useEffect(() => {
-    setIsLoaded(false)
+    setIsLoaded(false);
     let userIP;
     getPublicIP().then((ip) => {
       // alert(ip)
@@ -128,8 +128,6 @@ const FlagCounter = () => {
     });
 
     getFlagCount();
-
-
   }, []);
 
   return (
@@ -149,8 +147,8 @@ const FlagCounter = () => {
           padding: 0.5rem;
           background-color: #ddd;
         }
-        
-        .flag-counter__card--full-width{
+
+        .flag-counter__card--full-width {
           padding: 0.5rem;
           background-color: #ddd;
           grid-column: 1/5;
@@ -174,9 +172,9 @@ const FlagCounter = () => {
             width: 100%;
             grid-template-columns: repeat(3, 1fr);
           }
-          .flag-counter__card--full-width{
-          grid-column: 1/4;
-        }
+          .flag-counter__card--full-width {
+            grid-column: 1/4;
+          }
         }
       `}</style>
 
@@ -186,32 +184,37 @@ const FlagCounter = () => {
         <h1 className="flag-counter__heading heading heading--3 mb--1">
           <center>World Participation</center>
         </h1>
-        {isLoaded ? <div className="flag-counter">
-          {flagCount &&
-            flagCount.map((country) => {
-              // setTotalCount(totalCount + country.count)
-              if (!country.countryCode || country.countryCode === "Error") {
-                return null;
-              }
-              return (
-                <div
-                  className="flag-counter__card"
-                  key={`${Math.random()}${JSON.stringify(country)}`}
-                >
-                  {country.count>0 && <div className="flag-counter__flag">
-                    <Image
-                      src={`https://flagsapi.com/${country.countryCode}/shiny/64.png`}
-                      layout="fill"
-                      objectFit="contain"
-                      alt={country.countryCode}
-                    ></Image>
-                  </div>}
-                  <p className="flag-counter__count">{country.count>0? country.count : ""}</p>
-                </div>
-              );
-            })}
-        <div className="flag-counter__cad flag-counter__card--full-width">
-          {/* <div className="flag-counter__flag">
+        {isLoaded ? (
+          <div className="flag-counter">
+            {flagCount &&
+              flagCount.map((country) => {
+                // setTotalCount(totalCount + country.count)
+                if (!country.countryCode || country.countryCode === "Error") {
+                  return null;
+                }
+                return (
+                  <div
+                    className="flag-counter__card"
+                    key={`${Math.random()}${JSON.stringify(country)}`}
+                  >
+                    {country.count > 0 && (
+                      <div className="flag-counter__flag">
+                        <Image
+                          src={`https://flagsapi.com/${country.countryCode}/shiny/64.png`}
+                          layout="fill"
+                          objectFit="contain"
+                          alt={country.countryCode}
+                        ></Image>
+                      </div>
+                    )}
+                    <p className="flag-counter__count">
+                      {country.count > 0 ? country.count : ""}
+                    </p>
+                  </div>
+                );
+              })}
+            <div className="flag-counter__cad flag-counter__card--full-width">
+              {/* <div className="flag-counter__flag">
             <Image
               src={`https://flagsapi.com/${country.countryCode}/shiny/64.png`}
               layout="fill"
@@ -219,10 +222,12 @@ const FlagCounter = () => {
               alt={country.countryCode}
             ></Image>
           </div> */}
-          <p className="flag-counter__count">Total World Wide Visits: {totalCount}</p>
-        </div>
-        <div className="flag-counter__cad flag-counter__card--full-width">
-          {/* <div className="flag-counter__flag">
+              <p className="flag-counter__count">
+                Total World Wide Visits: {totalCount}
+              </p>
+            </div>
+            <div className="flag-counter__cad flag-counter__card--full-width">
+              {/* <div className="flag-counter__flag">
             <Image
               src={`https://flagsapi.com/${country.countryCode}/shiny/64.png`}
               layout="fill"
@@ -230,11 +235,16 @@ const FlagCounter = () => {
               alt={country.countryCode}
             ></Image>
           </div> */}
-          <p className="flag-counter__count">Daily Visits Count: {dailyFlagCount.daily_count}</p>
-        </div>
-        </div> : <center>Loading...</center>}
+              <p className="flag-counter__count">
+                Daily Visits Count: {dailyFlagCount.daily_count}
+              </p>
+            </div>
+          </div>
+        ) : (
+          <center>Loading...</center>
+        )}
 
-{/* 
+        {/* 
         {JSON.stringify(dailyFlagCount)}
         {totalCount} */}
       </>
