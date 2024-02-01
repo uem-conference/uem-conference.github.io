@@ -16,6 +16,7 @@ function SliderContent({ activeIndex, imageSlider }) {
             className={`${styles.slide_image}`}
             src={slide.urls}
             alt="img"
+            layout="fill"
           />
         </div>
       ))}

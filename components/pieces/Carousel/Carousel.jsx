@@ -55,6 +55,7 @@ function Slider() {
                 alt="menu"
                 width={30}
                 height={30}
+                layout="fill"
               ></Image>
             ) : (
               <Image
@@ -63,6 +64,7 @@ function Slider() {
                 alt="menu"
                 width={30}
                 height={30}
+                // layout="responsive"
               ></Image>
             )}
           </div>
