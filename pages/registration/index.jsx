@@ -105,7 +105,7 @@ const RegistrationPage = () => {
           </thead>
           <tbody className="table__body text text--normal">
             <tr className="table__row">
-              <td className="table__data">Regular Author Student</td>
+              <td className="table__data">Regular Author (UG/PG)</td>
               <td className="table__data">4500</td>
               {/* <td className="table__data">100+12% Tax and Bank charges</td> */}
               <td className="table__data">100</td>
