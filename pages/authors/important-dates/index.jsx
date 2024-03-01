@@ -164,13 +164,13 @@ const index = () => {
           Important Deadlines
         </h1>
         <ul>
-          {importantDeadlines.map((data) => {
-            return (
-              <p key={data} className="homepage__deadlines__text">
-                {data}
-              </p>
-            );
-          })}
+          {importantDeadlines.map((data, index) => (
+            <li
+              key={index}
+              className="homepage__deadlines__text"
+              dangerouslySetInnerHTML={{ __html: data }}
+            />
+          ))}
         </ul>
       </div>
     </>

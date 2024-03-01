@@ -2,7 +2,7 @@ export const importantDeadlines = [
   "Full Paper Submission Open:",
   "28th August 2023",
   "Full Paper Submission:",
-  "20th January 2024",
+  "~~20th January 2024~~ 15th March 2024",
   "Acceptance Notification:",
   "6th March 2024",
   "Early Bird Registration:",
