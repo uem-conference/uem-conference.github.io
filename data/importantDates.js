@@ -7,7 +7,7 @@ export const importantDeadlines = [
   "Acceptance Notification:",
   "<span style='text-decoration: line-through;'>06.03.2024</span> 25.03.2024",
   "Early-Bird Registration Closes:",
-  "<span style='text-decoration: line-through;'>25.03.2024</span> 30.03.2024",
+  "<span style='text-decoration: line-through;'>30.03.2024</span> 15.04.2024",
   "Last Date of Registration:",
   "25th April 2024",
   "Final Camera Ready Paper",
