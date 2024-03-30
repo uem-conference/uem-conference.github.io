@@ -2,12 +2,12 @@ export const importantDeadlines = [
   "Full Paper Submission Open:",
   "28th August 2023",
   "Full Paper Submission:",
-  "<span style='text-decoration: line-through;'>28.02.2024</span> " +
-    "15.03.2024",
+  "<span style='text-decoration: line-through;'>28th February 2024</span> " +
+    "15th March 2024",
   "Acceptance Notification:",
-  "<span style='text-decoration: line-through;'>06.03.2024</span> 25.03.2024",
+  "<span style='text-decoration: line-through;'>6th March 2024</span> 25th March 2024",
   "Early-Bird Registration Closes:",
-  "<span style='text-decoration: line-through;'>30.03.2024</span> 15.04.2024",
+  "<span style='text-decoration: line-through;'>30th March 2024</span> 15th April 2024",
   "Last Date of Registration:",
   "25th April 2024",
   "Final Camera Ready Paper",
