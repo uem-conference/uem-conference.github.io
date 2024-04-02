@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from "react";
 import { Heading } from "../../../components/pieces";
 import Image from "next/legacy/image";
@@ -72,18 +71,13 @@ const Submissions = () => {
         <p className="submissions__text text text--normal">
           Prospective authors are invited to submit original technical papers
           that have not been submitted elsewhere for publication (copyright
-          infringement issues will be the authors' responsibility) in the
+          infringement issues will be the author&apos;s responsibility) in the
           AdComSys 2024 Conference Proceedings. Papers must be written in good
           english. The Conference Management Toolkit (CMT) portal will be used
           for the submission link. All manuscripts will be double-blind reviewed
           for technical content and scope by a technical program committee. The
           authors must submit the paper without including their names and
           affiliation.
-          {/* If you are new to Conference Management Toolkit (CMT),
-					please visit&nbsp;
-					<a href="https://cmt3.research.microsoft.com/AdComSys2024">
-						this page.
-					</a> */}
         </p>
         <p className="submissions__text text text--normal">
           The organizers of AdComSys 2024 are strict about Plagiarism. The
@@ -174,15 +168,6 @@ const Submissions = () => {
 
         <p className="submissions__heading heading heading--3 mb--1">
           PPT Template of AdComSYs 2024:- Will Be Provided Soon
-          {/* <Link href="/authors/submissions">
-						<Image
-							className="download-icon"
-							src="/assets/icons/download.png"
-							alt="download-icon"
-							width={25}
-							height={25}
-						></Image>
-					</Link> */}
         </p>
 
         <p className="submissions__heading heading heading--2 heading--line my--2">
