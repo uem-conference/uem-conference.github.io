@@ -108,8 +108,8 @@ const Header = () => {
             <p className="invalid-selection">
               Last date of Full Paper Submission:{" "}
               <span style={{ textDecoration: "line-through" }}>15.03.2024</span>
-              <span> (closed)</span> | The submission deadline is extended to
-              15th March 2024.
+              <span> (closed)</span> | The notifications to the submitting
+              authors will be sent from 02.04.2024 onwards.
             </p>
           </div>
 
