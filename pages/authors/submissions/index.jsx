@@ -51,11 +51,18 @@ const Submissions = () => {
         </Head>
       </Head>
       <style jsx>{`
-        // p {
-        // 	display: flex;
-        // 	flex-direction: row;
-        // 	align-items: center;
-        // }
+        .camera-ready-submission {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 0.5rem;
+        }
+        .new-icon {
+          position: relative;
+          height: 50px;
+          width: 50px;
+        }
       `}</style>
 
       <Heading
@@ -159,8 +166,9 @@ const Submissions = () => {
           <Image
             src="/assets/gif/new.gif"
             alt="New"
-            height={30}
-            width={30}
+            height={40}
+            width={40}
+            className="new-icon"
           ></Image>
           <p>:-</p>
         </div>
