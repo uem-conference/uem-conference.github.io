@@ -154,6 +154,16 @@ const Submissions = () => {
             ></Image>
           </Link>
         </p>
+        <div className="submissions__heading heading heading--2 heading--line my-- camera-ready-submission">
+          <p>Camera Ready Submission</p>
+          <Image
+            src="/assets/gif/new.gif"
+            alt="New"
+            height={30}
+            width={30}
+          ></Image>
+          <p>:-</p>
+        </div>
         <p className="submissions__heading heading heading--2 heading--line my--2">
           Mode of Presentation:-
         </p>
