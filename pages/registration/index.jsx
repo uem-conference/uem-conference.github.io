@@ -188,9 +188,12 @@ const RegistrationPage = () => {
           ></Image>
         </h2>
 
-        <p className="text text--normal mb--1">
-          To register your Paper please{" "}
-          <Link href="/registration">Click here.</Link>
+        <p
+          className="text text--normal mb--1"
+          style={{ display: "flex", alignItems: "center", gap: "1rem" }}
+        >
+          To register your Paper please
+          <a href="https://uem.edu.in/uem-kolkata/adcomsys-2024">click here</a>
         </p>
 
         <p className="text text--normal mb--1">
@@ -198,9 +201,14 @@ const RegistrationPage = () => {
           e-mail, the auto-generated e-mail consist of an invoice having the
           amount you have paid to register your paper. Author has to e-mail that
           invoice to conference e-mail id (adcomsys@uem.edu.in) along with their
-          paper id and paper title. If any author will not send the invoice to
-          the conference email-id then their registration will not be granted or
-          treated as invalid.
+          paper id and paper title. The file format should be typically in pdf
+          format. The file name must be in this format:123_ Payment_Receipt.pdf.
+          Where 123 is your https://cmt3.research.microsoft.com/ paper number
+          (contained in the acknowledgement message to your submission). For
+          example: if the submission ID is 87 and corresponding author name is
+          Dr. Alex Simpson, then file name should be 87_Payment_Receipt.pdf If
+          any author will not send the invoice to the conference email-id then
+          their registration will not be granted or treated as invalid.
         </p>
 
         <h3
