@@ -185,7 +185,7 @@ const Submissions = () => {
         </p>
         <p className="submissions__heading heading heading--3 mb--1">
           The Word template for the camera ready submission:-
-          <Link href={"/assets/downloads/AdComSys 2024 Brochure.pdf"}>
+          <Link href={"/assets/downloads/camera/splnproc2311.docm"}>
             <Image
               className="download-icon"
               src="/assets/icons/download.png"
@@ -197,7 +197,11 @@ const Submissions = () => {
         </p>
         <p className="submissions__heading heading heading--3 mb--1">
           The Latex template for the camera ready submission:-
-          <Link href={"/assets/downloads/AdComSys 2024 Brochure.pdf"}>
+          <Link
+            href={
+              "/assets/downloads/camera/Microsoft+Word+Proceedings+Templates (2).zip"
+            }
+          >
             <Image
               className="download-icon"
               src="/assets/icons/download.png"
@@ -209,7 +213,11 @@ const Submissions = () => {
         </p>
         <p className="submissions__heading heading heading--3 mb--1">
           The Springer guidelines for Conference Proceedings:-
-          <Link href={"/assets/downloads/AdComSys 2024 Brochure.pdf"}>
+          <Link
+            href={
+              "/assets/downloads/camera//SPLNPROC Technical Instructions.pdf"
+            }
+          >
             <Image
               className="download-icon"
               src="/assets/icons/download.png"
