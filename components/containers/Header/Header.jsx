@@ -100,11 +100,6 @@ const Header = () => {
         <Banner></Banner>
         <div className="marquee__container">
           <div className="marquee">
-            {/* <p className="invalid-selection">
-              Last date of Full Paper Submission:{" "}
-              <span style={{ textDecoration: "line-through" }}>28.02.2024</span>
-              <span> {"  "}15.03.2024</span>
-            </p> */}
             <p className="invalid-selection">
               Last date of Full Paper Submission:{" "}
               <span style={{ textDecoration: "line-through" }}>15.03.2024</span>

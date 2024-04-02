@@ -199,7 +199,7 @@ const Submissions = () => {
           The Latex template for the camera ready submission:-
           <Link
             href={
-              "/assets/downloads/camera/Microsoft+Word+Proceedings+Templates (2).zip"
+              "/assets/downloads/camera/Microsoft+Word+Proceedings+Templates.zip"
             }
           >
             <Image
@@ -215,7 +215,7 @@ const Submissions = () => {
           The Springer guidelines for Conference Proceedings:-
           <Link
             href={
-              "/assets/downloads/camera//SPLNPROC Technical Instructions.pdf"
+              "/assets/downloads/camera/SPLNPROC-Technical-Instructions.pdf"
             }
           >
             <Image
