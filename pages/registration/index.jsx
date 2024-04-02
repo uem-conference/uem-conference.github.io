@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Heading } from "../../components/pieces";
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 const RegistrationPage = () => {
   useEffect(() => {
     document.title = "Registration | " + process.env.app_name;
@@ -170,9 +171,21 @@ const RegistrationPage = () => {
 
         <h2
           className="heading heading--3 mb--1"
-          style={{ textTransform: "uppercase" }}
+          style={{
+            textTransform: "uppercase",
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+          }}
         >
           Paper Registration Link
+          <Image
+            src="/assets/gif/new.gif"
+            alt="New"
+            height={40}
+            width={40}
+            className="new-icon"
+          ></Image>
         </h2>
 
         <p className="text text--normal mb--1">
