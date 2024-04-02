@@ -184,7 +184,31 @@ const Submissions = () => {
           below-mentioned link:
         </p>
         <p className="submissions__heading heading heading--3 mb--1">
-          To download Conference Brochure:-
+          The Word template for the camera ready submission:-
+          <Link href={"/assets/downloads/AdComSys 2024 Brochure.pdf"}>
+            <Image
+              className="download-icon"
+              src="/assets/icons/download.png"
+              alt="download-icon"
+              width={25}
+              height={25}
+            ></Image>
+          </Link>
+        </p>
+        <p className="submissions__heading heading heading--3 mb--1">
+          The Latex template for the camera ready submission:-
+          <Link href={"/assets/downloads/AdComSys 2024 Brochure.pdf"}>
+            <Image
+              className="download-icon"
+              src="/assets/icons/download.png"
+              alt="download-icon"
+              width={25}
+              height={25}
+            ></Image>
+          </Link>
+        </p>
+        <p className="submissions__heading heading heading--3 mb--1">
+          The Springer guidelines for Conference Proceedings:-
           <Link href={"/assets/downloads/AdComSys 2024 Brochure.pdf"}>
             <Image
               className="download-icon"
