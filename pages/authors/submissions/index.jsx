@@ -161,7 +161,13 @@ const Submissions = () => {
             ></Image>
           </Link>
         </p>
-        <div className="submissions__heading heading heading--2 heading--line my-- camera-ready-submission">
+
+        <div
+          style={{
+            marginTop: "2rem",
+          }}
+          className="submissions__heading heading heading--2 heading--line my-- camera-ready-submission"
+        >
           <p>Camera Ready Submission</p>
           <Image
             src="/assets/gif/new.gif"
@@ -172,6 +178,23 @@ const Submissions = () => {
           ></Image>
           <p>:-</p>
         </div>
+        <p className="submissions__text text text--normal">
+          The authors of the accepted papers are instructed to download the
+          template for the preparation of camera ready papers from the
+          below-mentioned link:
+        </p>
+        <p className="submissions__heading heading heading--3 mb--1">
+          To download Conference Brochure:-
+          <Link href={"/assets/downloads/AdComSys 2024 Brochure.pdf"}>
+            <Image
+              className="download-icon"
+              src="/assets/icons/download.png"
+              alt="download-icon"
+              width={25}
+              height={25}
+            ></Image>
+          </Link>
+        </p>
         <p className="submissions__heading heading heading--2 heading--line my--2">
           Mode of Presentation:-
         </p>
