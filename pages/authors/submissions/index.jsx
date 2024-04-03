@@ -199,7 +199,7 @@ const Submissions = () => {
           The Latex template for the camera ready submission:-
           <Link
             href={
-              "/assets/downloads/camera/Microsoft+Word+Proceedings+Templates.zip"
+              "/assets/downloads/camera/LaTeX2e+Proceedings+Templates+download.zip"
             }
           >
             <Image
