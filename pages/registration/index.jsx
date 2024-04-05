@@ -269,7 +269,19 @@ const RegistrationPage = () => {
             <span>IOBAINBB893</span>
           </li>
         </ol>
-
+        <p className="text text--normal mb--1">
+          The author has to email the TRANSACTION ID to the conference email ID
+          (adcomsys@uem.edu.in) along with their paper ID and paper title. The
+          file format of the transaction ID proof should be typically in pdf
+          format. The file name must be in this format:123_ Payment_Receipt.pdf.
+          Where 123 is your https://cmt3.research.microsoft.com/paper number
+          (contained in the acknowledgement message to your submission). For
+          example, if the submission ID is 87 and the corresponding author name
+          is Dr. Alex Simpson, then the file name should be
+          87_Payment_Receipt.pdf. If any author does not send the invoice to the
+          conference email ID, then their registration will not be granted and
+          will be treated as invalid.
+        </p>
         <h4
           className="heading heading--3 mb--1"
           style={{ textTransform: "uppercase" }}
