@@ -187,7 +187,17 @@ const RegistrationPage = () => {
             className="new-icon"
           ></Image>
         </h2>
-
+        <h3
+          className="heading heading--5 mb--1"
+          style={{
+            textTransform: "uppercase",
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+          }}
+        >
+          For Indian Authors:
+        </h3>
         <p
           className="text text--normal mb--1"
           style={{ display: "flex", alignItems: "center", gap: "1rem" }}
@@ -215,13 +225,57 @@ const RegistrationPage = () => {
           any author will not send the invoice to the conference email-id then
           their registration will not be granted or treated as invalid.
         </p>
-
         <h3
+          className="heading heading--5 mb--1"
+          style={{
+            textTransform: "uppercase",
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+          }}
+        >
+          For Foreign Authors:
+        </h3>
+        <p className="text text--normal mb--1">
+          Foreign authors are requested to pay the registration fees using the
+          following details:
+        </p>
+
+        <ol>
+          <li style={{ marginBottom: "5px" }}>
+            <strong style={{ marginRight: " 5px" }}>
+              Name of the Beneficiary:
+            </strong>
+            <span>
+              &quot;University of Engineering and Management, Kolkata&quot;
+            </span>
+          </li>
+          <li style={{ marginBottom: "5px" }}>
+            <strong style={{ marginRight: " 5px" }}>Name of the Bank:</strong>
+            <span>Indian Overseas Bank, Sector - V, Salt Lake Branch</span>
+          </li>
+          <li style={{ marginBottom: "5px" }}>
+            <strong style={{ marginRight: " 5px" }}>
+              Beneficiary A/c. No:
+            </strong>
+            <span>164201000001924 (Savings A/c.)</span>
+          </li>
+          <li style={{ marginBottom: "5px" }}>
+            <strong style={{ marginRight: " 5px" }}>IFSC:</strong>
+            <span>IOBA0001642</span>
+          </li>
+          <li style={{ marginBottom: "5px" }}>
+            <strong style={{ marginRight: " 5px" }}>Swift Code:</strong>
+            <span>IOBAINBB893</span>
+          </li>
+        </ol>
+
+        <h4
           className="heading heading--3 mb--1"
           style={{ textTransform: "uppercase" }}
         >
           Cancellation Policy
-        </h3>
+        </h4>
 
         <p className="text text--normal mb--1">
           There will be no cancellation after Registration
