@@ -193,7 +193,12 @@ const RegistrationPage = () => {
           style={{ display: "flex", alignItems: "center", gap: "1rem" }}
         >
           To register your Paper please
-          <a href="https://uem.edu.in/uem-kolkata/adcomsys-2024">click here</a>
+          <a
+            target="_blank"
+            href="https://uem.edu.in/uem-kolkata/adcomsys-2024"
+          >
+            click here
+          </a>
         </p>
 
         <p className="text text--normal mb--1">
