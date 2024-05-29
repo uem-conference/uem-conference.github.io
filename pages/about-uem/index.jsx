@@ -6,7 +6,10 @@ import Link from "next/link";
 import Head from "next/head";
 export default function AboutUem() {
   useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get("q");
     document.title = "About UEM | " + process.env.app_name;
+    console.log("myParam=>" + myParam);
   }, []);
   return (
     <>
