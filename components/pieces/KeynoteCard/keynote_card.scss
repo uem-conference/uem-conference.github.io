@@ -3,28 +3,25 @@
   max-width: 800px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
 
 .keynote-card {
-  //   padding: 15px;
-  //   padding-top: 0px;
   width: 100%;
-  aspect-ratio: 2/3.1;
+  max-width: 800px;
+  height: fit-content;
   border: 2px solid gray;
   border-radius: 10px;
-  //   background-color: lightgrey;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  // gap: 10px;
 
   &__image {
-    margin: auto;
     width: 100%;
-    aspect-ratio: 7/5;
+    aspect-ratio: 7/9;
     position: relative;
-    border-bottom: 2px solid gray;
-
-    // height: 10rem;
 
     & > img {
       object-fit: cover;
@@ -32,36 +29,36 @@
     }
   }
   &__content {
+    border-left: 2px solid gray;
     width: 100%;
-    height: 50%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // display: grid;
-    // grid-template-rows: 10fr 1fr 1fr auto;
-    // background-color: aqua;
 
     &__name {
       width: 100%;
       text-transform: capitalize;
       border-bottom: 2px solid grey;
       font-weight: 600;
-      font-size: clamp(11px, 1.1vw, 16px);
       letter-spacing: 1px;
-      height: 40px;
+      padding: 10px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 10px;
     }
 
     &__dept {
-      height: 40px;
+      // height: 40px;
       text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      //   font-size: 12px;
+      border: 2px solid black;
+      border-top: none;
+      border-bottom: none;
+      border-radius: 3%/100%;
       font-size: clamp(8px, 0.9vw, 12px);
+      padding: 0px 15px;
     }
     &__org {
       font-size: 12px;
@@ -73,18 +70,18 @@
     }
 
     &__desc {
-      font-size: 12px;
-      padding: 10px;
+      font-size: 14px;
+      padding: 10px 20px;
       text-align: justify;
-      height: 55px;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      line-height: 15px;
+      // height: 55px;
+      // text-overflow: ellipsis;
+      // overflow: hidden;
+      line-height: 21px;
 
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
-      white-space: pre-wrap;
+      // display: -webkit-box;
+      // -webkit-box-orient: vertical;
+      // -webkit-line-clamp: 3;
+      // white-space: pre-wrap;
       //   background-color: aquamarine;
     }
   }
@@ -190,72 +187,72 @@
   }
 }
 
-@media screen and (max-width: 860px) {
-  .keynote-speakers {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+// @media screen and (max-width: 860px) {
+//   .keynote-speakers {
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 20px;
+//   }
 
-  .keynote-card {
-    &__content {
-      &__name {
-        font-size: clamp(11px, 2vw, 16px);
-      }
+//   .keynote-card {
+//     &__content {
+//       &__name {
+//         font-size: clamp(11px, 2vw, 16px);
+//       }
 
-      &__dept {
-        font-size: clamp(10px, 0.9vw, 12px);
-      }
-      &__org {
-        font-size: clamp(10px, 0.9vw, 12px);
-      }
+//       &__dept {
+//         font-size: clamp(10px, 0.9vw, 12px);
+//       }
+//       &__org {
+//         font-size: clamp(10px, 0.9vw, 12px);
+//       }
 
-      &__desc {
-        font-size: 10px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 500px) {
-  .keynote-speakers {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-  }
+//       &__desc {
+//         font-size: 10px;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 500px) {
+//   .keynote-speakers {
+//     grid-template-columns: repeat(1, 1fr);
+//     gap: 20px;
+//   }
 
-  .keynote-card {
-    &__content {
-      &__name {
-        font-size: clamp(11px, 5vw, 16px);
-      }
+//   .keynote-card {
+//     &__content {
+//       &__name {
+//         font-size: clamp(11px, 5vw, 16px);
+//       }
 
-      &__dept {
-        font-size: clamp(10px, 2.5vw, 12px);
-      }
-      &__org {
-        font-size: clamp(10px, 2.5vw, 12px);
-      }
+//       &__dept {
+//         font-size: clamp(10px, 2.5vw, 12px);
+//       }
+//       &__org {
+//         font-size: clamp(10px, 2.5vw, 12px);
+//       }
 
-      &__desc {
-        font-size: 10px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 600px) {
-  .keynote {
-    &__content {
-      transform: scale(1);
-      animation: scaleIn 0.2s linear;
-      width: 90%;
-      max-width: 700px;
-      aspect-ratio: 1/1.75;
-    }
+//       &__desc {
+//         font-size: 10px;
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 600px) {
+//   .keynote {
+//     &__content {
+//       transform: scale(1);
+//       animation: scaleIn 0.2s linear;
+//       width: 90%;
+//       max-width: 700px;
+//       aspect-ratio: 1/1.75;
+//     }
 
-    &__job {
-      font-size: 15px;
-    }
-    &__desc {
-      font-size: 15px;
-      line-height: 23px;
-    }
-  }
-}
+//     &__job {
+//       font-size: 15px;
+//     }
+//     &__desc {
+//       font-size: 15px;
+//       line-height: 23px;
+//     }
+//   }
+// }

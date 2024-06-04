@@ -4,7 +4,7 @@ import React, { Fragment, useState } from "react";
 const KeynoteCard = (props) => {
   const data = props.data;
 
-  const [showDesc, setShowDesc] = useState(false);
+  // const [showDesc, setShowDesc] = useState(false);
   return (
     <Fragment>
       <div className="keynote-card">
@@ -14,22 +14,24 @@ const KeynoteCard = (props) => {
         <div className="keynote-card__content">
           <p className="keynote-card__content__name">
             {data.name.toLowerCase()}
+            <p className="keynote-card__content__dept">
+              {data.dept}-{data.org}
+            </p>
           </p>
-          <p className="keynote-card__content__dept">{data.dept}</p>
-          <p className="keynote-card__content__org">{data.org}</p>
+          {/* <p className="keynote-card__content__org">{data.org}</p> */}
           <p className="keynote-card__content__desc">{data.desc}</p>
-          <button
+          {/* <button
             className="keynote-card__btn"
             onClick={() => {
               setShowDesc(true);
             }}
           >
             Know More
-          </button>
+          </button> */}
         </div>
       </div>
 
-      {showDesc && (
+      {/* {showDesc && (
         <div className="keynote__screen">
           <button
             className="keynote__btn"
@@ -47,7 +49,7 @@ const KeynoteCard = (props) => {
             <p className="keynote__desc">{data.desc}</p>
           </div>
         </div>
-      )}
+      )} */}
     </Fragment>
   );
 };
