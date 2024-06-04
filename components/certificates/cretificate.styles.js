@@ -8,4 +8,5 @@ const styles = new StyleMaster();
 
 styles.addClassRule(".para", { "background-color": "green" });
 
-export default { certificateStyles, styles };
+const expObj = { certificateStyles, styles };
+export default expObj;

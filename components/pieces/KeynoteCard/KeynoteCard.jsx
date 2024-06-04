@@ -9,7 +9,7 @@ const KeynoteCard = (props) => {
     <Fragment>
       <div className="keynote-card">
         <div className="keynote-card__image">
-          <Image src={data.image} layout="fill"></Image>
+          <Image src={data.image} layout="fill" alt={data.name}></Image>
         </div>
         <div className="keynote-card__content">
           <p className="keynote-card__content__name">
