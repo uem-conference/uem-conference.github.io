@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import { Heading } from "../../components/pieces";
+import { Heading, KeynoteCard } from "../../components/pieces";
 import Head from "next/head";
+import { keynoteSpeakersArray } from "../../data/keynoteSpeakers";
 function KeynoteSpeakers() {
   useEffect(() => {
     document.title = "Keynote Speakers | " + process.env.app_name;
@@ -46,9 +47,16 @@ function KeynoteSpeakers() {
 
       <Heading text={"Keynote Speakers"} class={"mb--2"} element="h1"></Heading>
       <div className="content-container">
-        <h2 className=" heading heading--2 sub-title">
-          <center>To Be Updated</center>
-        </h2>
+        <section className="keynote-speakers">
+          {keynoteSpeakersArray.map((speaker) => {
+            return (
+              <KeynoteCard
+                data={speaker}
+                key={JSON.stringify(speaker)}
+              ></KeynoteCard>
+            );
+          })}
+        </section>
       </div>
     </>
   );

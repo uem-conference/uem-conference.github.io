@@ -10,6 +10,7 @@ export default function AboutUem() {
     const myParam = urlParams.get("q");
     document.title = "About UEM | " + process.env.app_name;
     console.log("myParam=>" + myParam);
+
   }, []);
   return (
     <>
