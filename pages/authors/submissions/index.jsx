@@ -86,6 +86,7 @@ const Submissions = () => {
           authors must submit the paper without including their names and
           affiliation.
         </p>
+        {/* This is Commit */}
         <p className="submissions__text text text--normal">
           The organizers of AdComSys 2024 are strict about Plagiarism. The
           submitting authors should avoid the deliberate or reckless
