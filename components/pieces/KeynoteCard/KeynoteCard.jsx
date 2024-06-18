@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React, { Fragment, useState } from "react";
 
 const KeynoteCard = (props) => {

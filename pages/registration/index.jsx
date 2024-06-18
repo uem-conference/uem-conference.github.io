@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Heading } from "../../components/pieces";
 import Link from "next/link";
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 const RegistrationPage = () => {
   useEffect(() => {
     document.title = "Registration | " + process.env.app_name;
