@@ -249,7 +249,19 @@ const Submissions = () => {
         </p>
 
         <p className="submissions__heading heading heading--3 mb--1">
-          PPT Template of AdComSYs 2024:- Will Be Provided Soon
+          PPT Template of AdComSYs 2024(new):-{" "}
+          <Link
+            href={"/assets/downloads/PPT_Template_AdComSys_2024.pptx"}
+            target="_blank"
+          >
+            <Image
+              className="download-icon"
+              src="/assets/icons/download.png"
+              alt="download-icon"
+              width={25}
+              height={25}
+            ></Image>
+          </Link>
         </p>
 
         <p className="submissions__heading heading heading--2 heading--line my--2">

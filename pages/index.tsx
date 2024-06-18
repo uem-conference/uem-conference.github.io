@@ -288,14 +288,14 @@ const HomePage = () => {
                 click here
               </a>
               <br />
-              <br />
+              {/* <br />
               To download list of accepted papers as on 5th May 2024, please{" "}
               <a
                 href="/assets/downloads/List of the accepted papers as on 5th May 2024.pdf"
                 target="_blank"
               >
                 click here
-              </a>
+              </a> */}
             </p>
           </div>
           <div className="homepage__right">
