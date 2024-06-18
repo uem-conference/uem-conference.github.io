@@ -11,6 +11,7 @@ function AcceptedAndRegisteredPapers() {
       "Accepted And Registered Papers | Techinical Programs | " +
       process.env.app_name;
   }, []);
+  console.log(acceptedPapers);
   return (
     <>
       <Head>
@@ -68,11 +69,12 @@ function AcceptedAndRegisteredPapers() {
           <center>To be updated</center>
         </h2> */}
       <div className="arp-container">
-        {acceptedPapers.map((paper) => {
-          <div className="arp-paper-row">
+        {acceptedPapers.map((paper) => (
+          <div className="arp-paper-row" key={paper.paperID}>
             <p>{paper.paperID}</p>
-          </div>;
-        })}
+            <p>{paper.title}</p>
+          </div>
+        ))}
       </div>
       <p className="submissions__heading heading heading--3 mb--1">
         ACCEPTED AND REGISTERED PAPERS :-
