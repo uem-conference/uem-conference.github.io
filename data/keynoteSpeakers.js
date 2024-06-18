@@ -1,5 +1,12 @@
 export const keynoteSpeakersArray = [
   {
+    image: "/assets/images/KeynoteSpeakers/Prof_barna_cornel.jpg",
+    name: "Prof. Barna Cornel",
+    dept: "Professor, Department of Informatics",
+    org: "Aurel Vlaicu University of Arad, Romania",
+    desc: "Barna Cornel was born on August 18, 1958 in Arad city, Romania. He received his Bachelor of Science in field of Computer Science from Universitatea Politehnica Timisoara in 1983. He completed his study to Doctor in Science at the same University. In 2000 he join the Department of Informatics of Aurel Vlaicu University from Arad, where he is professor.His research interests lie in area of artificial intelligence, fuzzy logic and information granularity.",
+  },
+  {
     image: "/assets/images/KeynoteSpeakers/Prof_Valentina_Emilia_Balas.jpg",
     name: "Prof. Valentina Emilia Balas",
     dept: "Professor at the Faculty of Engineering",
@@ -26,12 +33,5 @@ export const keynoteSpeakersArray = [
     dept: "Professor, Department of Computer Science and Technology",
     org: "IIEST, Shibpur",
     desc: "Prof. Das has worked for almost four years in TCS as an assistant system analyst and has more than 20 years of teaching experience. Prof. Das completed B. Sc. Honours in Mathematics from Belur Rama Krishna Mission Vidyamandira under Calcutta University in 1993 and B. Tech and M. Tech. in Computer Science and Engineering from Calcutta University. His areas of interest for both teaching and research are Discrete Structures, Data Structures and Algorithms, Design and Analysis of Algorithms, Database Management Systems, Data Mining, Pattern Recognition, Machine Learning, Text Mining, and Audio-Video data analysis.",
-  },
-  {
-    image: "/assets/images/KeynoteSpeakers/Prof_barna_cornel.jpg",
-    name: "Prof. Barna Cornel",
-    dept: "Professor, Department of Informatics",
-    org: "Aurel Vlaicu University of Arad, Romania",
-    desc: "Barna Cornel was born on August 18, 1958 in Arad city, Romania. He received his Bachelor of Science in field of Computer Science from Universitatea Politehnica Timisoara in 1983. He completed his study to Doctor in Science at the same University. In 2000 he join the Department of Informatics of Aurel Vlaicu University from Arad, where he is professor.His research interests lie in area of artificial intelligence, fuzzy logic and information granularity.",
   },
 ];
