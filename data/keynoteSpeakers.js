@@ -32,6 +32,6 @@ export const keynoteSpeakersArray = [
     name: "Prof. Barna Cornel",
     dept: "Professor, Department of Informatics",
     org: "Aurel Vlaicu University of Arad, Romania",
-    desc: "Barna Cornel was born on August 18, 1958 in Arad city, Romania. He received his Bachelor of Science in field of Computer Science from Universitatea Politehnica Timisoara in 1983. He completed his study to Doctor in Science at the same University. In 2000 he join the Department of Informatics of Aurel Vlaicu University from Arad, where he is professor.His research interests lie in area of artificial intelligence, fuzzy logic and information granularity",
+    desc: "Barna Cornel was born on August 18, 1958 in Arad city, Romania. He received his Bachelor of Science in field of Computer Science from Universitatea Politehnica Timisoara in 1983. He completed his study to Doctor in Science at the same University. In 2000 he join the Department of Informatics of Aurel Vlaicu University from Arad, where he is professor.His research interests lie in area of artificial intelligence, fuzzy logic and information granularity.",
   },
 ];
