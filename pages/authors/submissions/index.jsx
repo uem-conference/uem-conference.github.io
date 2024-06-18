@@ -116,7 +116,7 @@ const Submissions = () => {
 
         <p className="submissions__heading heading heading--3 mb--1">
           The word template is available at :-
-          <Link href={"/assets/downloads/Word+Template.zip"}>
+          <Link href={"/assets/downloads/Word+Template.zip"} target="_blank">
             <Image
               className="download-icon"
               src="/assets/icons/download.png"
@@ -128,7 +128,7 @@ const Submissions = () => {
         </p>
         <p className="submissions__heading heading heading--3 mb--1">
           The Latex Template Is Available At:-{" "}
-          <Link href={"/assets/downloads/LaTex+Package.zip"}>
+          <Link href={"/assets/downloads/LaTex+Package.zip"} target="_blank">
             <Image
               className="download-icon"
               src="/assets/icons/download.png"
@@ -140,7 +140,7 @@ const Submissions = () => {
         </p>
         <p className="submissions__heading heading heading--3 mb--1">
           Details can also be found in the Call for Papers:-
-          <Link href={"/assets/downloads/Call-For-Papers.pdf"}>
+          <Link href={"/assets/downloads/Call-For-Papers.pdf"} target="_blank">
             <Image
               className="download-icon"
               src="/assets/icons/download.png"
@@ -152,7 +152,10 @@ const Submissions = () => {
         </p>
         <p className="submissions__heading heading heading--3 mb--1">
           To download Conference Brochure:-
-          <Link href={"/assets/downloads/AdComSys 2024 Brochure.pdf"}>
+          <Link
+            href={"/assets/downloads/AdComSys 2024 Brochure.pdf"}
+            target="_blank"
+          >
             <Image
               className="download-icon"
               src="/assets/icons/download.png"
@@ -186,7 +189,10 @@ const Submissions = () => {
         </p>
         <p className="submissions__heading heading heading--3 mb--1">
           The Word template for the camera ready submission:-
-          <Link href={"/assets/downloads/camera/splnproc2311.docm"}>
+          <Link
+            href={"/assets/downloads/camera/splnproc2311.docm"}
+            target="_blank"
+          >
             <Image
               className="download-icon"
               src="/assets/icons/download.png"
@@ -202,6 +208,7 @@ const Submissions = () => {
             href={
               "/assets/downloads/camera/LaTeX2e+Proceedings+Templates+download.zip"
             }
+            target="_blank"
           >
             <Image
               className="download-icon"
@@ -218,6 +225,7 @@ const Submissions = () => {
             href={
               "/assets/downloads/camera/SPLNPROC-Technical-Instructions.pdf"
             }
+            target="_blank"
           >
             <Image
               className="download-icon"

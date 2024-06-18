@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Heading } from "../../../components/pieces";
 import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 function Schedule() {
   useEffect(() => {
     document.title = "Schedule | Techinical Programs | " + process.env.app_name;
@@ -45,10 +47,25 @@ function Schedule() {
       </Head>
       <Heading text={"Schedule"} class={"mb--2"} element="h1"></Heading>
       <div className="content-container">
-        <h2 className=" heading heading--2 sub-title">
+        {/* <h2 className=" heading heading--2 sub-title">
           <center>To be updated</center>
-        </h2>
+        </h2> */}
       </div>
+      <p className="submissions__heading heading heading--3 mb--1">
+        SCHEDULE :-
+        <Link
+          href={"/assets/downloads/Program_Summary_AdComSys_2024.pdf"}
+          target="_blank"
+        >
+          <Image
+            className="download-icon"
+            src="/assets/icons/download.png"
+            alt="download-icon"
+            width={25}
+            height={25}
+          ></Image>
+        </Link>
+      </p>
     </>
   );
 }

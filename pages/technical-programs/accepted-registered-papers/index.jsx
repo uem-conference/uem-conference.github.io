@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Heading } from "../../../components/pieces";
 import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 function AcceptedAndRegisteredPapers() {
   useEffect(() => {
     document.title =
@@ -59,11 +61,26 @@ function AcceptedAndRegisteredPapers() {
         class={"mb--2"}
         element="h1"
       ></Heading>
-      <div className="content-container">
-        <h2 className=" heading heading--2 sub-title">
+      {/* <div className="content-container"> */}
+      {/* <h2 className=" heading heading--2 sub-title">
           <center>To be updated</center>
-        </h2>
-      </div>
+        </h2> */}
+      <p className="submissions__heading heading heading--3 mb--1">
+        ACCEPTED AND REGISTERED PAPERS :-
+        <Link
+          href={"/assets/downloads/List_of_Accepted_&_Registered_Papers.pdf"}
+          target="_blank"
+        >
+          <Image
+            className="download-icon"
+            src="/assets/icons/download.png"
+            alt="download-icon"
+            width={25}
+            height={25}
+          ></Image>
+        </Link>
+      </p>
+      {/* </div> */}
     </>
   );
 }
