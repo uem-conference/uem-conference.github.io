@@ -68,6 +68,7 @@ function AcceptedAndRegisteredPapers() {
           <center>To be updated</center>
         </h2> */}
       <div className="arp-container">
+        {JSON.parse(acceptedPapers)}
         {acceptedPapers.map((paper) => {
           <div className="arp-paper-row">
             <p>{paper.paperID}</p>
