@@ -3,6 +3,7 @@ import { Heading } from "../../../components/pieces";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { ConferenceTable } from "../../../components/pieces";
 function Schedule() {
   useEffect(() => {
     document.title = "Schedule | Techinical Programs | " + process.env.app_name;
@@ -51,6 +52,7 @@ function Schedule() {
           <center>To be updated</center>
         </h2> */}
       </div>
+      <ConferenceTable></ConferenceTable>
       <p className="submissions__heading heading heading--3 mb--1">
         SCHEDULE :-
         <Link

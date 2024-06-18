@@ -1,5 +1,4 @@
-// data/adComSys2024Schedule.js
-const adComSys2024Schedule = {
+const adComSysSchedule = {
   title:
     "First International Conference on Advanced Computing and Systems - AdComSys 2024",
   schedule: [
@@ -50,4 +49,4 @@ const adComSys2024Schedule = {
   ],
 };
 
-export default adComSys2024Schedule;
+export default adComSysSchedule;

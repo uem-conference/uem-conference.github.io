@@ -7,3 +7,4 @@ export { default as SettingPanel } from "./SettingPanel/SettingPanel";
 export { default as ChatBot } from "./ChatBot/ChatBot";
 export { default as ChatBot_v2 } from "./ChatBot_v2/index";
 export { default as KeynoteCard } from "./KeynoteCard/KeynoteCard";
+export { default as ConferenceTable } from "./ConferenceTable/ConferenceTable";
