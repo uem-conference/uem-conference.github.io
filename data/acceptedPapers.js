@@ -304,7 +304,7 @@ const acceptedPapers = [
     paperID: 94,
     title:
       "Ensemble Learning to Enhance Diabetic Retinopathy Detection and Classification in Fundus Images",
-    authors: ["Ms. S.G.Gawande", "Dr A.P.Thakare"],
+    authors: ["Ms. S.G.Gawande", "Dr. A.P.Thakare"],
     correspondingAuthor: "Ms S.G.Gawande",
   },
   {
@@ -411,3 +411,4 @@ const acceptedPapers = [
     correspondingAuthor: "Yagnyasenee Sen Gupta",
   },
 ];
+export default acceptedPapers;

@@ -3,6 +3,8 @@ import { Heading } from "../../../components/pieces";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import acceptedPapers from "../../../data/acceptedPapers";
+
 function AcceptedAndRegisteredPapers() {
   useEffect(() => {
     document.title =
@@ -65,6 +67,13 @@ function AcceptedAndRegisteredPapers() {
       {/* <h2 className=" heading heading--2 sub-title">
           <center>To be updated</center>
         </h2> */}
+      <div className="arp-container">
+        {acceptedPapers.map((paper) => {
+          <div className="arp-paper-row">
+            <p>{paper.paperID}</p>
+          </div>;
+        })}
+      </div>
       <p className="submissions__heading heading heading--3 mb--1">
         ACCEPTED AND REGISTERED PAPERS :-
         <Link
