@@ -11,6 +11,7 @@ function AcceptedAndRegisteredPapers() {
       "Accepted And Registered Papers | Techinical Programs | " +
       process.env.app_name;
   }, []);
+  console.log(acceptedPapers);
   return (
     <>
       <Head>
@@ -67,14 +68,28 @@ function AcceptedAndRegisteredPapers() {
       {/* <h2 className=" heading heading--2 sub-title">
           <center>To be updated</center>
         </h2> */}
-      <div className="arp-container">
-        {JSON.parse(acceptedPapers)}
-        {acceptedPapers.map((paper) => {
-          <div className="arp-paper-row">
-            <p>{paper.paperID}</p>
-          </div>;
-        })}
-      </div>
+
+      <table className="arp-container">
+        <tr className="arp__paper-row">
+          <th className="arp__id arp__heading"> ID</th>
+          <th className="arp__title arp__heading">Title</th>
+          <th className="arp__authors arp__heading">Authors</th>
+          <th className="arp__cauthor arp__heading">Corresponding Author</th>
+        </tr>
+        {acceptedPapers.map((paper) => (
+          <tr className="arp__paper-row" key={paper.paperID}>
+            <td className="arp__id arp__cell">{paper.paperID}</td>
+            <td className="arp__title arp__cell">{paper.title}</td>
+            <td className="arp__authors arp__cell">
+              {paper.authors.join(", ")}
+            </td>
+            <td className="arp__cauthor arp__cell">
+              {paper.correspondingAuthor}
+            </td>
+          </tr>
+        ))}
+      </table>
+      <br />
       <p className="submissions__heading heading heading--3 mb--1">
         ACCEPTED AND REGISTERED PAPERS :-
         <Link

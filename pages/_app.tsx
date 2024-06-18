@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import "../styles/chatbot.css";
 import "../styles/footer_v2.scss";
+import "../styles/base/acceptedPapers.scss";
 import "/components/pieces/KeynoteCard/keynote_card.scss";
 import Head from "next/head";
 import type { AppProps } from "next/app";
