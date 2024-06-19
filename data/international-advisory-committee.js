@@ -173,6 +173,18 @@
 
 const internationalAdvisoryCommittee = [
   {
+    name: "Prof. Barna Cornel",
+    affiliation:
+      "Department of Informatics-Aurel Vlaicu University of Arad, Romania",
+    country: "RO",
+  },
+
+  {
+    name: "Prof. Valentine Emilia Balas",
+    affiliation: `Faculty Of Engineering-"Aurel Vlaicu" University of Arad, Romania`,
+    country: "AE",
+  },
+  {
     name: "Dr. Lawrence Dalmarie",
     affiliation: "University of District of Columbia, USA",
     country: "US",
