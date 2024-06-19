@@ -9,25 +9,16 @@ const KeynoteCard = (props) => {
     <Fragment>
       <div className="keynote-card">
         <div className="keynote-card__image">
-          <Image src={data.image} layout="fill" alt={data.name}></Image>
+          <Image src={data.image} layout="fill" alt={data.name} />
         </div>
         <div className="keynote-card__content">
-          <p className="keynote-card__content__name">
+          <div className="keynote-card__content__name">
             {data.name.toLowerCase()}
-            <p className="keynote-card__content__dept">
-              {data.dept}-{data.org}
-            </p>
-          </p>
-          {/* <p className="keynote-card__content__org">{data.org}</p> */}
-          <p className="keynote-card__content__desc">{data.desc}</p>
-          {/* <button
-            className="keynote-card__btn"
-            onClick={() => {
-              setShowDesc(true);
-            }}
-          >
-            Know More
-          </button> */}
+          </div>
+          <div className="keynote-card__content__dept">
+            {data.dept}-{data.org}
+          </div>
+          <div className="keynote-card__content__desc">{data.desc}</div>
         </div>
       </div>
 

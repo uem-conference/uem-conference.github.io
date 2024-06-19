@@ -101,10 +101,8 @@ const Header = () => {
         <div className="marquee__container">
           <div className="marquee">
             <p className="invalid-selection">
-              Last date of Full Paper Submission:{" "}
-              <span style={{ textDecoration: "line-through" }}>15.03.2024</span>
-              <span> (closed)</span> | The notifications to the submitting
-              authors will be sent from 02.04.2024 onwards.
+              AdComSys 2024 will be organized at the University of Engineering
+              and Management, Kolkata Campus on 26th and 27th June 2024.
             </p>
           </div>
 
