@@ -1,5 +1,12 @@
 export const keynoteSpeakersArray = [
   {
+    image: "/assets/images/KeynoteSpeakers/prof_bhaskar_gupta.jpg",
+    name: "Prof. Bhaskar Gupta (Chief Guest)",
+    dept: "Vice Chancellor, Jadavpur University, India",
+    org: "Jadavpur University, Kolkata, India",
+    desc: `Bhaskar Gupta was born in Kolkata, India, in 1960. He received the B.E.Tel.E.,M.E.Tel.E., and Ph.D. degrees from Jadavpur University, Kolkata, India in 1982, 1984 and 1996 respectively. He is currently a Professor in the Department of Electronics and Telecommunications Department, Jadavpur University, where he has been teaching since 1985.He has supervised 20 doctoral dissertations and is presently guiding 17 more. He has published more than 300 research articles in refereed journals and conferences and coauthored three books on advanced research topics. His present area of interest is planar antennas, wearable antennas,dielectric resonator antennas, biological effects of RF radiation on plants, RF MEMS and application of soft computing techniques in microwave engineering and antennas. Dr. Gupta is a Fellow of IETE, a Fellow of the Institution of Engineers (India) and a Life Member of SEMCE(I). He was the Chairman of AP-MTT Joint Chapter, IEEE Calcutta Section; Chairman, Students’ Activities and Vice-Chair, IEEE Calcutta Section. Presently, he is Chair, Electronics & Telecommunication Engineering Division, WB State Centre of Institution of Engineers (India). He serves as Referee in different internationally acclaimed journals and as Guest Editor to the Asian Journal of Physics. Further, he successfully completed 11 research projects sponsored by various agencies and is currently working on seven more, including national and international collaborative projects. He was the Chairman, West Bengal Joint Entrance Examination Board from 2011 to 2015. He served DFCCIL and Railtel Corporation, both Government of India PSUs, as Independent Director for more than three years in each case. He has been named in the 2009 edition of Marquis’ Who’s Who in the World.`,
+  },
+  {
     image: "/assets/images/KeynoteSpeakers/Prof_barna_cornel.jpg",
     name: "Prof. Barna Cornel",
     dept: "Professor, Department of Informatics",
