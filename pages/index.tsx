@@ -328,7 +328,7 @@ const HomePage = () => {
                 </a>
               </p>
               <Image
-                style={{ margin: "2rem 0" }}
+                // style={{ margin: "2rem 0" }}
                 src={"/AIS-springer.jpg"}
                 alt="springer"
                 width={120}
