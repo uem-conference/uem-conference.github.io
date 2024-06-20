@@ -182,7 +182,7 @@ const internationalAdvisoryCommittee = [
   {
     name: "Prof. Valentine Emilia Balas",
     affiliation: `Faculty Of Engineering-"Aurel Vlaicu" University of Arad, Romania`,
-    country: "AE",
+    country: "RO",
   },
   {
     name: "Dr. Lawrence Dalmarie",
