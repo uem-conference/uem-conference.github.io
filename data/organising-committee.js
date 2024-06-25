@@ -153,18 +153,18 @@ const organisingCommittee = [
         name: "Dr. Srilekha Mukherjee",
         organization: "University of Engineering and Management Kolkata, India",
       },
-      {
-        name: "Dr. Panchali Datta Choudhury",
-        organization: "University of Engineering and Management Kolkata, India",
-      },
+      // {
+      //   name: "Dr. Panchali Datta Choudhury",
+      //   organization: "University of Engineering and Management Kolkata, India",
+      // },
       {
         name: "Dr. Anirban Chakraborty",
         organization: "University of Engineering and Management Kolkata, India",
       },
-      {
-        name: "Prof. Stobak Dutta",
-        organization: "University of Engineering and Management Kolkata, India",
-      },
+      // {
+      //   name: "Prof. Stobak Dutta",
+      //   organization: "University of Engineering and Management Kolkata, India",
+      // },
       {
         name: "Dr. Prasenjit Kumar Das",
         organization: "University of Engineering and Management Kolkata, India",
@@ -193,10 +193,10 @@ const organisingCommittee = [
         name: "Dr. Rajendrani Mukherjee",
         organization: "University of Engineering and Management Kolkata, India",
       },
-      {
-        name: "Dr. Tapas Guha",
-        organization: "University of Engineering and Management Kolkata, India",
-      },
+      // {
+      //   name: "Dr. Tapas Guha",
+      //   organization: "University of Engineering and Management Kolkata, India",
+      // },
     ],
   },
 ];
