@@ -158,7 +158,7 @@ const organisingCommittee = [
       //   organization: "University of Engineering and Management Kolkata, India",
       // },
       {
-        name: "Dr. Anirban Chakraborty",
+        name: "Prof. Anirban Ganguly",
         organization: "University of Engineering and Management Kolkata, India",
       },
       // {
@@ -193,6 +193,11 @@ const organisingCommittee = [
         name: "Dr. Rajendrani Mukherjee",
         organization: "University of Engineering and Management Kolkata, India",
       },
+      {
+        name: "Prof. Arpita Saha Chowdhury",
+        organization: "University of Engineering and Management Kolkata, India",
+      },
+
       // {
       //   name: "Dr. Tapas Guha",
       //   organization: "University of Engineering and Management Kolkata, India",
